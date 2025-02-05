@@ -1,0 +1,495 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model AssinmentResult {
+  id          Int        @id @default(autoincrement())
+  score       Int
+  answersbody Json?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  subjectId   Int
+  userId      Int
+  assinmentId Int
+  lessonId    Int
+  teacherId   Int
+  Assinments  Assinments @relation(fields: [assinmentId], references: [id])
+  Subjects    Subjects   @relation(fields: [subjectId], references: [id])
+  User        User       @relation(fields: [userId], references: [id])
+  teacher     Teachers   @relation(fields: [teacherId], references: [id])
+  lesson      Lessons    @relation(fields: [lessonId], references: [id])
+}
+
+model Assinments {
+  id               Int                @id @default(autoincrement())
+  name             String
+  description      String
+  assinmentbody    Json?
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  lessonId         Int
+  subjectId        Int
+  AssinmentResult  AssinmentResult[]
+  Lessons          Lessons            @relation(fields: [lessonId], references: [id])
+  Subjects         Subjects           @relation(fields: [subjectId], references: [id])
+  UserOnAssinments UserOnAssinments[]
+  User             User[]
+  teacherId        Int
+  teacher          Teachers           @relation(fields: [teacherId], references: [id])
+}
+
+model Exam {
+  id          Int           @id @default(autoincrement())
+  title       String        @db.VarChar(100)
+  Exambody    Json?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  fullDegree  Int?
+  subjectId   Int
+  teacherId   Int
+  Subjects    Subjects      @relation(fields: [subjectId], references: [id])
+  ExamResult  ExamResult[]
+  FinalResult FinalResult[]
+  UserOnExams UserOnExams[]
+  User        User[]
+  teacher     Teachers      @relation(fields: [teacherId], references: [id])
+}
+
+model ExamResult {
+  id          Int       @id @default(autoincrement())
+  score       Int
+  answersbody Json?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  examId      Int
+  subjectId   Int
+  userId      Int
+  teacherId   Int?
+  Exam        Exam      @relation(fields: [examId], references: [id])
+  Subjects    Subjects  @relation(fields: [subjectId], references: [id])
+  User        User      @relation(fields: [userId], references: [id])
+  teacher     Teachers? @relation(fields: [teacherId], references: [id])
+}
+
+model FinalResult {
+  id        Int      @id @default(autoincrement())
+  score     Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  examId    Int
+  Exam      Exam     @relation(fields: [examId], references: [id])
+  userId    Int
+  User      User     @relation(fields: [userId], references: [id])
+  subjectId Int
+  subject   Subjects @relation(fields: [subjectId], references: [id])
+  teacherId Int
+  teacher   Teachers @relation(fields: [teacherId], references: [id])
+}
+
+model Sections {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(100)
+  description String     @db.VarChar(1000)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  subjects    Subjects[]
+  managerId   Int?
+  manager     Manager?   @relation(fields: [managerId], references: [id])
+}
+
+model Groups {
+  id          Int        @id @default(autoincrement())
+  name        String
+  description String
+  gender      Gender
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  Teachers    Teachers[]
+  User        User[]
+  Admins      Admins[]
+}
+
+model Lessons {
+  id               Int               @id @default(autoincrement())
+  name             String
+  description      String
+  body             Json?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  subjectId        Int
+  teacherId        Int
+  comments         Comments[]
+  likes            LikesComment[]
+  replies          ReComment[]
+  Assinments       Assinments[]
+  Assinment_Result AssinmentResult[]
+  Subjects         Subjects          @relation(fields: [subjectId], references: [id])
+  teacher          Teachers          @relation(fields: [teacherId], references: [id])
+}
+
+model Admins {
+  id                Int            @id @default(autoincrement())
+  name              String
+  email             String         @unique
+  password          String
+  telephone         String         @unique
+  gender            Gender
+  address           String?
+  age               Int?
+  image             String?
+  education         String?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  groupId           Int
+  role              Role           @default(ADMIN)
+  leaderId          Int
+  comments          Comments[]
+  likes             LikesComment[]
+  replies           ReComment[]
+  Group             Groups         @relation(fields: [groupId], references: [id])
+  leader            AdminTeacher   @relation(fields: [leaderId], references: [id])
+  passwordresetCode String?
+  passwordExpire    DateTime?      @default(now())
+  passwordVirify    Boolean?       @default(false)
+}
+
+model AdminTeacher {
+  id                Int            @id @default(autoincrement())
+  name              String
+  email             String         @unique
+  password          String
+  telephone         String         @unique
+  gender            Gender
+  address           String?
+  age               Int?
+  image             String?
+  education         String?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  role              Role           @default(ADMIN_TEACHER)
+  admins            Admins[]
+  teachers          Teachers[]
+  comments          Comments[]
+  likes             LikesComment[]
+  replies           ReComment[]
+  managerId         Int
+  manager           Manager        @relation(fields: [managerId], references: [id])
+  passwordresetCode String?
+  passwordExpire    DateTime?      @default(now())
+  passwordVirify    Boolean?       @default(false)
+}
+
+model Manager {
+  id                Int            @id @default(autoincrement())
+  name              String
+  email             String         @unique
+  password          String
+  telephone         String         @unique
+  gender            Gender
+  address           String?
+  age               Int?
+  image             String?
+  education         String?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  role              Role           @default(MANAGER)
+  leaders           AdminTeacher[]
+  comments          Comments[]
+  likes             LikesComment[]
+  replies           ReComment[]
+  section           Sections[]
+  ownerId           Int
+  owner             Owner          @relation(fields: [ownerId], references: [id])
+  passwordresetCode String?
+  passwordExpire    DateTime?      @default(now())
+  passwordVirify    Boolean?       @default(false)
+}
+
+model Owner {
+  id                Int            @id @default(autoincrement())
+  name              String
+  email             String         @unique
+  password          String
+  telephone         String         @unique
+  gender            Gender
+  address           String?
+  age               Int?
+  image             String?
+  education         String?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  role              Role           @default(OWNER)
+  managers          Manager[]
+  comments          Comments[]
+  likes             LikesComment[]
+  replies           ReComment[]
+  passwordresetCode String?
+  passwordExpire    DateTime?      @default(now())
+  passwordVirify    Boolean?       @default(false)
+}
+
+model Subjects {
+  id              Int               @id @default(autoincrement())
+  name            String            @db.VarChar(100)
+  info            String
+  updatedAt       DateTime          @updatedAt
+  createdAt       DateTime          @default(now())
+  AssinmentResult AssinmentResult[]
+  Assinments      Assinments[]
+  Exam            Exam[]
+  ExamResult      ExamResult[]
+  FinalResult     FinalResult[]
+  Lessons         Lessons[]
+  Teachers        Teachers[]
+  UserOnSubject   UserOnSubject[]
+  User            User[]
+  comments        Comments[]
+  likes           LikesComment[]
+  replies         ReComment[]
+  sectionId       Int
+  sections        Sections          @relation(fields: [sectionId], references: [id])
+}
+
+model Teachers {
+  id                Int               @id @default(autoincrement())
+  name              String
+  email             String            @unique
+  password          String
+  telephone         String            @unique
+  gender            Gender
+  address           String?
+  age               Int?
+  education         String?
+  image             String?
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  groupId           Int
+  role              Role              @default(TEACHER)
+  subjectId         Int
+  leaderId          Int
+  Groups            Groups            @relation(fields: [groupId], references: [id])
+  Subjects          Subjects          @relation(fields: [subjectId], references: [id])
+  leader            AdminTeacher      @relation(fields: [leaderId], references: [id])
+  assingmentResult  AssinmentResult[]
+  examResult        ExamResult[]
+  lessons           Lessons[]
+  assinments        Assinments[]
+  exams             Exam[]
+  finalResult       FinalResult[]
+  comments          Comments[]
+  likes             LikesComment[]
+  replies           ReComment[]
+  passwordresetCode String?
+  passwordExpire    DateTime?         @default(now())
+  passwordVirify    Boolean?          @default(false)
+}
+
+model User {
+  id                Int                @id @default(autoincrement())
+  name              String             @db.VarChar(100)
+  email             String             @unique @db.VarChar(100)
+  password          String             @db.VarChar(100)
+  telephone         String             @unique @db.VarChar(20)
+  address           String?
+  age               Int?
+  education         String?
+  image             String?
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  gender            Gender
+  role              Role               @default(USER)
+  groupId           Int
+  AssinmentResult   AssinmentResult[]
+  ExamResult        ExamResult[]
+  Groups            Groups             @relation(fields: [groupId], references: [id])
+  UserOnAssinments  UserOnAssinments[]
+  UserOnExams       UserOnExams[]
+  UserOnSubject     UserOnSubject[]
+  Assinments        Assinments[]
+  Exam              Exam[]
+  Subjects          Subjects[]
+  FinalResult       FinalResult[]
+  comments          Comments[]
+  likes             LikesComment[]
+  replies           ReComment[]
+  passwordresetCode String?
+  passwordExpire    DateTime?          @default(now())
+  passwordVirify    Boolean?           @default(false)
+}
+
+model Comments {
+  id           Int            @id @default(autoincrement())
+  text         String         @db.VarChar(1000)
+  image        String[]       @default([])
+  likes        LikesComment[]
+  replies      ReComment[]
+  userId       Int?
+  User         User?          @relation(fields: [userId], references: [id])
+  adminId      Int?
+  Admin        Admins?        @relation(fields: [adminId], references: [id])
+  teacheId     Int?
+  Teacher      Teachers?      @relation(fields: [teacheId], references: [id])
+  leaderId     Int?
+  AdminTeacher AdminTeacher?  @relation(fields: [leaderId], references: [id])
+  mangerId     Int?
+  Manager      Manager?       @relation(fields: [mangerId], references: [id])
+  ownerId      Int?
+  Owner        Owner?         @relation(fields: [ownerId], references: [id])
+  lessonId     Int
+  Lesson       Lessons        @relation(fields: [lessonId], references: [id])
+  subjectId    Int
+  Subjects     Subjects       @relation(fields: [subjectId], references: [id])
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model ReComment {
+  id           Int            @id @default(autoincrement())
+  text         String         @db.VarChar(1000)
+  image        String[]       @default([])
+  commentId    Int
+  likes        LikesComment[]
+  Comment      Comments       @relation(fields: [commentId], references: [id])
+  userId       Int?
+  User         User?          @relation(fields: [userId], references: [id])
+  adminId      Int?
+  Admin        Admins?        @relation(fields: [adminId], references: [id])
+  teacheId     Int?
+  Teacher      Teachers?      @relation(fields: [teacheId], references: [id])
+  leaderId     Int?
+  AdminTeacher AdminTeacher?  @relation(fields: [leaderId], references: [id])
+  mangerId     Int?
+  Manager      Manager?       @relation(fields: [mangerId], references: [id])
+  ownerId      Int?
+  Owner        Owner?         @relation(fields: [ownerId], references: [id])
+  lessonId     Int
+  Lesson       Lessons        @relation(fields: [lessonId], references: [id])
+  subjectId    Int
+  Subjects     Subjects       @relation(fields: [subjectId], references: [id])
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model LikesComment {
+  id           Int           @id @default(autoincrement())
+  like         Boolean?      @default(false)
+  disLike      Boolean?      @default(false)
+  love         Boolean?      @default(false)
+  hate         Boolean?      @default(false)
+  commentId    Int?
+  Comment      Comments?     @relation(fields: [commentId], references: [id])
+  reCommentId  Int?
+  ReComment    ReComment?    @relation(fields: [reCommentId], references: [id])
+  userId       Int?
+  User         User?         @relation(fields: [userId], references: [id])
+  adminId      Int?
+  Admin        Admins?       @relation(fields: [adminId], references: [id])
+  teacheId     Int?
+  Teacher      Teachers?     @relation(fields: [teacheId], references: [id])
+  leaderId     Int?
+  AdminTeacher AdminTeacher? @relation(fields: [leaderId], references: [id])
+  mangerId     Int?
+  Manager      Manager?      @relation(fields: [mangerId], references: [id])
+  ownerId      Int?
+  Owner        Owner?        @relation(fields: [ownerId], references: [id])
+  lessonId     Int
+  Lesson       Lessons       @relation(fields: [lessonId], references: [id])
+  subjectId    Int
+  Subjects     Subjects      @relation(fields: [subjectId], references: [id])
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model UserOnAssinments {
+  userId      Int
+  assinmentId Int
+  Assinments  Assinments @relation(fields: [assinmentId], references: [id])
+  User        User       @relation(fields: [userId], references: [id])
+
+  @@id([userId, assinmentId])
+}
+
+model UserOnExams {
+  userId Int
+  examId Int
+  Exam   Exam @relation(fields: [examId], references: [id])
+  User   User @relation(fields: [userId], references: [id])
+
+  @@id([userId, examId])
+}
+
+model UserOnSubject {
+  userId    Int
+  subjectId Int
+  Subjects  Subjects @relation(fields: [subjectId], references: [id])
+  User      User     @relation(fields: [userId], references: [id])
+
+  @@id([userId, subjectId])
+}
+
+model Articles {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  access    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Posts {
+  id        Int      @id @default(autoincrement())
+  title     String?
+  content   String?
+  body      Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  author    Json?
+}
+
+model Hadith {
+  id        Int      @id @default(autoincrement())
+  title     String?
+  content   String?
+  body      Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  author    Json?
+}
+
+model News {
+  id        Int      @id @default(autoincrement())
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  author    Json?
+}
+
+model Codes {
+  id         Int       @id @default(autoincrement())
+  code       String
+  role       Role
+  email      String
+  CodeExpire DateTime? @default(now())
+  VirifyCode Boolean?  @default(false)
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+enum Gender {
+  MALE
+  FEMALE
+}
+
+enum Role {
+  USER
+  ADMIN
+  TEACHER
+  ADMIN_TEACHER
+  MANAGER
+  OWNER
+}

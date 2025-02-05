@@ -1,0 +1,11 @@
+.articleMain{
+    border: 40px solid transparent;
+    border-image:url('/avatar/round-3.avif') 80 round ;
+}
+
+@media (max-width: 768px) {
+    .articleMain{
+        border: 15px solid transparent;
+        border-image:url('/avatar/round-3.avif') 80 round ;
+    }
+}

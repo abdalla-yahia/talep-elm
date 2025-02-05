@@ -1,0 +1,28 @@
+.toggleDown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.header_nav{
+    background-image: url('/images/header.png');
+    background-size: 100% 100%;
+    background-color: #5b3f11;
+    
+}
+@media (max-width:1023.5px){
+    .toggleDown {
+        transition: .5s all ease-in;
+        position: absolute;
+        background-color: inherit;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background-color: #111827;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+    }
+}

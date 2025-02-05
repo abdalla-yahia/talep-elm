@@ -1,0 +1,189 @@
+{
+    "id":4,
+    "title":"نزهة النظر  ",
+    "description":"نزهة النظر في توضيح نخبة الفكر في مصطلح أهل الأثر   ",
+    "search":" بحث عن موضوع في كتاب نزهة النظر  ",
+    "type":"المادة",
+    "author":"  بن حجر العسقلاني",
+    "publisher":"بشرح المهندس عبدالمنعم الشحات",
+    "year":1984,
+    "audio_count":34,
+    "audio_type":"mp3",
+    "sort":"id",
+    "download":"https://archive.org/download/20240226_20240226_1627/%D8%B4%D8%B1%D8%AD%20%D9%86%D8%B2%D9%87%D8%A9%20%D8%A7%D9%84%D9%86%D8%B8%D8%B1%20-%20%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%20%D8%A7%D9%84%D9%84%D8%A7%D8%AD%D9%85.pdf",
+    "url":"https://archive.org/download/nozhet-alnuzur",
+    "image":"https://www.noor-book.com/publice/covers_cache_webp/18/f/1/5/44a8080b37f15e6f7be7849c483d9679.jpg.webp",
+    "data":
+    [
+        {
+            "id": 1,
+            "name": "تاريخ التصنيف في علم المصطلح",
+            "url": "nozhet-alnuzur-001.mp3"
+        },
+        {
+            "id": 2,
+            "name": "تقسيم الحديث من حيث طرق وصوله إلينا",
+            "url": "nozhet-alnuzur-002.mp3"
+        },
+        {
+            "id": 3,
+            "name": "معنى الخبر والأثر",
+            "url": "nozhet-alnuzur-003.mp3"
+        },
+        {
+            "id": 4,
+            "name": "شروط التواتر",
+            "url": "nozhet-alnuzur-004.mp3"
+        },
+        {
+            "id": 5,
+            "name": "تابع شروط التواتر",
+            "url": "nozhet-alnuzur-005.mp3"
+        },
+        {
+            "id": 6,
+            "name": "تابع شروط التواتر",
+            "url": "nozhet-alnuzur-006.mp3"
+        },
+        {
+            "id": 7,
+            "name": "تابع أنواع الحديث باعتبار وصوله إلينا",
+            "url": "nozhet-alnuzur-007.mp3"
+        },
+        {
+            "id": 8,
+            "name": "تابع أنواع الحديث باعتبار وصوله إلينا",
+            "url": "nozhet-alnuzur-008.mp3"
+        },
+        {
+            "id": 9,
+            "name": "لزوم اتباع شريعة النبي",
+            "url": "nozhet-alnuzur-009.mp3"
+        },
+        {
+            "id": 10,
+            "name": "تابع أنواع الحديث باعتبار وصوله إلينا",
+            "url": "nozhet-alnuzur-010.mp3"
+        },
+        {
+            "id": 11,
+            "name": "تابع أنواع الحديث باعتبار وصوله إلينا- خبر الآحاد",
+            "url": "nozhet-alnuzur-011.mp3"
+        },
+        {
+            "id": 12,
+            "name": "الخبر المقبول وما يتعلق به من مباحث- الصحيح لذاته",
+            "url": "nozhet-alnuzur-012.mp3"
+        },
+        {
+            "id": 13,
+            "name": "الحسن لذاته",
+            "url": "nozhet-alnuzur-013.mp3"
+        },
+        {
+            "id": 14,
+            "name": "تابع الحسن لذاته",
+            "url": "nozhet-alnuzur-014.mp3"
+        },
+        {
+            "id": 15,
+            "name": "أنواع الحديث الضعيف",
+            "url": "nozhet-alnuzur-015.mp3"
+        },
+        {
+            "id": 16,
+            "name": "المتابعة",
+            "url": "nozhet-alnuzur-016.mp3"
+        },
+        {
+            "id": 17,
+            "name": "الحديث المقبول",
+            "url": "nozhet-alnuzur-017.mp3"
+        },
+        {
+            "id": 18,
+            "name": "الحديث المقبول",
+            "url": "nozhet-alnuzur-018.mp3"
+        },
+        {
+            "id": 19,
+            "name": "الحديث المردود",
+            "url": "nozhet-alnuzur-019.mp3"
+        },
+        {
+            "id": 20,
+            "name": "أنواع الحديث المردود",
+            "url": "nozhet-alnuzur-020.mp3"
+        },
+        {
+            "id": 21,
+            "name": "الحديث المعضل",
+            "url": "nozhet-alnuzur-021.mp3"
+        },
+        {
+            "id": 22,
+            "name": "الإرسال الخفي والتدليس",
+            "url": "nozhet-alnuzur-022.mp3"
+        },
+        {
+            "id": 23,
+            "name": "الخبر المردود بسبب الراوي ",
+            "url": "nozhet-alnuzur-023.mp3"
+        },
+        {
+            "id": 24,
+            "name": "الحديث المتروك بسبب الطعن في أحد رواته ",
+            "url": "nozhet-alnuzur-024.mp3"
+        },
+        {
+            "id": 25,
+            "name": "تابع الحديث المتروك بسبب الطعن في أحد رواته ",
+            "url": "nozhet-alnuzur-025.mp3"
+        },
+        {
+            "id": 26,
+            "name": "الحديث المدرج ",
+            "url": "nozhet-alnuzur-026.mp3"
+        },
+        {
+            "id": 27,
+            "name": "الحديث المردود ",
+            "url": "nozhet-alnuzur-027.mp3"
+        },
+        {
+            "id": 28,
+            "name": "اختصار الحديث والرواية بالمعنى",
+            "url": "nozhet-alnuzur-028.mp3"
+        },
+        {
+            "id": 29,
+            "name": "جهالة الراوي ",
+            "url": "nozhet-alnuzur-029.mp3"
+        },
+        {
+            "id": 30,
+            "name": "الرواية عن المبتدع ",
+            "url": "nozhet-alnuzur-030.mp3"
+        },
+        {
+            "id": 31,
+            "name": "فقد شرط اتصال السند ",
+            "url": "nozhet-alnuzur-031.mp3"
+        },
+        {
+            "id": 32,
+            "name": "الحديث الصحيح الذي اتصل اسناده برواية العدل الضابط عن مثله إلى منتهاه ",
+            "url": "nozhet-alnuzur-032.mp3"
+        },
+        {
+            "id": 33,
+            "name": "أنواع الحديث المرفوع ",
+            "url": "nozhet-alnuzur-033.mp3"
+        },
+        {
+            "id": 34,
+            "name": "تابع أنواع الحديث المرفوع ",
+            "url": "nozhet-alnuzur-034.mp3"
+        }
+    ]
+}

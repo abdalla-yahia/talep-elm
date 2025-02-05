@@ -1,0 +1,50 @@
+{
+    "id":1,
+    "title":"فقه الخلاف ",
+    "description":"فقه الخلاف   ",
+    "search":" بحث عن موضوع في كتاب فقه الخلاف ",
+    "type":"المادة",
+    "author":"  الشيخ ياسر برهامي",
+    "publisher":"بشرح المهندس عبدالمنعم الشحات",
+    "year":2000,
+    "audio_count":121,
+    "audio_type":"mp3",
+    "sort":"id",
+    "download":"https://archive.org/download/Pdf4104/%D9%83%D8%AA%D8%A7%D8%A8%20%20%20pdf%20%20%20%20%20%20%20%D8%A7%D9%82%D8%B1%D8%A7%20%20%D8%A7%D9%88%D9%86%D9%84%D8%A7%D9%8A%D9%86%20%204104%20-%20%D9%81%D9%82%D9%87%20%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81%20%D8%A8%D9%8A%D9%86%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%D9%8A%D9%86%20-%20%D9%8A%D8%A7%D8%B3%D8%B1%20%D8%A8%D8%B1%D9%87%D8%A7%D9%85%D9%8A.pdf",
+    "url":"https://archive.org/download/ana-sal-shahaat--fikhkhilaaf",
+    "image":"https://www.noor-book.com/publice/covers_cache_webp/13/e/0/5/24ba115aa8e0548158f751d447e72cce.png.webp",
+    "data":
+    [
+        {
+            "id": 1,
+            "name": " الدرس الأول",
+            "url":"01.mp3"
+        },
+        {
+            "id": 2,
+            "name": " الدرس الثاني",
+            "url":"02.mp3"
+        },
+        {
+            "id": 3,
+            "name": " الدرس الثالث",
+            "url":"03.mp3"
+        },
+        {
+            "id": 4,
+            "name": " الدرس الرابع",
+            "url":"04.mp3"
+        
+        },
+        {
+            "id": 5,
+            "name": " الدرس الخامس",
+            "url":"05.mp3"
+        },
+        {
+            "id": 6,
+            "name": " الدرس السادس",
+            "url":"06.mp3"
+        }
+    ]
+}

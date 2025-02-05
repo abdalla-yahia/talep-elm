@@ -1,0 +1,36 @@
+.span_toggle {
+    .span_toggle{
+        margin-right: 5px;
+        color: red;
+        transform: translate(0px,15px);
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        animation: doute .5s infinite  alternate forwards;
+        &:nth-child(1){
+            animation-delay: 0s;
+            right: 7px;
+        }
+        &:nth-child(2){
+            animation-delay: calc(.5s / 3);
+            right: 14px;
+        }
+        &:nth-child(3){
+            animation-delay: calc(.5s / 6);
+            right: 21px;
+        }
+    }
+    position: relative;
+}
+
+@keyframes doute {
+    0%{
+        transform: translate(0px,10px);
+        filter: hue-rotate(0deg);
+}
+100%{
+    transform: translate(0,0);
+    filter: hue-rotate(360deg);
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "id":4,
+    "title":"الولاء والبراء ",
+    "description":"الولاء والبراء   ",
+    "search":" بحث عن موضوع في كتاب الولاء والبراء ",
+    "type":"المادة",
+    "author":"  الشيخ ياسر برهامي",
+    "publisher":"بشرح الشيخ المهندس عبدالمنعم الشحات",
+    "year":2000,
+    "audio_count":36,
+    "audio_type":"mp3",
+    "sort":"id",
+    "download":"",
+    "url":"https://ia800606.us.archive.org/23/items/alwalaa-wa-albaraa/alwalaa-wa-albaraa",
+    "image":"https://www.noor-book.com/publice/covers_cache_webp/16/c/7/8/cdde632ed7c78320e03f4c16e6d6519c.png.webp",
+    "data":[
+        {
+            "id": 1,
+            "name": "1",
+            "url": "01.mp3"
+        },
+        {
+            "id": 2,
+            "name": "2",
+            "url": "02.mp3"
+        },
+        {
+            "id":3,
+            "name":"3",
+            "url":"03.mp3"
+        },
+        {
+            "id":4,
+            "name":"4",
+            "url":"04.mp3"
+        },
+        {
+            "id":5,
+            "name":"5",
+            "url":"05.mp3"
+        },
+        {
+            "id":6,
+            "name":"6",
+            "url":"06.mp3"
+        },
+        {
+            "id":7,
+            "name":"7",
+            "url":"07.mp3"
+        },
+        {
+            "id":8,
+            "name":"8",
+            "url":"08.mp3"
+        },
+        {
+            "id":9,
+            "name":"9",
+            "url":"09.mp3"
+        },
+        {
+            "id":10,
+            "name":"10",
+            "url":"10.mp3"
+        },
+        {
+            "id":11,
+            "name":"11",
+            "url":"11.mp3"
+        },
+        {
+            "id":12,
+            "name":"12",
+            "url":"12.mp3"
+        }
+        
+    ]
+}

@@ -1,0 +1,20 @@
+.newsbar{
+    animation-name: move;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    padding-left: 100%;
+    /* width: fit-content; */
+    &:hover {
+        animation-play-state:paused;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+}
