@@ -29,7 +29,7 @@ export default function BookSoundPage({Book}:{Book:Chapter}) {
         
         (Book?.data?.sort((a, b) =>a[SORT] > b[SORT] ? 1 : -1).map((sound) => {
             return (
-                <div title={`${sound.name}`} style={{backgroundColor:`${ID === sound.id ?'#523301':''}`,color:`${ID === sound.id ?'white':''}`}} onClick={()=>{setAudioUrl(`${Book?.url}/${sound.url}`);SetType(Book?.type);SetBookTitle(Book?.title);setplay(true);SetID(sound.id as number);SetSahapyName(sound.name)}} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-[#01403c] hover:text-white bg-[#01403c] rounded text-blue-950`}>
+                <div title={`${sound.name}`} style={{backgroundColor:`${ID === sound.id ?'#023734':''}`,color:`${ID === sound.id ?'white':''}`}} onClick={()=>{setAudioUrl(`${Book?.url}/${sound.url}`);SetType(Book?.type);SetBookTitle(Book?.title);setplay(true);SetID(sound.id as number);SetSahapyName(sound.name)}} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-[#01403c] hover:text-white bg-[#01857c] rounded text-white`}>
                     {   Book?.id === 3?
                         <h1  className='line-clamp-1'>{`( ${sound.id} ) - ${sound.name}`}</h1>:
                         <h1  className='line-clamp-1'>{sound.name}
@@ -46,7 +46,7 @@ export default function BookSoundPage({Book}:{Book:Chapter}) {
                         <p className=' w-full text-blue-950'>عدد نتائج البحث : <span className='text-blue-600'>{Book?.data?.filter(item=>item.name.includes(Search))?.length} </span>نتيجة</p>
                         {Book?.data?.filter(item=>item.name.includes(Search)).sort((a, b) =>a[SORT] > b[SORT] ? 1 : -1).map((sound) => {
                             return (
-                                <div title={`${sound.name}`} style={{backgroundColor:`${ID === sound.id ?'#523301':''}`,color:`${ID === sound.id ?'white':''}`}} onClick={()=>{setAudioUrl(`${Book?.url}/${sound.url}`);SetType(Book?.type);setplay(true);SetID(sound.id as number);SetSahapyName(sound.name)}} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-[#01403c] hover:text-white bg-[#01403c] rounded m-2 text-blue-950`}>
+                                <div title={`${sound.name}`} style={{backgroundColor:`${ID === sound.id ?'#523301':''}`,color:`${ID === sound.id ?'white':''}`}} onClick={()=>{setAudioUrl(`${Book?.url}/${sound.url}`);SetType(Book?.type);setplay(true);SetID(sound.id as number);SetSahapyName(sound.name)}} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-[#01403c] hover:text-white bg-[#01857c] rounded m-2 text-white`}>
                                     {   Book?.id === 3?
                                         <h1 className='line-clamp-1'>{`( ${sound.id} ) - ${sound.name}`}</h1>:
                                         <h1 className='line-clamp-1'>{sound.name}</h1>

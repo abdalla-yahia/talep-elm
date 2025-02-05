@@ -94,7 +94,7 @@ useEffect(() => {
 }, [soraData, SoraNumber]);
   return (
     <>
-      <nav style={{background:'#5b3f11 url("/images/header.png")'}} className="text-gray-700 fixed top-0  left-0 z-30 w-full flex-wrap md:flex-nowrap lg:flex-nowrap flex justify-evenly md:justify-between lg:justify-between items-end gap-1 bg-[#5b3f11] shadow py-3 px-2">
+      <nav style={{background:'#5b3f11 url("/images/header.png")',backgroundSize:"100% 100%"}} className="text-gray-700 fixed top-0  left-0 z-30 w-full flex-wrap md:flex-nowrap lg:flex-nowrap flex justify-evenly md:justify-between lg:justify-between items-end gap-1 bg-[#5b3f11] shadow py-3 px-2">
         {/*Search for Aya */}
         <div className="w-1/3 md:w-[15%] lg:w-[15%]  flex  justify-between items-center">
           <input
