@@ -5,7 +5,7 @@ import Elamal_AlGamaee from './Elamal_ElGamaee.json';
 import ElHakmya_Mansour from './Elhakmea_Mansour.json';
 import Elhakmia from './Elhakmea.json';
 import ElJejad from './ElJehad.json';
-import ElKhelaf from './ElKhelaf.json';
+import ElKhelaf from './Elkhelaf.json';
 import Eman_We_Kofr_Mansour from './Eman_Kofr_Mansour.json';
 import Eman_Kofr from './Eman_Kofr.json';
 import Kada_Kadar_Mansour from './Kadaa_Kadar_Mansour.json';

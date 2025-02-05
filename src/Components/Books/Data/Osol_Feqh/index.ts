@@ -2,7 +2,7 @@ import Al_Resala from "./AL_Resala.json";
 import Al_Tazkera from './Al_Tazkera_Mansour.json';
 import Al_Warkat_Mansour from './Al_Warkat_Mansour.json';
 import Al_Osol_Mn_Alosol from './AlOsol_Mn_Alosol.json';
-import ElWadeh_Nabile from './ElWadeh_Nabile.json';
+import ElWadeh_Nabile from './Elwadeh_Nabile.json';
 import Elwadeh from './Elwadeh.json';
 import Ghayat_Elsawl from './Gkayat_Elsawl.json';
 import Kawaed_Osol_Mansour from './Kawaed_Osol_Feqh_MAnsour.json';

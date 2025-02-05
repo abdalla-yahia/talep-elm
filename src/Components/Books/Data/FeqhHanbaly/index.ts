@@ -22,7 +22,7 @@ import Omdat_Al_Alam from './Omdat_Al_Ahkam.json';
 import Tayseer_Al_Alam from './Tayseer_Al_Alam.json';
 import Zad_Al_Mostaknea_Shankety from './Zad_Al_Mostaknea_Shankety.json';
 import Zad_Al_Mostaknea_Shoaeer from './Zad_Al_Mostaknea_Shoaeer.json';
-import Zad_ElMostaqneaa from './Zad_ElMostaqneaa.json';
+import Zad_ElMostaqneaa from './Zad_Elmostaqneaa.json';
 export default function Feqh_Hanbalyan(){
     return {
         id:2,
