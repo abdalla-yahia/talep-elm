@@ -17,8 +17,8 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  title: "الدورات العلمية للشيخ خالد منصور",
-  description: "الموقع الرسمي لفضيلة الشيخ الدكتور خالد منصور",
+  title: "طالب علم شرعي",
+  description: "الموقع عبارة عن مكتبة متكاملة لطالب العلم الشرعي",
 };
 
 export default function RootLayout({

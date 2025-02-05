@@ -162,7 +162,7 @@ export default function AudioPlayer({Book, audioUrl, BookTitle, setAudioUrl, pla
   return (
     <>
      {/*Player Audio Box */}
-    <div className="fixed bottom-0 left-2 w-full flex flex-col justify-center items-center rounded h-fit px-2 py-1 bg-[#5b3f11] shadow">
+    <div className="fixed bottom-0 left-2 w-full flex flex-col justify-center items-center rounded h-fit px-2 py-1 bg-[#01403c] shadow">
         {/* Progress Bar */}
         <div onClick={(e)=>handleProgress(e)} className={`${styleProgress.progressbar}`}>
             <input type="range" min="0" max="100" value={progress || 0} onChange={(e)=>SetProgress(Number(e.target.value))} className='w-full text-red-500 rotate-180 h-1 relative '/>

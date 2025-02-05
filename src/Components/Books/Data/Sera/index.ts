@@ -1,5 +1,10 @@
-import Al_Shamaeel from './Shamael_Mohamdya.json';
+import Ashra_Mobashroon from './Ashra_Mobashroon.json';
+import Mokhtasar_Sera from './Mokhtasr_Sera.json';
 import Orjoza_Meaea from './Orjoza_Memea.json';
+import Rahek_Makhtoom from './Rahek_Makhtoom.json';
+import Al_Shamaeel from './Shamael_Mohamdya.json';
+import Sor_Sahaba from './Sor_Sahaba.json';
+import Sor_Rabeean from './Sor_Tabeean.json';
 export default function Sera_Books(){
     return {
         id:1,
@@ -7,7 +12,12 @@ export default function Sera_Books(){
         description:"سيرة",
         books:[
             Al_Shamaeel,
-            Orjoza_Meaea
+            Orjoza_Meaea,
+            Sor_Sahaba,
+            Sor_Rabeean,
+            Ashra_Mobashroon,
+            Mokhtasar_Sera,
+            Rahek_Makhtoom
         ]
     }
 }

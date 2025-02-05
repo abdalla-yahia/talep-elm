@@ -10,7 +10,7 @@ export default function NavLinks({user}:{user:UserPayload | null}) {
    const [toggle,setToggle]= useState(false)
 
   return (
-    <div className='text-white'>
+    <div className='text-black'>
         {
            toggle?
            <IoMdClose onClick={()=>setToggle(!toggle)} className="text-3xl lg:hidden block cursor-pointer"/>:

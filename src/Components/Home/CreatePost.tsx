@@ -33,7 +33,7 @@ export default function CreatePost() {
   return (
       <>
               
-        {!toggle && UserLogedData?.role  as React.ReactNode && UserLogedData?.role === 'OWNER' && <button onClick={()=>setToggle(!toggle)} className="hover:text-blue-600 my-1 bg-blue-900 text-white w-full px-3 rounded cursor-pointer">إنشاء منشور</button> }
+        {!toggle && UserLogedData?.role  as React.ReactNode && UserLogedData?.role === 'OWNER' && <button onClick={()=>setToggle(!toggle)} className="hover:text-blue-600 my-1 bg-[#01403c] text-white w-full px-3 rounded cursor-pointer">إنشاء منشور</button> }
        {toggle &&  <div className="container text-gray-700 w-full flex flex-col justify-center items-center">
         <div className="w-full flex gap-2 mb-2  justify-center items-center">
             <h3 className="flex text-gray-200">عنوان المنشور : </h3>

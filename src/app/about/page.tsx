@@ -10,7 +10,7 @@ export default function page() {
             <p className=" w-full text-lg text-white text-justify ">
                 نحن نتشرف أن نقدم  لك عزيزي الزائر الدورات العلمية التى تؤهلك لفهم صحيح الدين على الكتاب والسنة , وضحض الشبهات التى أتى بها الأولون وسار على دربهم الأخرون , ونتمنى أن تكون هذه الدورات منفعة لكم ونتمنى أن نلتقي جميعاً على ضفاف الكوثر يوم القيامه وأن نجتمع سوياً في جنات الخلد , اللهم آمين
             </p>
-            <h2 className="w-full text-2xl text-white text-justify ">البرنامج العلمي للشيخ خالد منصور</h2>
+            <h2 className="w-full text-2xl text-white text-justify ">البرنامج العلمي لموقع طالب علم شرعي</h2>
             <h3 className="w-full text-lg text-white text-justify ">
               
 

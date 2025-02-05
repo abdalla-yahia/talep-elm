@@ -19,7 +19,7 @@ export default async function Header() {
   if(!token){
     return (
       <>
-     <nav  className={`${amiri.className} ${style.header_nav} relative w-full z-50 flex bg-[#5b3f11]`}>
+     <nav  className={`${amiri.className} ${style.header_nav} relative w-full z-50 flex bg-[#2faea3]`}>
         <div className="container  w-full p-2 flex justify-around items-center">
           <Link  href="/" className={'flex justify-center  items-center font-bold text-fuchsia-700 hover:text-white'}>
           <Image className="rounded-lg ml-2" alt="logo" width={280} height={320} src={'/images/Title_Logo.png'}/>
@@ -36,7 +36,7 @@ const Decoade = Jwt.verify(token, process.env.JWT_SECRET_KEY as string) as UserP
 
   return (
     <>
-      <nav  className={`${amiri.className} ${style.header_nav} relative w-full z-50 flex bg-[#5b3f11]`}>
+      <nav  className={`${amiri.className} ${style.header_nav} relative w-full z-50 flex bg-[#2faea3]`}>
         <div className="container  w-full p-2 flex justify-around items-center">
           <Link  href="/" className={'flex justify-center  items-center font-bold text-fuchsia-700'}>
           <Image className="rounded-lg ml-2" alt="logo" width={280} height={320} src={'/images/Title_Logo.png'}/>

@@ -86,7 +86,7 @@ export default function LoginForm({userFromToken,setToggle,toggle}:{userFromToke
                 {User?.name !== undefined && User?.name !== '' && User?.name !== null && User?.name !== 'AxiosError' ?
                 (
                     <>
-                    <div className={`text-gray-200  flex justify-center items-center px-5 lg:flex-row flex-col`}>
+                    <div className={`text-black flex justify-center items-center px-5 lg:flex-row flex-col`}>
               <Link href={role !== undefined ? `/${role}/dashboard/articles` :'/'} className="cursor-pointer flex flex-col justify-center items-center text-center">
               <Image 
               onClick={()=>setToggle(!toggle as unknown as boolean)} 
@@ -95,7 +95,7 @@ export default function LoginForm({userFromToken,setToggle,toggle}:{userFromToke
               height={50}
               alt="User Image"
               className="rounded-full hover:text-gray-300"/>
-                        <p className="rounded-full hover:text-white text-gray-300">{(User?.name)}</p>
+                        <p className="rounded-full hover:text-white text-black">{(User?.name)}</p>
               </Link>
                 <button onClick={()=>{LogoutHandeller();setToggle(!toggle)}} className="hover:bg-blue-900 bg-blue-800 hover:text-white mx-2 p-2 rounded">
                   خروج
@@ -104,7 +104,7 @@ export default function LoginForm({userFromToken,setToggle,toggle}:{userFromToke
               </>
               ):
               (<button onClick={()=>setToggle(!toggle)} className="p-2 rounded ">
-                <Link className="p-2 rounded hover:bg-[#895605] bg-[#9f6301]"  href="/login"> تسجيل الدخول</Link>
+                <Link className="p-2 rounded hover:bg-[#01958b] bg-[#01403c]"  href="/login"> تسجيل الدخول</Link>
                 </button>)}
               </div>
   )

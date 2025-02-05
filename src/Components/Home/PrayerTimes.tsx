@@ -20,7 +20,7 @@ export default  function PrayerTimesPage() {
     return (
       <>
         {/*Hijiry Time */}
-        <div className="card px-1 text-[13px] w-full text-center shadow mb-2 bg-[#5b3f11] text-white">
+        <div className="card px-1 text-[13px] w-full text-center shadow mb-2 bg-[#01403c] text-white">
           <span className="w-full text-red-600 text-2xl">
             {prayer?.date?.hijri?.weekday?.ar}
           </span>
@@ -30,7 +30,7 @@ export default  function PrayerTimesPage() {
           </span>
           <span>{prayer?.date?.hijri?.year + "هجريه"}</span>
         </div>
-        <div className="card px-1 text-[13px] w-full text-center shadow mb-2 bg-[#5b3f11] text-white">
+        <div className="card px-1 text-[13px] w-full text-center shadow mb-2 bg-[#01403c] text-white">
           مواقيت الصلاة{" "}
         </div>
         {/*Prayer Times */}
@@ -38,7 +38,7 @@ export default  function PrayerTimesPage() {
           <div className="row w-full">
             <div className="col-md-12 flex flex-col justify-center items-center">
               {/*El Fagr */}
-              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#5b3f11] shadow text-white">
+              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#01403c] shadow text-white">
                 <div className="card-body text-sm">
                   <h5 className="card-title flex justify-center items-center gap-1">
                     الفجر
@@ -51,7 +51,7 @@ export default  function PrayerTimesPage() {
                 </div>
               </div>
               {/*El Shrooq */}
-              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#5b3f11] shadow text-white">
+              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#01403c] shadow text-white">
                 <div className="card-body text-sm">
                   <h5 className="card-title flex justify-center items-center gap-1">
                     الشروق
@@ -64,7 +64,7 @@ export default  function PrayerTimesPage() {
                 </div>
               </div>
               {/*El Dohr */}
-              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#5b3f11] shadow text-white">
+              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#01403c] shadow text-white">
                 <div className="card-body text-sm">
                   <h5 className="card-title flex justify-center items-center gap-1">
                     الظهر
@@ -78,7 +78,7 @@ export default  function PrayerTimesPage() {
                 
               </div>
               {/*El Asr */}
-              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#5b3f11] shadow text-white">
+              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#01403c] shadow text-white">
                 <div className="card-body text-sm">
                   <h5 className="card-title flex justify-center items-center gap-1">
                     العصر
@@ -95,7 +95,7 @@ export default  function PrayerTimesPage() {
                 </div>
               </div>
               {/*El Maghrib */}
-              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#5b3f11] shadow text-white">
+              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#01403c] shadow text-white">
                 <div className="card-body text-sm">
                   <h5 className="card-title flex justify-center items-center gap-1">
                     المغرب
@@ -111,7 +111,7 @@ export default  function PrayerTimesPage() {
                 </div>
               </div>
               {/*El Esha */}
-              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#5b3f11] shadow text-white">
+              <div className="card w-full mb-2 flex justify-center text-center items-center bg-[#01403c] shadow text-white">
                 <div className="card-body text-sm">
                   <h5 className="card-title flex justify-center items-center gap-1">
                     العشاء

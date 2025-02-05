@@ -7,7 +7,7 @@ import Sidebar from "@/Components/DashvoardSideBar/Sidebar";
 
 export const metadata: Metadata = {
   title: " الدورات العلمية  ",
-  description: " الدورات العلمية للشيخ خالد منصور تهدف لإخراج جيل جديد على الكتاب والسنة بدون إفراط أو تفريط",
+  description: " الدورات العلمية لموقع طالب علم شرعي تهدف لإخراج جيل جديد على الكتاب والسنة بدون إفراط أو تفريط",
 };
 
 export default function UserDAshboardLayout({
