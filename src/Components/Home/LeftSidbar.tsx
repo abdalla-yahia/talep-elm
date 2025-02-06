@@ -146,7 +146,7 @@ export default function LeftSidbar() {
 
           <button
             onClick={() => CreatePostHandeller()}
-            className="p-2 rounded text-white  hover:bg-[#01403c] cursor-pointer"
+            className="p-2 rounded text-white shadow-md hover:bg-[#01403c] bg-[#01403c]  cursor-pointer"
           >
             إنشاء الموضوع
           </button>
@@ -189,7 +189,7 @@ export default function LeftSidbar() {
     {/**Show Post */}
       {Post &&
             (<div>
-              <h1 className="text-2xl w-full my-3 text-[#01403c] text-center flex justify-center items-center">
+              <h1 className="text-2xl w-full my-3 text-[#02968c] text-center flex justify-center items-center">
                 {Post?.title}
               </h1>
               <p style={{lineHeight:'2'}} className={`text-justify max-h-[350px] overflow-y-scroll scrollbar-hide`}>

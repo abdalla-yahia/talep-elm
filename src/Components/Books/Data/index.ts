@@ -1,4 +1,5 @@
-import Sera from './Sera'
+import Sera from './Sera';
+import Tarekh from './Tarekh';
 import Feqh_Hanbaly from './FeqhHanbaly';
 import Fatawe from './Fatawy';
 import Osol_Feqh from './Osol_Feqh';
@@ -13,9 +14,11 @@ import Hadith from './Hadith';
 import Tafseer from './Tafseer';
 import Tazkea from './Tazkea';
 import Ferak_Mazahb from './Ferak_Mazaheb';
+import Khotab from './Khotab';
 export default function BooksData(){
     return [
         Sera(),
+        Tarekh(),
         Osol_Feqh(),
         Osol_Tafseer(),
         Osol_Bedaa(),
@@ -29,6 +32,7 @@ export default function BooksData(){
         Aqeda(),
         Hadith(),
         Tafseer(),
-        Tazkea()
+        Tazkea(),
+        Khotab(),
     ]
 }

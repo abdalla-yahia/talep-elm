@@ -5,6 +5,7 @@ import Rahek_Makhtoom from './Rahek_Makhtoom.json';
 import Al_Shamaeel from './Shamael_Mohamdya.json';
 import Sor_Sahaba from './Sor_Sahaba.json';
 import Sor_Rabeean from './Sor_Tabeean.json';
+import Al_Khelafa_Serjany from './Al_Khelafa_Serjany.json';
 export default function Sera_Books(){
     return {
         id:1,
@@ -17,7 +18,8 @@ export default function Sera_Books(){
             Sor_Rabeean,
             Ashra_Mobashroon,
             Mokhtasar_Sera,
-            Rahek_Makhtoom
+            Rahek_Makhtoom,
+            Al_Khelafa_Serjany
         ]
     }
 }
