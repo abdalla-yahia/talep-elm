@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body >
+      <body className="bg-gray-400 dark:bg-black text-white">
       <StoreProvider>
         <Header />
         <Container>
