@@ -39,10 +39,10 @@ export default function RootLayout({
           <Footer />
         </StoreProvider>
         <ToastContainer />
+        <a href='https://visitorbadge.io/status?path=https%3A%2F%2Ftalep-elm.vercel.app%2F'>
+          <img src='https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftalep-elm.vercel.app%2F&countColor=%23263759' />
+        </a>
       </body>
-      <a href='https://visitorbadge.io/status?path=https%3A%2F%2Ftalep-elm.vercel.app%2F'>
-        <img src='https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftalep-elm.vercel.app%2F&countColor=%23263759' />
-      </a>
     </html>
   );
 }
