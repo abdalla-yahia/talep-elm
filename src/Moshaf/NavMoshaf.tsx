@@ -92,6 +92,10 @@ useEffect(() => {
   setTypeSora((Type as [{type:string}])[+SoraNumber + 1] ?.type) as unknown as string;
     setLengthAyat(soraData?.length);
 }, [soraData, SoraNumber]);
+useEffect(()=>{
+  document.title =`سورة  ${nameSora} - الشيخ ${nameShaikh}`
+},[nameSora,nameShaikh])
+
   return (
     <>
       <nav style={{background:'#5b3f11 url("/images/header.png")',backgroundSize:"100% 100%"}} className="text-gray-700 fixed top-0  left-0 z-30 w-full flex-wrap md:flex-nowrap lg:flex-nowrap flex justify-evenly md:justify-between lg:justify-between items-end gap-1 bg-[#5b3f11] shadow py-3 px-2">

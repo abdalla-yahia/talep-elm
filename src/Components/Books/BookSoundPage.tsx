@@ -1,7 +1,7 @@
 'use client'
 import { Chapter } from '@/Interfaces/InterFaces'
 import AudioPlayer from '@/Utils/AudioPlayer'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 export default function BookSoundPage({Book}:{Book:Chapter}) {
     const [SahapyName,SetSahapyName] = useState<null|string>(null)
     const [type,SetType] = useState<null|string>(null)
@@ -12,6 +12,9 @@ export default function BookSoundPage({Book}:{Book:Chapter}) {
     const [play,setplay] = useState(false)
         
     const SORT: keyof typeof Book.data[0] = Book?.sort as keyof typeof Book.data[0]
+    useEffect(()=>{
+        document.title = `${SahapyName} - ${Book?.title}`
+    },[SahapyName,Book])
  return (
     <>
     <div className='w-full flex flex-col justify-center items-center'>
