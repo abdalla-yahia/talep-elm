@@ -1,3 +1,4 @@
+'use client'
 import { LogedUserInterface } from "@/Interfaces/InterFaces"
 import { createPost } from "@/lib/Actions/PostsActions"
 import { useAppDispatch, useAppSelector } from "@/lib/hooks"

@@ -1,3 +1,4 @@
+'use client'
 import { CreateHadithInterface, LogedUserInterface } from "@/Interfaces/InterFaces"
 import { createHadith, deleteHadith, fetchHadith } from "@/lib/Actions/HadithActions"
 import { useAppDispatch, useAppSelector } from "@/lib/hooks"
@@ -25,7 +26,6 @@ export default function LeftSidbar() {
     content: '',
     author: { id: 0, name: '', image: '' }
   })
-
   const dispatch = useAppDispatch();
   const CreatePostHandeller = () => {
     dispatch(createHadith({

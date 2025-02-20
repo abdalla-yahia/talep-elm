@@ -1,4 +1,3 @@
-'use client'
 import ArticlesHomePage from "./ArticlesHomePage";
 import CreatePost from "./CreatePost";
 import LeftSidbar from "./LeftSidbar";

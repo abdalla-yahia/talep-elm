@@ -1,3 +1,4 @@
+'use client'
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as icon from '@/Components/Icons/icons'
 import { LegacyRef, useEffect, useRef, useState } from 'react';
