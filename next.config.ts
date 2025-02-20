@@ -19,6 +19,10 @@ const nextConfig: NextConfig = {
     {
       protocol:'https',
       hostname:'ktabpdf.com'
+    },
+    {
+      protocol:'https',
+      hostname:'api.visitorbadge.io'
     }
 
     ]

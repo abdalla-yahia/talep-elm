@@ -165,7 +165,7 @@ export default function LeftSidbar() {
               <icon.MdKeyboardDoubleArrowDown />
             </span>
             {PostToggle &&
-              <div className='bg-[#016d79] absolute rounded left-0 top-[140%] w-[80%] z-40 h-[400px] scrollbar-hide overflow-y-scroll text-text_color flex justify-start items-start flex-col'>
+              <div className='bg-second_background_color absolute rounded left-0 top-[140%] w-[80%] z-40 h-[400px] scrollbar-hide overflow-y-scroll text-text_color flex justify-start items-start flex-col'>
                 {
                   AllHadith?.Hadith?.length > 0
                     &&
@@ -190,7 +190,7 @@ export default function LeftSidbar() {
       {/**Show Post */}
       {Post &&
         (<div>
-          <h1 className="text-2xl w-full my-3 text-secondary_color text-center flex justify-center items-center">
+          <h1 className="text-2xl w-full my-3 text-primary_color text-center flex justify-center items-center">
             {Post?.title}
           </h1>
           <p style={{ lineHeight: '2' }} className={`text-justify max-h-[350px] overflow-y-scroll scrollbar-hide`}>

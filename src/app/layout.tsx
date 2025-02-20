@@ -8,6 +8,7 @@ import StoreProvider from './StoreProvider';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Amiri } from 'next/font/google';
+import Image from 'next/image';
 
 const amiri = Amiri({
   subsets: ['latin'],
@@ -40,7 +41,7 @@ export default function RootLayout({
         </StoreProvider>
         <ToastContainer />
         <a href='https://visitorbadge.io/status?path=https%3A%2F%2Ftalep-elm.vercel.app%2F'>
-          <img src='https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftalep-elm.vercel.app%2F&countColor=%23263759' />
+          <img src='https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftalep-elm.vercel.app%2F&countColor=%23263759' alt='img-vesitors' width={150} height={50}/>
         </a>
       </body>
     </html>
