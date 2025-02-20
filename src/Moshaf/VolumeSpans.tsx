@@ -62,63 +62,53 @@ export default function VolumeSpans({
         >
           <div
             style={{ height: `5px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `10px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `15px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `20px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `25px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `30px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `35px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `40px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `45px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
           <div
             style={{ height: `50px`, width: "3px", marginLeft: "1px" }}
-            className={`elementVolume ${
-              mute && style.active
-            } bg-gray-700 rounded block`}
+            className={`elementVolume ${mute && style.active
+              } bg-gray-700 rounded block`}
           ></div>
         </div>
         {mute ? (
@@ -135,9 +125,8 @@ export default function VolumeSpans({
               setMute(!mute);
               UnMuteHandeller();
             }}
-            className={`${
-              !mute ? "text-gray-500" : "text-green-500 "
-            }  cursor-pointer`}
+            className={`${!mute ? "text-text_color" : "text-green-500 "
+              }  cursor-pointer`}
           />
         )}
       </div>

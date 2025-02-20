@@ -28,7 +28,7 @@ export default function LessonContent({
         </Accordion.Header>
         <Accordion.Body>
           <div className="flex justify-start items-center flex-col w-full">
-            <h1 className="font-bold text-3xl text-red-500">{title}</h1>
+            <h1 className="font-bold text-3xl text-accent_color">{title}</h1>
             <p className="text-2xl text-center leading-loose">{desc}</p>
             <span className="flex gap-2 text-sm text-gray-300 justify-start items-start">
               تاريخ إضافة الدرس :<span>{DateConvert(date)}</span>

@@ -28,7 +28,7 @@ export default function ArticlesMap({ Articles }: { Articles: Articles[] }) {
               className="relative"
             >
               <Accordion.Header className="flex justify-start items-center ">
-                <span className="line-clamp-1 text-end">{`(${index +1}) -- `} {Article?.title} </span>
+                <span className="line-clamp-1 text-end">{`(${index + 1}) -- `} {Article?.title} </span>
               </Accordion.Header>
               <Accordion.Body>
                 <Link
@@ -37,9 +37,9 @@ export default function ArticlesMap({ Articles }: { Articles: Articles[] }) {
                   className="bg-blue-100 w-full cursor-pointer min-h-36 text-center p-1 rounded flex flex-col   "
                 >
                   <h1 className="text-3xl mb-2 text-sh"> {Article?.title}</h1>
-                  <div className="text-sm text-gray-500">
+                  <div className="text-sm text-text_color">
                     {Article?.access === "public" ? "عام" : "خاص"}
-                    <h2 className="text-red-500 text-xl font-bold">إضغط لقراءة المقال .....</h2>
+                    <h2 className="text-accent_color text-xl font-bold">إضغط لقراءة المقال .....</h2>
                   </div>
                 </Link>
 
@@ -89,7 +89,7 @@ export default function ArticlesMap({ Articles }: { Articles: Articles[] }) {
                             Article?.id as unknown as string
                           );
                         }}
-                        className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-white shadow-sm "
+                        className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-text_color shadow-sm "
                       >
                         حفظ التعديلات
                       </button>

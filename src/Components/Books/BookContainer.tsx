@@ -6,23 +6,23 @@ import { Chapter } from "@/Interfaces/InterFaces";
 import BookSoundPage from "@/Components/Books/BookSoundPage";
 
 
-export default function BookContainer({Book}:{Book:Chapter}) {
+export default function BookContainer({ Book }: { Book: Chapter }) {
   return (
     <>
-    <div  className="w-full h-full">
-      {
-        Book.title !== null && Book?.title !== undefined ? (
+      <div className="w-full h-full">
+        {
+          Book.title !== null && Book?.title !== undefined ? (
             <>
-            <FullTitle F_Title={Book?.description}/>
-            <BookInfo Book={Book}/>
-            <BookSoundPage Book={Book}/>
+              <FullTitle F_Title={Book?.description} />
+              <BookInfo Book={Book} />
+              <BookSoundPage Book={Book} />
             </>
-        )
-            : 
+          )
+            :
             (
               <>
-            <div className='w-full flex flex-col  h-screen justify-center gap-2 items-center'>
-              {/* <h1 className="text-red-800 text-2xl font-bold">مختصر لمشروع برنامجنا العلمى</h1> 
+                <div className='w-full flex flex-col  h-screen justify-center gap-2 items-center'>
+                  {/* <h1 className="text-red-800 text-2xl font-bold">مختصر لمشروع برنامجنا العلمى</h1> 
               <p className="text-justify px-3 h-[600px] overflow-y-scroll scrollbar-hide text-xl font-bold text-gray-900">
 
 1 - من هو طالب العلم الذى ينتظر ؟
@@ -203,15 +203,15 @@ export default function BookContainer({Book}:{Book:Chapter}) {
  و نجتهد في سؤال من نثق بهم من أهل العلم ..
 
               </p> */}
-              <icon.SiAudiobookshelf className="text-blue-700 text-3xl  mx-1 "/>
-            <h1 className='text-center flex justify-center items-center text-3xl text-red-500'>قم باختيار كتاب من القائمة الجانبية للإستماع إليه 
-            </h1>
-              <h3 className='text-center w-full md:w-[50%] lg:w-[50%] my-2 flex justify-center items-center text-fuchsia-700'>روى الإمام البخاري (71)، ومسلم (1037)  عن مُعَاوِيَةَ بن أبي سفيان رضي الله عنهما قال: سَمِعْتُ النَّبِيَّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ.</h3>
-            </div>
+                  <icon.SiAudiobookshelf className="text-blue-700 text-3xl  mx-1 " />
+                  <h1 className='text-center flex justify-center items-center text-3xl text-accent_color'>قم باختيار كتاب من القائمة الجانبية للإستماع إليه
+                  </h1>
+                  <h3 className='text-center w-full md:w-[50%] lg:w-[50%] my-2 flex justify-center items-center text-fuchsia-700'>روى الإمام البخاري (71)، ومسلم (1037)  عن مُعَاوِيَةَ بن أبي سفيان رضي الله عنهما قال: سَمِعْتُ النَّبِيَّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ.</h3>
+                </div>
               </>
             )
-      }
-        </div>
+        }
+      </div>
     </>
   )
 }

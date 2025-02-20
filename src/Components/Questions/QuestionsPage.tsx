@@ -87,7 +87,7 @@ export default function QuestionsPage({
           {answers?.find((ele) => ele?.id === id) ? (
             <IoCheckmarkDone className="text-green-500 absolute left-10" />
           ) : (
-            <MdClose className="text-red-500 absolute left-10" />
+            <MdClose className="text-accent_color absolute left-10" />
           )}
         </Accordion.Header>
         <Accordion.Body>
@@ -115,7 +115,7 @@ export default function QuestionsPage({
                 );
               })}
             </div>
-            <span className="font-bold text-red-500">
+            <span className="font-bold text-accent_color">
               درجة السؤال: ({degree})
             </span>
           </div>

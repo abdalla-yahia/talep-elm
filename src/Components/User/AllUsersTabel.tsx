@@ -1,21 +1,21 @@
 import * as icon from '@/Components/Icons/icons';
-import {useAppDispatch, useAppSelector} from '@/lib/hooks';
-import {useEffect, useState} from 'react';
-import {fetchGroups} from '@/lib/Actions/GroupsActions';
-import {deleteUser, fetchAllUsers, fetchUserById, updateUser} from '@/lib/Actions/UserActions';
-import {toast} from 'react-toastify';
+import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+import { useEffect, useState } from 'react';
+import { fetchGroups } from '@/lib/Actions/GroupsActions';
+import { deleteUser, fetchAllUsers, fetchUserById, updateUser } from '@/lib/Actions/UserActions';
+import { toast } from 'react-toastify';
 import Link from 'next/link';
 import Swal from 'sweetalert2';
-import {Groups} from '@prisma/client';
-import {AllUserInterface, LogedUserInterface} from '@/Interfaces/InterFaces';
-import {usePathname} from 'next/navigation';
+import { Groups } from '@prisma/client';
+import { AllUserInterface, LogedUserInterface } from '@/Interfaces/InterFaces';
+import { usePathname } from 'next/navigation';
 
-export default function AllUsersTabel({place, query, setUserGender, setUserGroup}: {place: {id: number; User: AllUserInterface[]}; query: string | null; setUserGender: React.Dispatch<React.SetStateAction<string>>; setUserGroup: React.Dispatch<React.SetStateAction<string>>}) {
-  const {AllGroups} = useAppSelector((state) => state.group) as unknown as {AllGroups: {Groups: Groups[]}};
-  const {UpdateUser} = useAppSelector((state) => state.user) as unknown as {UpdateUser: {status: number}};
-  const {DeleteUser} = useAppSelector((state) => state.user) as unknown as {DeleteUser: {status: number}};
-  const {UserLogedData} = useAppSelector((state) => state.user) as unknown as {UserLogedData: LogedUserInterface};
-  const {AllUsers} = useAppSelector((state) => state.user) as unknown as {AllUsers: {User: AllUserInterface[]}};
+export default function AllUsersTabel({ place, query, setUserGender, setUserGroup }: { place: { id: number; User: AllUserInterface[] }; query: string | null; setUserGender: React.Dispatch<React.SetStateAction<string>>; setUserGroup: React.Dispatch<React.SetStateAction<string>> }) {
+  const { AllGroups } = useAppSelector((state) => state.group) as unknown as { AllGroups: { Groups: Groups[] } };
+  const { UpdateUser } = useAppSelector((state) => state.user) as unknown as { UpdateUser: { status: number } };
+  const { DeleteUser } = useAppSelector((state) => state.user) as unknown as { DeleteUser: { status: number } };
+  const { UserLogedData } = useAppSelector((state) => state.user) as unknown as { UserLogedData: LogedUserInterface };
+  const { AllUsers } = useAppSelector((state) => state.user) as unknown as { AllUsers: { User: AllUserInterface[] } };
   const [toggle, setToggle] = useState(false);
   const [indexId, setIndexId] = useState('');
   const [userId, setUserId] = useState('');
@@ -254,7 +254,7 @@ export default function AllUsersTabel({place, query, setUserGender, setUserGroup
                         </select>
                       )}
                       <icon.MdTransferWithinAStation onClick={() => ShowGroupsHandeller(index, user.id as unknown as number)} title='نقل من المجموعة' className='text-4xl px-2 hover:text-green-600 transition-all cursor-pointer font-bold text-blue-500' />
-                      <icon.CiTrash onClick={() => DeleteUserHandeller(user?.id as unknown as string)} title='حذف الطالب نهائياً' className='text-4xl px-2 hover:text-green-600 transition-all cursor-pointer font-bold text-red-500' />
+                      <icon.CiTrash onClick={() => DeleteUserHandeller(user?.id as unknown as string)} title='حذف الطالب نهائياً' className='text-4xl px-2 hover:text-green-600 transition-all cursor-pointer font-bold text-accent_color' />
                     </span>
                   </span>
                 </div>

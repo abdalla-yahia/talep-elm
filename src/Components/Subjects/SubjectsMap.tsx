@@ -41,13 +41,13 @@ export default function SubjectsMap({
                   className="bg-blue-100 w-full cursor-pointer min-h-36 text-center p-1 rounded flex flex-col   "
                 >
                   <h1 className="text-3xl mb-2 text-sh"> {Subject.name}</h1>
-                  <div className="text-sm text-gray-500">{Subject.info}</div>
+                  <div className="text-sm text-text_color">{Subject.info}</div>
                 </Link>
 
                 {/* Edite Subject Box */}
                 {toggle &&
                   parseInt(SubjectId) ===
-                    (Subject?.id as unknown as number) && (
+                  (Subject?.id as unknown as number) && (
                     <div className="w-full flex z-50  top-0 left-0 flex-col gap-3  justify-start items-start absolute bg-green-200 p-3 rounded ">
                       <div className="flex items-center gap-2">
                         <h1>اسم المادة</h1>
@@ -95,7 +95,7 @@ export default function SubjectsMap({
                             Subject?.id as unknown as string
                           );
                         }}
-                        className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-white shadow-sm "
+                        className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-text_color shadow-sm "
                       >
                         حفظ التعديلات
                       </button>

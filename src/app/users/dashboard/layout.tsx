@@ -18,12 +18,12 @@ export default function UserDAshboardLayout({
   return (
     <Container>
       <Row>
-    <section className="flex  justify-start items-start gap-1">
-      <Sidebar />
-      <div className="w-5/6 h-full gap-3 bg-gray-400 min-h-screen rounded p-3 flex justify-start items-start flex-col flex-wrap">
-      {children}
-      </div>
-    </section>
+        <section className="flex  justify-start items-start gap-1">
+          <Sidebar />
+          <div className="w-5/6 h-full gap-3 bg-second_background_color min-h-screen rounded p-3 flex justify-start items-start flex-col flex-wrap">
+            {children}
+          </div>
+        </section>
       </Row>
     </Container>
   );

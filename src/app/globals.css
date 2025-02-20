@@ -5,11 +5,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #2E7D32; 
+  --secondary-color: #FFFFFF; 
+  --accent-color: #af6704;
+  --background-color: #F5F5F5;
+  --second-background-color: #dedede;
+  --text-color: #795548;
+  
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background-color: #F5F5F5;
     --foreground: #ededed;
   }
 }
@@ -18,6 +26,9 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Cairo', sans-serif;
 }
 
 html {
@@ -31,4 +42,18 @@ div#__next {
 }
 main {
   @apply h-full;
+}
+
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

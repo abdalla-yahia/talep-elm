@@ -6,8 +6,7 @@
     z-index: 100;
 }
 .header_nav{
-    background-image: url('/images/header.png');
-    background-color: #016143;
+    /* background-image: url('/images/header.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     

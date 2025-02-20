@@ -1,13 +1,13 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import Header from '@/Components/Header/Header';
 import Footer from '@/Components/Footer/Footer';
-import {Container, Row} from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import StoreProvider from './StoreProvider';
-import {ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {Amiri} from 'next/font/google';
+import { Amiri } from 'next/font/google';
 
 const amiri = Amiri({
   subsets: ['latin'],
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ar' dir='rtl'>
-      <body className='bg-gray-400 dark:bg-black text-white'>
+      <body suppressHydrationWarning className='bg-second_background_color dark:bg-black text-text_color'>
         <StoreProvider>
           <Header />
           <Container>

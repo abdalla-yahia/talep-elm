@@ -39,9 +39,8 @@ export default function SectionsMap({
                 <span className="text-lg font-bold text-red-700">
                   {Section?.name}
                 </span>
-                <span className="text-lg font-bold text-blue-700">{`-- مدير القسم :  ${
-                  Section?.manager?.name || "لا يوجد"
-                }`}</span>
+                <span className="text-lg font-bold text-blue-700">{`-- مدير القسم :  ${Section?.manager?.name || "لا يوجد"
+                  }`}</span>
               </Accordion.Header>
               <Accordion.Body>
                 <Link
@@ -101,7 +100,7 @@ export default function SectionsMap({
                       onClick={() => {
                         EditSectionHandeller(Section?.id as unknown as string);
                       }}
-                      className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-white shadow-sm "
+                      className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-text_color shadow-sm "
                     >
                       حفظ التعديلات
                     </button>

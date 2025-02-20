@@ -7,73 +7,74 @@ import { toast } from "react-toastify"
 import Swal from "sweetalert2"
 
 export default function LeftSidbar() {
-      const {UserLogedData} = useAppSelector(state=>state.user) as unknown as {UserLogedData:LogedUserInterface}
-      const {CreateHadith} = useAppSelector(state=>state.hadith) as unknown as {CreateHadith:{status:number}}
-      const {DeleteHadith} = useAppSelector(state=>state.hadith) as unknown as {DeleteHadith:{status:number}}
-      const { AllHadith } = useAppSelector(
-        (state) => state.hadith
-      ) as unknown as { AllHadith: { Hadith: CreateHadithInterface[] } };
-      const [toggle,setToggle]= useState(false)
-      const [PostToggle,setPostToggle]= useState(false)
-      const [showAlot, setShowAlot] = useState(false);
-      const [title,setTitle]= useState('')
-      const [content,setContent]= useState('')
-      const [SearchText,SetSearchText] = useState('');
-      const [Post, setPost] = useState<CreateHadithInterface>({
-        id: '',
-        title: '',
-        content: '',
-        author: { id: 0, name: '', image: '' }
-      })
+  const { UserLogedData } = useAppSelector(state => state.user) as unknown as { UserLogedData: LogedUserInterface }
+  const { CreateHadith } = useAppSelector(state => state.hadith) as unknown as { CreateHadith: { status: number } }
+  const { DeleteHadith } = useAppSelector(state => state.hadith) as unknown as { DeleteHadith: { status: number } }
+  const { AllHadith } = useAppSelector(
+    (state) => state.hadith
+  ) as unknown as { AllHadith: { Hadith: CreateHadithInterface[] } };
+  const [toggle, setToggle] = useState(false)
+  const [PostToggle, setPostToggle] = useState(false)
+  const [showAlot, setShowAlot] = useState(false);
+  const [title, setTitle] = useState('')
+  const [content, setContent] = useState('')
+  const [SearchText, SetSearchText] = useState('');
+  const [Post, setPost] = useState<CreateHadithInterface>({
+    id: '',
+    title: '',
+    content: '',
+    author: { id: 0, name: '', image: '' }
+  })
 
-      const dispatch = useAppDispatch();
-      const CreatePostHandeller = ()=>{
-          dispatch(createHadith({
-              title,
-              content,
-              author:{id:parseInt(UserLogedData?.id) as number,name:UserLogedData?.name as string,image:UserLogedData?.image as string}}))
+  const dispatch = useAppDispatch();
+  const CreatePostHandeller = () => {
+    dispatch(createHadith({
+      title,
+      content,
+      author: { id: parseInt(UserLogedData?.id) as number, name: UserLogedData?.name as string, image: UserLogedData?.image as string }
+    }))
   }
   useEffect(() => {
     dispatch(fetchHadith())
-  },[CreateHadith,dispatch])
-      useEffect(()=>{
-          if(CreateHadith.status){
-              if(CreateHadith?.status === 201){
-                  toast.success('تم إنشاء البوست بنجاح')
-                setToggle(false)
-                setContent('')
-              }else if(CreateHadith?.status === 400){
-                  toast.error('حدث خطأ في إنشاء البوست')
-              }
-          }
-      }, [CreateHadith,DeleteHadith,dispatch])
-      // //Set Post To State 
-      useEffect(()=>{
-          setPost(AllHadith?.Hadith?.[AllHadith?.Hadith?.length - 1]);
-      },[AllHadith])
+  }, [CreateHadith, dispatch])
+  useEffect(() => {
+    if (CreateHadith.status) {
+      if (CreateHadith?.status === 201) {
+        toast.success('تم إنشاء البوست بنجاح')
+        setToggle(false)
+        setContent('')
+      } else if (CreateHadith?.status === 400) {
+        toast.error('حدث خطأ في إنشاء البوست')
+      }
+    }
+  }, [CreateHadith, DeleteHadith, dispatch])
+  // //Set Post To State 
+  useEffect(() => {
+    setPost(AllHadith?.Hadith?.[AllHadith?.Hadith?.length - 1]);
+  }, [AllHadith])
   //Delete Hadith
   const DeleteHadithHandeller = (e: string) => {
-     Swal.fire({
-                title: 'هل ستقوم بحذف هذا الموضوع/الحديث؟',
-                text: '!!سيؤدي هذا إلى حذف جميع بيانات الموضوع/الحديث',
-                icon: "warning",
-                showCancelButton: true,
-                cancelButtonText:'إلغاء',
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: 'نعم ! قم بحذف الموضوع/الحديث',
-              }).then((result) => {
-                if (result.isConfirmed) {
-                      dispatch(deleteHadith(e));
-                    if (DeleteHadith?.status === 200) {
-                      Swal.fire({
-                        title: "تم الحذف!",
-                        text: "تم الحذف بنجاح.",
-                        icon: "success",
-                      });
-                    }
-                }
-              });
+    Swal.fire({
+      title: 'هل ستقوم بحذف هذا الموضوع/الحديث؟',
+      text: '!!سيؤدي هذا إلى حذف جميع بيانات الموضوع/الحديث',
+      icon: "warning",
+      showCancelButton: true,
+      cancelButtonText: 'إلغاء',
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: 'نعم ! قم بحذف الموضوع/الحديث',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        dispatch(deleteHadith(e));
+        if (DeleteHadith?.status === 200) {
+          Swal.fire({
+            title: "تم الحذف!",
+            text: "تم الحذف بنجاح.",
+            icon: "success",
+          });
+        }
+      }
+    });
   }
   return (
     <div className="flex flex-col gap-2 justify-center items-center">
@@ -83,13 +84,13 @@ export default function LeftSidbar() {
           <>
             <button
               onClick={() => setToggle(!toggle)}
-              className="hover:text-blue-600 my-1 bg-[#01403c] shadow-md text-white w-full px-3 rounded cursor-pointer"
+              className="hover:text-blue-600 my-1 bg-background_color shadow-md text-text_color w-full px-3 rounded cursor-pointer"
             >
               إنشاء موضوع
             </button>
             <div className="w-full flex flex-col">
               {AllHadith?.Hadith?.length > 0 &&
-                AllHadith?.Hadith?.slice(0, !showAlot?3:undefined).map((hadith, index) => (
+                AllHadith?.Hadith?.slice(0, !showAlot ? 3 : undefined).map((hadith, index) => (
                   <div
                     key={index}
                     className="w-full flex flex-col gap-2 justify-center items-center"
@@ -101,7 +102,7 @@ export default function LeftSidbar() {
                         {hadith?.content}
                       </span>
                       <icon.CiTrash
-                        className="text-red-500 cursor-pointer"
+                        className="text-accent_color cursor-pointer"
                         onClick={() =>
                           DeleteHadithHandeller(hadith?.id as unknown as string)
                         }
@@ -146,60 +147,60 @@ export default function LeftSidbar() {
 
           <button
             onClick={() => CreatePostHandeller()}
-            className="p-2 rounded text-white shadow-md hover:bg-[#01403c] bg-[#01403c]  cursor-pointer"
+            className="p-2 rounded text-text_color shadow-md hover:bg-background_color bg-background_color  cursor-pointer"
           >
             إنشاء الموضوع
           </button>
         </div>
       )}
-     
 
-        {/**########################################################## */}
-        <div className='w-full relative bg-[#01403c] rounded'>
-            <div onClick={()=>{setPostToggle(!PostToggle)}} className="w-full scrollbar-hide flex flex-col-reverse justify-between items-center my-1 rounded h-fit px-2 text-slate-100 shadow bg-[#01403c]">
-            <input value={SearchText} onChange={(e)=>{SetSearchText(e.target.value);setPostToggle(true)}} type="search" name="" id="" className='m-2 px-2 z-40 outline-none rounded bg-[#01403c] text-white w-full self-center' placeholder=' بحث عن مقالة ....' />
-            <div  className="flex relative justify-start items-start w-full" dir='rtl'>
-                <span className='flex justify-between items-center w-full'>
-                <span className="text-lg cursor-pointer font-bold text-slate-100">{Post?.title || 'اختر المقالة'}</span>
-                <icon.MdKeyboardDoubleArrowDown />
-                </span>
-                {PostToggle && 
-                <div className='bg-[#016d79] absolute rounded left-0 top-[140%] w-[80%] z-40 h-[400px] scrollbar-hide overflow-y-scroll text-white flex justify-start items-start flex-col'>
+
+      {/**########################################################## */}
+      <div className='w-full relative bg-background_color rounded'>
+        <div onClick={() => { setPostToggle(!PostToggle) }} className="w-full scrollbar-hide flex flex-col-reverse justify-between items-center my-1 rounded h-fit px-2 text-primary_color shadow bg-background_color">
+          <input value={SearchText} onChange={(e) => { SetSearchText(e.target.value); setPostToggle(true) }} type="search" name="" id="" className='m-2 px-2 z-40 outline-none rounded bg-background_color text-text_color w-full self-center' placeholder=' بحث عن مقالة ....' />
+          <div className="flex relative justify-start items-start w-full" dir='rtl'>
+            <span className='flex justify-between items-center w-full'>
+              <span className="text-lg cursor-pointer font-bold text-primary_color">{Post?.title || 'اختر المقالة'}</span>
+              <icon.MdKeyboardDoubleArrowDown />
+            </span>
+            {PostToggle &&
+              <div className='bg-[#016d79] absolute rounded left-0 top-[140%] w-[80%] z-40 h-[400px] scrollbar-hide overflow-y-scroll text-text_color flex justify-start items-start flex-col'>
                 {
-                    AllHadith?.Hadith?.length > 0 
+                  AllHadith?.Hadith?.length > 0
                     &&
-                      SearchText === '' ?
+                    SearchText === '' ?
                     (
-                        <>
+                      <>
                         {
-                          AllHadith?.Hadith?.map((post,index)=>{
-                            return <span key={index} onClick={()=>{setPost(post as CreateHadithInterface);setPostToggle(false)}} className='hover:hover:bg-[#01403c] hover:text-white px-2 py-1 line-clamp-1 text-white  cursor-pointer rounded'  title={post?.title ?? ''}>{post?.title}</span>                    
+                          AllHadith?.Hadith?.map((post, index) => {
+                            return <span key={index} onClick={() => { setPost(post as CreateHadithInterface); setPostToggle(false) }} className='hover:hover:bg-background_color hover:text-text_color px-2 py-1 line-clamp-1 text-text_color  cursor-pointer rounded' title={post?.title ?? ''}>{post?.title}</span>
                           })
                         }
-                        </>
-                )
-                  :(AllHadith?.Hadith?.filter(el=>el?.title?.includes(SearchText))).map((post,index)=>
-                    <span onClick={()=>{setPost(post as CreateHadithInterface);SetSearchText('')}} className='hover:hover:bg-[#01403c] hover:text-white px-2 py-1 cursor-pointer rounded' key={index} title={post?.title ?? ''}>{post?.title}</span>)
+                      </>
+                    )
+                    : (AllHadith?.Hadith?.filter(el => el?.title?.includes(SearchText))).map((post, index) =>
+                      <span onClick={() => { setPost(post as CreateHadithInterface); SetSearchText('') }} className='hover:hover:bg-background_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={post?.title ?? ''}>{post?.title}</span>)
                 }
-                </div>
-                } 
-            </div>
-            </div>
-    </div>
-    {/**Show Post */}
-      {Post &&
-            (<div>
-              <h1 className="text-2xl w-full my-3 text-[#02968c] text-center flex justify-center items-center">
-                {Post?.title}
-              </h1>
-              <p style={{lineHeight:'2'}} className={`text-justify max-h-[350px] overflow-y-scroll scrollbar-hide`}>
-                {Post?.content}
-              </p>
-              <p className="text-gray-500 mt-5 text-sm">
-                الناشر / {Post?.author?.name as unknown as string}
-              </p><br/>
-            </div>)
+              </div>
             }
+          </div>
+        </div>
+      </div>
+      {/**Show Post */}
+      {Post &&
+        (<div>
+          <h1 className="text-2xl w-full my-3 text-secondary_color text-center flex justify-center items-center">
+            {Post?.title}
+          </h1>
+          <p style={{ lineHeight: '2' }} className={`text-justify max-h-[350px] overflow-y-scroll scrollbar-hide`}>
+            {Post?.content}
+          </p>
+          <p className="text-text_color mt-5 text-sm">
+            الناشر / {Post?.author?.name as unknown as string}
+          </p><br />
+        </div>)
+      }
     </div>
   );
 }

@@ -11,12 +11,12 @@ import { CountTime } from "@/Utils/Date";
 import * as icon from '@/Components/Icons/icons';
 import { CreateComment, Replies } from "@/Interfaces/InterFaces";
 
-export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
-    const {toggle,setToggle,NewComment,setNewComment,commentId,setCommentId,
-        DeleteCommentHandeller,EditCommentHandeller,reCommentToggle,setReCommentToggle,
-        CreateReCommentHandeller,setReCommentValue,ReCommentValue,DeleteReCommentHandeller,UserLogedData,EditReCommentHandeller,
-        NewReComment,setNewReComment,RecommentId,setReCommentId,EditReCommentToggle,setEditReCommentToggle
-     } = LessonHook({id});
+export default function CommentPage({ e, id }: { e: CreateComment, id: number }) {
+  const { toggle, setToggle, NewComment, setNewComment, commentId, setCommentId,
+    DeleteCommentHandeller, EditCommentHandeller, reCommentToggle, setReCommentToggle,
+    CreateReCommentHandeller, setReCommentValue, ReCommentValue, DeleteReCommentHandeller, UserLogedData, EditReCommentHandeller,
+    NewReComment, setNewReComment, RecommentId, setReCommentId, EditReCommentToggle, setEditReCommentToggle
+  } = LessonHook({ id });
 
   return (
     <div className="w-full  p-2 m-2 rounded bg-slate-300 relative flex flex-col ">
@@ -43,14 +43,13 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                 className={
                   parseInt(UserLogedData?.id) ===
                     parseInt(e?.User?.id as unknown as string) &&
-                  UserLogedData?.role === "USER"
+                    UserLogedData?.role === "USER"
                     ? `font-bold text-blue-700`
                     : ""
                 }
               >
-                {`${
-                  e.User?.gender === "MALE" ? "ْالطَالِب :" : "ُالطَالِبة :"
-                }` + e.User?.name}
+                {`${e.User?.gender === "MALE" ? "ْالطَالِب :" : "ُالطَالِبة :"
+                  }` + e.User?.name}
               </span>
             )) ||
               (e.Admin !== null && (
@@ -58,14 +57,13 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                   className={
                     parseInt(UserLogedData?.id) ===
                       parseInt(e?.Admin?.id as unknown as string) &&
-                    UserLogedData?.role === "ADMIN"
+                      UserLogedData?.role === "ADMIN"
                       ? `font-bold text-red-700`
                       : ""
                   }
                 >
-                  {`${
-                    e.Admin?.gender === "MALE" ? "المُشرِف :" : "المُشرِفة :"
-                  }` + e.Admin?.name}
+                  {`${e.Admin?.gender === "MALE" ? "المُشرِف :" : "المُشرِفة :"
+                    }` + e.Admin?.name}
                 </span>
               )) ||
               (e.Teacher !== null && (
@@ -73,16 +71,15 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                   className={
                     parseInt(UserLogedData?.id) ===
                       parseInt(e?.Teacher?.id as unknown as string) &&
-                    UserLogedData?.role === "TEACHER"
+                      UserLogedData?.role === "TEACHER"
                       ? `font-bold text-fuchsia-700`
                       : ""
                   }
                 >
-                  {`${
-                    e.Teacher?.gender === "MALE"
-                      ? "المُدَرِس :"
-                      : "المُدَرِسة :"
-                  }` + e.Teacher?.name}
+                  {`${e.Teacher?.gender === "MALE"
+                    ? "المُدَرِس :"
+                    : "المُدَرِسة :"
+                    }` + e.Teacher?.name}
                 </span>
               )) ||
               (e.AdminTeacher !== null && (
@@ -90,16 +87,15 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                   className={
                     parseInt(UserLogedData?.id) ===
                       parseInt(e?.AdminTeacher?.id as unknown as string) &&
-                    UserLogedData?.role === "ADMIN_TEACHER"
+                      UserLogedData?.role === "ADMIN_TEACHER"
                       ? `font-bold text-purple-700`
                       : ""
                   }
                 >
-                  {`${
-                    e.AdminTeacher?.gender === "MALE"
-                      ? "القائدْ :"
-                      : "القائِدَة :"
-                  }` + e.AdminTeacher?.name}
+                  {`${e.AdminTeacher?.gender === "MALE"
+                    ? "القائدْ :"
+                    : "القائِدَة :"
+                    }` + e.AdminTeacher?.name}
                 </span>
               )) ||
               (e.Manager !== null && (
@@ -107,14 +103,13 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                   className={
                     parseInt(UserLogedData?.id) ===
                       parseInt(e?.Manager?.id as unknown as string) &&
-                    UserLogedData?.role === "MANAGER"
+                      UserLogedData?.role === "MANAGER"
                       ? `font-bold text-green-700`
                       : ""
                   }
                 >
-                  {`${
-                    e.Manager?.gender === "MALE" ? "المُديرْ :" : "المُديرَة :"
-                  }` + e.Manager?.name}
+                  {`${e.Manager?.gender === "MALE" ? "المُديرْ :" : "المُديرَة :"
+                    }` + e.Manager?.name}
                 </span>
               )) ||
               (e.Owner !== null && (
@@ -122,14 +117,13 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                   className={
                     parseInt(UserLogedData?.id) ===
                       parseInt(e?.Owner?.id as unknown as string) &&
-                    UserLogedData?.role === "OWNER"
+                      UserLogedData?.role === "OWNER"
                       ? `font-bold text-orange-700`
                       : ""
                   }
                 >
-                  {`${
-                    e.Owner?.gender === "MALE" ? "الدُكتُور :" : "الدُكتُوره :"
-                  }` + e.Owner?.name}
+                  {`${e.Owner?.gender === "MALE" ? "الدُكتُور :" : "الدُكتُوره :"
+                    }` + e.Owner?.name}
                 </span>
               ))}
             <span className="text-[10px] flex justify-center items-center gap-1 font-bold text-gray-400">
@@ -148,21 +142,21 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
             parseInt(e?.Teacher?.id as unknown as string) &&
             UserLogedData?.role === "TEACHER") ||
           Role(UserLogedData?.role as unknown as string) > 2) && (
-          <div className="flex relative text-gray-500 gap-3 text-sm">
-            <FaEdit
-              onClick={() => {
-                setToggle(!toggle);
-                setCommentId(e.id as unknown as string);
-                setNewComment(e.text);
-              }}
-              className="cursor-pointer z-50 hover:text-gray-800 text-green-500"
-            />
-            <BiTrash
-              onClick={() => DeleteCommentHandeller(e.id as unknown as number)}
-              className="cursor-pointer hover:text-gray-800 text-red-700"
-            />
-          </div>
-        )}
+            <div className="flex relative text-text_color gap-3 text-sm">
+              <FaEdit
+                onClick={() => {
+                  setToggle(!toggle);
+                  setCommentId(e.id as unknown as string);
+                  setNewComment(e.text);
+                }}
+                className="cursor-pointer z-50 hover:text-gray-800 text-green-500"
+              />
+              <BiTrash
+                onClick={() => DeleteCommentHandeller(e.id as unknown as number)}
+                className="cursor-pointer hover:text-gray-800 text-red-700"
+              />
+            </div>
+          )}
       </div>
       <p className="text-gray-600   bg-slate-100 p-3 my-2 rounded text-base">
         {e.text}
@@ -180,7 +174,7 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
               onClick={() =>
                 EditCommentHandeller(e as unknown as { id: string })
               }
-              className="bg-slate-400 shadow text-sm w-full cursor-pointer font-bold  px-4 py-2 self-end text-white rounded"
+              className="bg-slate-400 shadow text-sm w-full cursor-pointer font-bold  px-4 py-2 self-end text-text_color rounded"
             >
               تحديث التعليق
             </button>
@@ -226,23 +220,23 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                   </div>
                   {(UserLogedData?.id == el?.User?.id ||
                     Role(UserLogedData?.role as unknown as string) > 1) && (
-                    <div className="flex w-1/6 justify-between items-center">
-                      <BiEditAlt
-                        onClick={() => {
-                          setEditReCommentToggle(!EditReCommentToggle);
-                          setReCommentId(el.id as unknown as string);
-                          setNewReComment(el.text);
-                        }}
-                        title="تعديل"
-                        className="cursor-pointer z-50 text-green-700 hover:text-gray-700"
-                      />
-                      <TbTrash
-                        onClick={() => DeleteReCommentHandeller(el.id)}
-                        title="حذف"
-                        className="cursor-pointer text-red-600  hover:text-gray-700"
-                      />
-                    </div>
-                  )}
+                      <div className="flex w-1/6 justify-between items-center">
+                        <BiEditAlt
+                          onClick={() => {
+                            setEditReCommentToggle(!EditReCommentToggle);
+                            setReCommentId(el.id as unknown as string);
+                            setNewReComment(el.text);
+                          }}
+                          title="تعديل"
+                          className="cursor-pointer z-50 text-green-700 hover:text-gray-700"
+                        />
+                        <TbTrash
+                          onClick={() => DeleteReCommentHandeller(el.id)}
+                          title="حذف"
+                          className="cursor-pointer text-red-600  hover:text-gray-700"
+                        />
+                      </div>
+                    )}
                 </div>
                 <p className="text-sm py-2 px-1 bg-green-50 rounded-lg w-full">
                   {el.text}
@@ -269,7 +263,7 @@ export default function CommentPage({e,id}:{e:CreateComment,id:number}) {
                     />
                     <button
                       onClick={() => EditReCommentHandeller(el.id)}
-                      className="bg-green-500 text-white rounded px-2 py-1"
+                      className="bg-green-500 text-text_color rounded px-2 py-1"
                     >
                       تعديل
                     </button>

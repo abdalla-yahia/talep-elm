@@ -31,27 +31,24 @@ export default function GroupsMap({ Groups }: { Groups: GroupsInterface[] }) {
               <Accordion.Header className="flex justify-between items-center ">
                 <span>{Group.name} </span>
                 <span
-                  className={`${
-                    Group?.gender === "MALE"
-                      ? "text-blue-600"
-                      : "text-fuchsia-400"
-                  } `}
+                  className={`${Group?.gender === "MALE"
+                    ? "text-blue-600"
+                    : "text-fuchsia-400"
+                    } `}
                 >
                   {" "}
-                  {`  --  ${
-                    Group?.gender === "MALE" ? " رجال " : " نساء "
-                  }  --  `}
+                  {`  --  ${Group?.gender === "MALE" ? " رجال " : " نساء "
+                    }  --  `}
                 </span>
                 <span className="text-gray-900">
                   {" "}
                   {` ( ${Group?.User?.length} )`}
                 </span>
                 <span
-                  className={`${
-                    Group?.gender === "MALE"
-                      ? "text-blue-600"
-                      : "text-fuchsia-400"
-                  } `}
+                  className={`${Group?.gender === "MALE"
+                    ? "text-blue-600"
+                    : "text-fuchsia-400"
+                    } `}
                 >
                   {" "}
                   {Group?.gender === "MALE" ? " طالب " : " طالبة "}
@@ -64,7 +61,7 @@ export default function GroupsMap({ Groups }: { Groups: GroupsInterface[] }) {
                   className="bg-blue-100 w-full cursor-pointer min-h-36 text-center p-1 rounded flex flex-col   "
                 >
                   <h1 className="text-3xl mb-2 text-sh"> {Group.name}</h1>
-                  <div className="text-sm text-gray-500">
+                  <div className="text-sm text-text_color">
                     {Group.description}
                   </div>
                 </Link>
@@ -113,7 +110,7 @@ export default function GroupsMap({ Groups }: { Groups: GroupsInterface[] }) {
                         onClick={() => {
                           EditGroupHandeller(Group?.id as unknown as string);
                         }}
-                        className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-white shadow-sm "
+                        className="w-full rounded p-2 bg-green-500 text-xl cursor-pointer text-text_color shadow-sm "
                       >
                         حفظ التعديلات
                       </button>
