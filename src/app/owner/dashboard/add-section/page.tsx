@@ -46,7 +46,7 @@ export default function CreateAnewSection() {
     return (
         <>
             <FullTitle F_Title={'إضافة قسم جديد'} />
-            <div className="flex flex-col w-full gap-2 bg-secondary_color0 rounded">
+            <div className="flex flex-col w-full gap-2 bg-second_background_color0 rounded">
                 <div className="flex justify-start items-center w-full p-3 gap-2">
                     <h3>اسم القسم العلمي</h3>
                     <input value={nameOfSection} onChange={(e) => setNameOfSection(e.target.value)} type="text" name="" id="" className="rounded w-[50%] caret-black text-gray-700 placeholder:text-red-200 px-2 outline-none" placeholder="اسم القسم العلمي" />

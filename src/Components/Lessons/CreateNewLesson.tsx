@@ -143,7 +143,7 @@ export default function CreateNewLesson() {
                     <input className="cursor-pointer hidden z-50 absolute w-full top-[0%] left-[0%]" type="file" id="file" name="file" onChange={(e) => uploadFilesHandeller(e)} />
                 </label>
             </div>
-            <button onClick={() => CreateLessonHandeller()} className="w-full p-3 cursor-pointer hover:bg-secondary_color0 hover:text-text_color rounded text-xl bg-blue-300 text-gray-700">حفظ الدرس</button>
+            <button onClick={() => CreateLessonHandeller()} className="w-full p-3 cursor-pointer hover:bg-second_background_color0 hover:text-text_color rounded text-xl bg-blue-300 text-gray-700">حفظ الدرس</button>
         </div>
     )
 }

@@ -49,7 +49,7 @@ export default function CreatePost() {
                     <h3 className="flex text-accent_color"> رابط الفيديو :</h3>
                     <input onChange={(e) => setBody({ src: e.target.value })} type="text" name="" id="" className="rounded px-2" placeholder="ادخل رابط فيديو المنشور" />
                 </div>
-                <button onClick={() => CreatePostHandeller()} className="p-2 rounded text-text_color hover:bg-blue-700 bg-secondary_color0 cursor-pointer">إنشاء المنشور</button>
+                <button onClick={() => CreatePostHandeller()} className="p-2 rounded text-text_color hover:bg-blue-700 bg-second_background_color0 cursor-pointer">إنشاء المنشور</button>
             </div>}
         </>
 

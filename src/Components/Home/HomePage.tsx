@@ -6,6 +6,7 @@ import PrayerTimes from "./PrayerTimes";
 import RadioQuran from "./RadioQuran";
 
 export default function HomePage() {
+
   return (
     <>
       <div className="container  overflow-hidden h-full flex justify-center items-center flex-col">

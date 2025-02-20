@@ -55,7 +55,7 @@ export default function RadioQuran() {
                         <span className="text-lg cursor-pointer font-bold text-primary_color">{RadioName || 'اختر الإذاعة'}</span>
                         <icon.MdKeyboardDoubleArrowDown />
                     </span>
-                    {toggle && <div className='bg-secondary_color rounded-md absolute left-0 top-[100%] w-[80%] z-40 max-h-[400px] scrollbar-hide overflow-y-scroll text-accent_color flex justify-start items-start flex-col'>
+                    {toggle && <div className='bg-second_background_color rounded-md absolute left-0 top-[100%] w-[80%] z-40 max-h-[400px] scrollbar-hide overflow-y-scroll text-accent_color flex justify-start items-start flex-col'>
                         {
                             Radios?.length > 0 && SearchText === '' ?
                                 (

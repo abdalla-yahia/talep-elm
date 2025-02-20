@@ -9,7 +9,6 @@ export default function MoshafPage() {
     const [NameSoras, setNameSoras] = useState([]);
     const [SoraNumber, setSoraNumber] = useState(1);
     const [AyaNumber, setAyaNumber] = useState(1);
-    // const [ClickedAya, setClickedAya] = useState(true);
     const [ShaikhSound, setShaikhSound] = useState('');
     const [soraData, setSoraData] = useState('');
     const [AyatLengthOfSora, setAyatLengthOfSora] = useState(0);
@@ -83,7 +82,6 @@ export default function MoshafPage() {
           audioRef2.current.src = SoursAudioQarea(e+1, SoraNumber, ShaikhSound);
           audioRef1?.current?.play();
   } 
-
   return (
     <>
     <div className="container">

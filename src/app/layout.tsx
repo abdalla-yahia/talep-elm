@@ -8,7 +8,6 @@ import StoreProvider from './StoreProvider';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Amiri } from 'next/font/google';
-import Image from 'next/image';
 
 const amiri = Amiri({
   subsets: ['latin'],
