@@ -13,8 +13,8 @@ export default function BookSoundPage({Book}:{Book:Chapter}) {
         
     const SORT: keyof typeof Book.data[0] = Book?.sort as keyof typeof Book.data[0]
     useEffect(()=>{
-        document.title = `${SahapyName} - ${Book?.title}`
-    },[SahapyName,Book])
+        document.title = `${SahapyName} - ${BookTitle}`
+    },[SahapyName,BookTitle])
  return (
     <>
     <div className='w-full flex flex-col justify-center items-center'>
