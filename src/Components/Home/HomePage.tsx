@@ -1,9 +1,10 @@
-import ArticlesHomePage from "./ArticlesHomePage";
+import { lazy, Suspense } from "react";
 import CreatePost from "./CreatePost";
 import LeftSidbar from "./LeftSidbar";
 import Newsbar from "./Newsbar";
 import PrayerTimes from "./PrayerTimes";
 import RadioQuran from "./RadioQuran";
+const ArticlesHomePage = lazy(()=>import("./ArticlesHomePage"));
 
 export default function HomePage() {
 
@@ -23,7 +24,9 @@ export default function HomePage() {
             <div className="text-center my-1 w-full">
               <RadioQuran />
               <CreatePost />
-              <ArticlesHomePage />
+              <Suspense fallback={<div>يتم التحميل...</div>}>
+                <ArticlesHomePage />
+              </Suspense>
             </div>
           </div>
           <div className={`shadow hidden min-h-full md:flex lg:flex w-[0%] md:w-[15%] lg:w-[15%] flex-col justify-start py-2 rounded text-text_color my-2 items-center  bg-background_color`}>

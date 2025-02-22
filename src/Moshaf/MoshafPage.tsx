@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
-import { LegacyRef, useEffect, useRef, useState } from "react";
+import React, { LegacyRef, useEffect, useRef, useState } from "react";
 import NavMoshaf from "./NavMoshaf";
 import SoraPage from "./SoraPage";
 import SoursAudioQarea from "./SoursAudioQarea";
 
-export default function MoshafPage() {
+ function MoshafPage() {
     const [NameSoras, setNameSoras] = useState([]);
     const [SoraNumber, setSoraNumber] = useState(1);
     const [AyaNumber, setAyaNumber] = useState(1);
@@ -107,3 +107,5 @@ export default function MoshafPage() {
     </>
   )
 }
+
+export default React.memo(MoshafPage);

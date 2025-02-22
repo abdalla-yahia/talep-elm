@@ -2,14 +2,14 @@
 import { deletePost, fetchPosts } from "@/lib/Actions/PostsActions"
 import { useAppDispatch, useAppSelector } from "@/lib/hooks"
 import Image from "next/image"
-import { useEffect } from "react"
+import React, { useEffect } from "react"
 import * as img from '../../../public/avatar';
 import * as icon from '@/Components/Icons/icons'
 import Swal from "sweetalert2";
 import { CountTime } from "@/Utils/Date";
 import { LogedUserInterface, PostsInterface } from "@/Interfaces/InterFaces";
 
-export default function ArticlesHomePage() {
+ function ArticlesHomePage() {
     const { UserLogedData } = useAppSelector(state => state.user) as unknown as { UserLogedData: LogedUserInterface }
     const { AllPosts } = useAppSelector(state => state.post) as unknown as { AllPosts: { Posts: PostsInterface[] } }
     const { DeletePost } = useAppSelector(state => state.post) as unknown as { DeletePost: { status: number } }
@@ -85,3 +85,5 @@ export default function ArticlesHomePage() {
 
     )
 }
+
+export default React.memo(ArticlesHomePage)
