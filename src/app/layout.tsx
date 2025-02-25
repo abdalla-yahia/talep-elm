@@ -18,7 +18,7 @@ const amiri = Amiri({
 
 export const metadata: Metadata = {
   title: 'طالب علم شرعي',
-  description: 'الموقع عبارة عن مكتبة متكاملة لطالب العلم الشرعي',
+  description: "موقع طالب علم يقدم لك القرآن الكريم بأفضل التلاوات، بالإضافة إلى مكتبة متكاملة من الدروس والخطب العلميه. زر الآن واحصل على محتوى إسلامي مميز.",
 };
 
 export default function RootLayout({
@@ -28,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ar' dir='rtl'>
+      <head>
+      <meta name="google-site-verification" content="c9AugZow630pVaeWVCuxRnRorLoauZc9CqyIBL9TVcA" />
+      </head>
       <body suppressHydrationWarning className='bg-second_background_color dark:bg-black text-text_color'>
         <StoreProvider>
           <Header />
