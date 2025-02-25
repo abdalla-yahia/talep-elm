@@ -28,9 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ar' dir='rtl'>
-      <head>
       <meta name="google-site-verification" content="c9AugZow630pVaeWVCuxRnRorLoauZc9CqyIBL9TVcA" />
-      </head>
       <body suppressHydrationWarning className='bg-second_background_color dark:bg-black text-text_color'>
         <StoreProvider>
           <Header />

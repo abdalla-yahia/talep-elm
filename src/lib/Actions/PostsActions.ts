@@ -4,9 +4,9 @@ import { Posts } from "@prisma/client";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { AxiosRequestConfig } from "axios";
 
-export const fetchPosts = createAsyncThunk('Posts/getall', async () => {
+export const fetchPosts = createAsyncThunk('Posts/getall', async ()=> {
     try {
-        const res = await getAllHook('/api/v1/posts')
+        const res = await getAllHook(`/api/v1/posts`)
         return res.data;
     } catch (error) {
         return error
