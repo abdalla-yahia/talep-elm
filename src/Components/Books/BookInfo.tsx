@@ -8,7 +8,7 @@ export default function BookInfo({ Book }: { Book: Chapter }) {
         <div className="w-full overflow-hidden flex flex-col md:flex-row lg:flex-row  md:justify-start lg:justify-start  justify-center items-center  gap-3 mt-2">
             {/* Book Image */}
             <div className="flex justify-center items-center md:justify-start lg:justify-start w-full md:w-fit lg:w-fit">
-                <Image src={Book?.image} width={60} height={60} alt={Book?.title} />
+                <Image loading="lazy" src={Book?.image} width={60} height={60} alt={Book?.title} />
             </div>
             {/* Book Info */}
             <div className="w-full h-full gap-3 flex flex-col md:justify-start lg:justify-start pt-2">

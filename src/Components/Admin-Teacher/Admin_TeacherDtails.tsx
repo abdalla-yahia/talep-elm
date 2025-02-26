@@ -26,7 +26,7 @@ export default function Admin_TeacherDtails({admin_teacher}:{admin_teacher:Admin
           </div>
 
           </div>
-          <Image height={480} width={80} src={admin_teacher?.image || (admin_teacher?.gender === 'MALE'?images.male_admin:images.female_teatcher) } alt="admin_teacher-image"  />
+          <Image loading="lazy" height={480} width={80} src={admin_teacher?.image || (admin_teacher?.gender === 'MALE'?images.male_admin:images.female_teatcher) } alt="admin_teacher-image"  />
         </div>
         <div className={`${admin_teacher?.gender === 'MALE'?'bg-gray-700 ':'bg-fuchsia-400 '} details flex justify-center items-center w-full min-h-10`}>
         <div className="flex justify-center items-center text-gray-300 text-[12px]">

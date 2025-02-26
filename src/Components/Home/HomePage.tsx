@@ -3,8 +3,8 @@ import { lazy, Suspense } from "react";
 import CreatePost from "./CreatePost";
 import LeftSidbar from "./LeftSidbar";
 import Newsbar from "./Newsbar";
-import PrayerTimes from "./PrayerTimes";
 import RadioQuran from "./RadioQuran";
+const PrayerTimes = lazy(()=>import( "./PrayerTimes"));
 const ArticlesHomePage = lazy(()=>import("./ArticlesHomePage"));
 
 export default function HomePage() {
@@ -19,7 +19,9 @@ export default function HomePage() {
         </div>
         <div className="row w-full">
           <div className="hidden  min-h-full md:flex lg:flex w-[0%] md:w-[15%] lg:w-[15%] flex-col justify-start my-2  items-center bg-background_color rounded ">
+          <Suspense fallback={<div>يتم التحميل...</div>}>
             <PrayerTimes />
+          </Suspense>
           </div>
           <div   className="w-[100%] overflow-y-auto scrollbar-hide max-h-screen md:w-[70%] lg:w-[70%] flex flex-col justify-start items-center  rounded ">
             <div className="text-center my-1 w-full">

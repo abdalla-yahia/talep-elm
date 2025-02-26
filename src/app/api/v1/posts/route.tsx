@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import  Jwt  from "jsonwebtoken";
 import { TokenInterFace } from "@/Interfaces/InterFaces";
 import Role from "@/Utils/Role";
-
+import {POSTS_COUNT_PER_PAGE} from "@/Utils/Constant"
 /**
  * @method GET
  * @access Privite (Only Admins)
@@ -11,7 +11,9 @@ import Role from "@/Utils/Role";
  * @returns Get All Posts Data
  */
 
-export async function GET(){
+export async function GET(request:NextRequest){
+    const Page_Number = request.nextUrl.searchParams.get('page') || 1;
+    const Skip = (parseInt(Page_Number as unknown as string) - 1) * POSTS_COUNT_PER_PAGE;
 try {
 
     const Posts = await prisma.posts.findMany({
@@ -26,7 +28,9 @@ try {
         },
         orderBy:{
             createdAt:'desc'
-        }
+        },
+        skip:Skip,
+        take:POSTS_COUNT_PER_PAGE
     });
     
     if(!Posts){

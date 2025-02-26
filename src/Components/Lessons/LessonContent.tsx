@@ -94,7 +94,7 @@ export default function LessonContent({
                       <h2 className="m-3 font-bold text-2xl text-purple-600">
                         صور {number}
                       </h2>
-                      <Image
+                      <Image loading="lazy"
                         className="w-full"
                         key={i}
                         width={100}

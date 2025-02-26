@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex justify-between w-full items-start">
           {/**Site Title And Logo*/}
           <Link href="/" className="flex justify-center items-center font-bold text-text_color">
-            <Image className="-scale-x-100" alt="logo" width={70} height={50} src={'/Salaf_Logo.png'} />
+            <Image loading="lazy" className="-scale-x-100" alt="logo" width={70} height={50} src={'/Salaf_Logo.png'} />
             <div className="flex flex-col justify-center items-center">
               <p className="inline-block">
                 موقع

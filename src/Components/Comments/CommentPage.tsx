@@ -22,7 +22,7 @@ export default function CommentPage({ e, id }: { e: CreateComment, id: number })
     <div className="w-full  p-2 m-2 rounded bg-slate-300 relative flex flex-col ">
       <div className="flex justify-between items-start w-full mb-2">
         <div className="text-slate-500 text-sm flex justify-start gap-2 items-start">
-          <Image
+          <Image loading="lazy"
             width={30}
             height={30}
             src={
@@ -192,7 +192,7 @@ export default function CommentPage({ e, id }: { e: CreateComment, id: number })
               >
                 <div className="text-gray-400 text-sm w-full flex justify-between gap-2 items-start">
                   <div className="flex gap-2 justify-start">
-                    <Image
+                    <Image loading="lazy"
                       width={20}
                       height={20}
                       src={(!el.User?.image as unknown as string) && img}

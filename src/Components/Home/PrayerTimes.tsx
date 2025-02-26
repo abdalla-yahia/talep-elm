@@ -1,10 +1,10 @@
 'use client'
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import * as icon from '@/Components/Icons/icons'
 import { PrayerTime } from "@/Interfaces/InterFaces"
 
-export default function PrayerTimesPage() {
+ function PrayerTimesPage() {
   const [prayer, setPrayer] = useState<PrayerTime>()
 
   const date = new Date()
@@ -133,3 +133,5 @@ export default function PrayerTimesPage() {
     </>
   );
 }
+
+export default React.memo(PrayerTimesPage)

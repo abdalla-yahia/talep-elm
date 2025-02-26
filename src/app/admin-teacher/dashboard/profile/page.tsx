@@ -150,7 +150,7 @@ export default function ProfilePage() {
                         <p className="card-text">التعليم: {Admin_Teacher?.Admin_Teacher?.education} </p>
                     </div>
                     <div className="card-image">
-                        <Image width={150} height={150} src={Admin_Teacher?.Admin_Teacher?.image && `${Admin_Teacher?.Admin_Teacher?.image}` || img.male_admin} alt="profile" className="rounded-[20%]" />
+                        <Image loading="lazy" width={150} height={150} src={Admin_Teacher?.Admin_Teacher?.image && `${Admin_Teacher?.Admin_Teacher?.image}` || img.male_admin} alt="profile" className="rounded-[20%]" />
                     </div>
                 </div>
                 <div className="card-foot text-sm bg-gray-500 w-full flex justify-center items-center">
@@ -195,7 +195,7 @@ export default function ProfilePage() {
                         </div>
                         <div className="card-image">
                             <label htmlFor="uploadPersonalImage" className="cursor-pointer">
-                                <Image width={150} height={150} src={image || img.male_admin} alt="profile" />
+                                <Image loading="lazy" width={150} height={150} src={image || img.male_admin} alt="profile" />
                                 <input onChange={(e) => uploadFilesHandeller(e)} type="file" name="" id="uploadPersonalImage" className="hidden" />
                                 <icon.RiImageAddLine className="w-full" />
                             </label>

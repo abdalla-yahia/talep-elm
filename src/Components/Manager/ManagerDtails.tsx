@@ -24,7 +24,7 @@ export default function ManagerDtails({manager}:{manager:Manager}) {
             <span className="line-clamp-4">{manager?.telephone}</span>
           </div>
           </div>
-          <Image height={480} width={80} src={manager?.image || (manager?.gender === 'MALE'?images?.mal_manager:images.female_manager) } alt="manager-image"  />
+          <Image loading="lazy" height={480} width={80} src={manager?.image || (manager?.gender === 'MALE'?images?.mal_manager:images.female_manager) } alt="manager-image"  />
         </div>
 
         <div className={`${manager?.gender === 'MALE'?'bg-gray-700 ':'bg-fuchsia-400 '} details flex justify-center items-center w-full min-h-10`}>

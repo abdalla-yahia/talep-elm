@@ -23,7 +23,7 @@ const data = [
           />
       </RadialBarChart>
     </ResponsiveContainer>
-        <Image className='absolute  rounded-full top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]' src='/avatar/man-woman-icon.avif' width={107} height={107} alt='woman-man-icon' />
+        <Image loading="lazy" className='absolute  rounded-full top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]' src='/avatar/man-woman-icon.avif' width={107} height={107} alt='woman-man-icon' />
           </div>
       {/*Data */}
       <div className="flex w-1/2 justify-evenly items-center ">

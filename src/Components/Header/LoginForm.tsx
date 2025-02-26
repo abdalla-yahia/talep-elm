@@ -88,7 +88,7 @@ export default function LoginForm({ userFromToken, setToggle, toggle }: { userFr
           <>
             <div className={`text-text_color flex justify-center items-center px-5 lg:flex-row flex-col`}>
               <Link href={role !== undefined ? `/${role}/dashboard/articles` : '/'} className="cursor-pointer flex flex-col justify-center items-center text-center">
-                <Image
+                <Image loading="lazy"
                   onClick={() => setToggle(!toggle as unknown as boolean)}
                   src={user?.user?.image || Admin?.Admin?.image || Teacher?.Teacher?.image || Admin_Teacher?.Admin_Teacher?.image || Manager?.Manager?.image || Owner?.Owner?.image || img.male_admin}
                   width={50}

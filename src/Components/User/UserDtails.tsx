@@ -32,7 +32,7 @@ export default function UserDtails({user}:{user:AllUserInterface}) {
             <span className="line-clamp-4">{DateConvert(user?.createdAt)}</span>
           </div>
           </div>
-          <Image height={480} width={80} src={user?.image || (user?.gender === 'MALE'?images.male_admin:images.female_user2) } alt="user-image"  />
+          <Image loading="lazy" height={480} width={80} src={user?.image || (user?.gender === 'MALE'?images.male_admin:images.female_user2) } alt="user-image"  />
         </div>
 
         <div className="details w-full bg-red-200 min-h-10">

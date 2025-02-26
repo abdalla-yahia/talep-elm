@@ -24,8 +24,8 @@ export default function Newsbar() {
     <>
       {AllNews?.News?.length > 0 && <div className='w-[100%] relative left-[6%] h-9 flex '>
         <span className='bg-red-600 text-text_color absolute h-full z-40 right-[8%] px-2 text-center flex justify-center items-center top-0'>عاجل</span>
-        <div className={` animate min-w-fit flex flex-nowrap justify-center items-start text-gray-100 h-9 bg-background_color p-2`}>
-          <p style={{ animationDuration: `${count / 15}s` }} className={`${style.newsbar} w-full text-nowrap`}>
+        <div className={` animate min-w-[100%] flex flex-nowrap justify-center items-start text-gray-100 h-9 bg-background_color p-2`}>
+          <p style={{ animationDuration: `${count / 15}s` }} className={`${style.newsbar} w-[100%] text-nowrap`}>
             {
               AllNews?.News?.length > 0 && AllNews?.News?.map(e => `${e?.content}  . `).join(' ')
             }

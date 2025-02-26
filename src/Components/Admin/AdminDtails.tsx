@@ -31,7 +31,7 @@ export default function AdminDtails({admin}:{admin:Admins}) {
             <span className="line-clamp-4">{DateConvert(admin?.createdAt)}</span>
           </div>
           </div>
-          <Image height={480} width={80} src={admin?.image || (admin?.gender === 'MALE'?img.male_admin:img.female_admin) } alt="admin-image"  />
+          <Image loading="lazy" height={480} width={80} src={admin?.image || (admin?.gender === 'MALE'?img.male_admin:img.female_admin) } alt="admin-image"  />
         </div>
 
         <div className="details w-full bg-red-200 min-h-10">

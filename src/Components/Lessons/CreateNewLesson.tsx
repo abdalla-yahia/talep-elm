@@ -123,16 +123,16 @@ export default function CreateNewLesson() {
                         const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp', '.svg', '.heif', '.raw'];
                         const Extention = item?.name.slice(item?.name.indexOf('.'),)
                         if (imageExtensions.includes(Extention))
-                            return <Image key={index} className=" " src={URL.createObjectURL(item as unknown as Blob)} width={50} height={50} alt="upload" />
+                            return <Image loading="lazy" key={index} className=" " src={URL.createObjectURL(item as unknown as Blob)} width={50} height={50} alt="upload" />
 
                         if (Extention === '.pdf')
-                            return <Image key={index} className=" " src={img.Pdf} width={50} height={50} alt="upload" />
+                            return <Image loading="lazy" key={index} className=" " src={img.Pdf} width={50} height={50} alt="upload" />
 
                         if (Extention === '.mp3' || Extention === '.wav' || Extention === '.ogg' || Extention === '.flac')
-                            return <Image key={index} className=" " src={img.Mp3} width={50} height={50} alt="upload" />
+                            return <Image loading="lazy" key={index} className=" " src={img.Mp3} width={50} height={50} alt="upload" />
 
                         if (Extention === '.mp4' || Extention === '.avi' || Extention === '.mov' || Extention === '.flv')
-                            return <Image key={index} className=" " src={img.Mp4} width={50} height={50} alt="upload" />
+                            return <Image loading="lazy" key={index} className=" " src={img.Mp4} width={50} height={50} alt="upload" />
 
 
                     })

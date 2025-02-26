@@ -8,7 +8,7 @@ export default function FullUserDetails({ user }: { user: AllUserInterface }) {
       <div key={user?.id} className={`${user?.gender === 'MALE' ? 'bg-slate-400 shadow' : 'bg-blue-300 shadow'} w-full min-h-36 text-center p-1 rounded flex flex-col mb-6  `}>
         <div className="w-full text-center text-purple-800  flex justify-center flex-wrap flex-row-reverse md:flex-col  items-start py-5 ">
 
-          <Image className="shadow mb-3 shadow-orange-400 rounded-[10%]" height={480} width={180} src={user?.image || (user?.gender === 'FEMALE' ? images.female_user2 : images.male_admin)} alt="user" />
+          <Image loading="lazy" className="shadow mb-3 shadow-orange-400 rounded-[10%]" height={480} width={180} src={user?.image || (user?.gender === 'FEMALE' ? images.female_user2 : images.male_admin)} alt="user" />
 
           <div className="w-full flex flex-col px-3 justify-start items-start lg:w-2/3  ">
             <div className="flex justify-start flex-wrap items-center w-full gap-2 mb-2">

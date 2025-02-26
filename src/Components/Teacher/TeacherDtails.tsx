@@ -28,7 +28,7 @@ export default function TeacherDtails({Teacher}:{Teacher:Teachers}) {
             <span className="line-clamp-4">{Teacher?.groupId}</span>
           </div>
           </div>
-          <Image height={480} width={80} src={Teacher?.image || (Teacher?.gender === 'MALE'?images.male_admin:images.female_teatcher) } alt="Teacher-image"  />
+          <Image loading="lazy" height={480} width={80} src={Teacher?.image || (Teacher?.gender === 'MALE'?images.male_admin:images.female_teatcher) } alt="Teacher-image"  />
         </div>
         <div className={`${Teacher?.gender === 'MALE'?'bg-gray-700 ':'bg-fuchsia-400 '} details flex justify-center items-center w-full min-h-10`}>
         <div className="flex justify-center items-center text-gray-300 text-[12px]">

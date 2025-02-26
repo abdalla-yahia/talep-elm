@@ -186,7 +186,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
               setPlay={setPlay}
             />
           )}
-          <Image
+          <Image loading="lazy"
             src={
               nameShaikh
                 ? `/favicon/${nameShaikh.replaceAll(" ", "-")}.png`

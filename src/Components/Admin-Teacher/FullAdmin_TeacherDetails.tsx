@@ -9,7 +9,7 @@ export default function FullAdmin_TeacherDetails({ Admin_Teacher }: { Admin_Teac
     <>
       <div key={Admin_Teacher?.id} className={`${Admin_Teacher?.gender === 'MALE' ? 'bg-slate-400 shadow' : 'bg-blue-300 shadow'} w-full min-h-36 text-center p-1 rounded flex flex-col mb-6  `}>
         <div className="w-full text-center  flex justify-between flex-wrap flex-row-reverse md:flex-col items-start sm:items-center py-5 ">
-          <Image className="w-1/3 shadow shadow-orange-400" height={480} width={180} src={Admin_Teacher?.image || (Admin_Teacher?.gender === 'FEMALE' ? images.female_teatcher : images.male_admin)} alt="Admin_Teacher" />
+          <Image loading="lazy" className="w-1/3 shadow shadow-orange-400" height={480} width={180} src={Admin_Teacher?.image || (Admin_Teacher?.gender === 'FEMALE' ? images.female_teatcher : images.male_admin)} alt="Admin_Teacher" />
 
           <div className="w-full flex flex-col px-3 justify-start items-start lg:w-2/3  ">
             <div className="flex gap-2 mb-2">
