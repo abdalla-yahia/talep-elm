@@ -8,7 +8,6 @@
 4. [Installation & Setup](#installation--setup)
 5. [Project Structure](#project-structure)
 6. [Contributing](#contributing)
-7. [License](#license)
 
 ---
 
@@ -99,9 +98,19 @@ To run this project locally, follow these steps:
 3. **Set Environment Variables:**
  Create a ``` .env ``` file in the root directory and add the following variables:
     ```bash
-    NEXT_PUBLIC_API_URL=http://your-api-url.com
+
     DATABASE_URL=postgresql://username:password@localhost:5432/your-database-name
-    JWT_SECRET=your-secret-key
+    SALT = your salt
+    JWT_SECRET_KEY = your-secret-key
+    NODE_ENV = your state env
+    SITE_TITLE = title of your project
+    EMAL_SERVICE = email service present 
+    EMAL_HOST = your email host
+    EMAIL_PORT = port of your email 
+    EMAIL_USER = user name of user name
+    EMAIL_PASS = password of send email
+    EMAIL_FROM = email or name of sender email
+    NODE_PATH= path of files
     ```
 4. **Run the Application:**
     ```bash
@@ -120,11 +129,13 @@ talep-elm/
 │   └── fonts/          # Custom fonts
 ├── src/
 │   ├── components/     # Reusable UI components
-│   ├── pages/          # Next.js pages
-│   ├── contexts/       # Context API providers
-│   ├── redux/          # Redux Toolkit store and slices
-│   ├── services/       # API service files
-│   ├── styles/         # Global styles and theme configurations
+│   ├── app/            # Next.js pages
+│   ├── Base/           # Project Domain
+│   ├── Hook/           # Context API providers
+│   ├── Interfaces/     # Global Interfaces 
+│   ├── Moshaf/         # Moshaf Content And Data
+│   ├── Types/          # Global Types 
+│   ├── Lib/            # Redux Toolkit store and slices
 │   └── utils/          # Helper functions
 ├── prisma/             # Prisma schema and migrations
 ├── .env                # Environment variables
