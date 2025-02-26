@@ -67,7 +67,6 @@ The project was developed using modern technologies to ensure scalability, maint
   - Redux Toolkit: For state management.
 
 - **Backend:**
-  - Node.js: As the runtime environment.
   - RESTful APIs: For communication between frontend and backend.
   - Axios: For making HTTP requests.
 
@@ -89,7 +88,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-repo/talep-elm.git
+   git clone https://github.com/abdalla-yahia/Islamy.git
    cd talep-elm
 2. **Install Dependencies:**
    ```bash
@@ -114,7 +113,7 @@ To run this project locally, follow these steps:
    Open your browser and navigate to ``` http://localhost:3000 ```.
 
 # Project Structure
-```json
+```
 talep-elm/
 ├── public/
 │   ├── images/         # Static images
@@ -148,10 +147,11 @@ Please ensure that your code adheres to the existing coding standards and includ
 # Contact
 For any questions or inquiries, feel free to reach out to the developer:
 
-Name: Abdalla Yahia
-Email: abdallayahia75@gmail.com
-LinkedIn: linkedin.com/in/abdalla-yahia
-GitHub: github.com/abdallayahia
+- Name: Abdalla Yahia
+- Email: abdallayahia75@gmail.com
+- LinkedIn: linkedin.com/in/abdalla-yahia
+- GitHub: github.com/abdalla-yahia
+- Tel:+2012-111-00554
 
 
 
