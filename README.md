@@ -2,13 +2,13 @@
 # Talep Elm
 
 ## Talep Elm of Contents
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Installation & Setup](#installation--setup)
-5. [Project Structure](#project-structure)
-6. [Contributing](#contributing)
-7. [Contact](#contact)
+1. [Overview](#overview-top)
+2. [Features](#features-top)
+3. [Technologies Used](#technologies-used-top)
+4. [Installation & Setup](#installation--setup-top)
+5. [Project Structure](#project-structure-top)
+6. [Contributing](#contributing-top)
+7. [Contact](#contact-top)
 
 
 ---
@@ -123,7 +123,7 @@ To run this project locally, follow these steps:
 5. **Access the App: **
    Open your browser and navigate to ``` http://localhost:3000 ```.
 
-# Project Structure
+# Project Structure [^Top](#talep-elm-of-contents)
 ```
 talep-elm/
 ├── public/
