@@ -8,10 +8,12 @@
 4. [Installation & Setup](#installation--setup)
 5. [Project Structure](#project-structure)
 6. [Contributing](#contributing)
+7. [Contact](#contact)
+
 
 ---
 
-## Overview
+## Overview [^Top](#talep-elm-of-contents)
 
 **Talep Elm** is an interactive Qur'an platform built with Next.js 15, React.js, PostgreSQL, Prisma ORM, Tailwind CSS, Bootstrap, Redux Toolkit, Axios, and deployed on Vercel. The platform provides users with a rich experience while reading the Qur'an online, featuring real-time radio broadcasting, private lectures for subscribers, role-based access control (RBAC), and detailed tracking of student progress.
 
@@ -19,7 +21,7 @@ The project was developed using modern technologies to ensure scalability, maint
 
 ---
 
-## Features
+## Features [^Top](#talep-elm-of-contents)
 
 - **Interactive Qur'an Platform:**
   - Displays entire surahs with the ability to select preferred readers.
@@ -56,7 +58,7 @@ The project was developed using modern technologies to ensure scalability, maint
 
 ---
 
-## Technologies Used
+## Technologies Used [^Top](#talep-elm-of-contents)
 
 - **Frontend:**
   - React.js: For building reusable UI components.
@@ -81,7 +83,7 @@ The project was developed using modern technologies to ensure scalability, maint
 
 ---
 
-## Installation & Setup
+## Installation & Setup [^Top](#talep-elm-of-contents)
 
 To run this project locally, follow these steps:
 
@@ -145,7 +147,7 @@ talep-elm/
 ├── package.json        # Project dependencies
 └── README.md           # Project documentation
 ```
-# Contributing
+# Contributing [^Top](#talep-elm-of-contents)
 We welcome contributions from the community! To contribute:
 
 1. **Fork the repository.**
@@ -158,7 +160,7 @@ We welcome contributions from the community! To contribute:
 
 Please ensure that your code adheres to the existing coding standards and includes appropriate tests.
 
-# Contact
+# Contact [^Top](#talep-elm-of-contents)
 For any questions or inquiries, feel free to reach out to the developer:
 
 - Name: Abdalla Yahia
