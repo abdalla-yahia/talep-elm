@@ -36,7 +36,7 @@ import { PrayerTime } from "@/Interfaces/InterFaces"
       </div>
       {/*Prayer Times */}
       <div className="container w-full p-0 flex flex-col justify-center items-center ">
-        <div className="row w-full">
+        <div className="w-[100%]">
           <div className="col-md-12 flex flex-col justify-center items-center">
             {/*El Fagr */}
             <div className="card w-full mb-2 flex justify-center text-center items-center bg-background_color shadow text-text_color">

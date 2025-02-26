@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import Header from '@/Components/Header/Header';
 import Footer from '@/Components/Footer/Footer';
-import { Container, Row } from 'react-bootstrap';
 import StoreProvider from './StoreProvider';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -32,11 +31,9 @@ export default function RootLayout({
       <body suppressHydrationWarning className='bg-second_background_color dark:bg-black text-text_color'>
         <StoreProvider>
           <Header />
-          <Container>
-            <Row>
-              <div className={`${amiri.className} min-h-screen  select-none`}>{children}</div>
-            </Row>
-          </Container>
+          <main className={`${amiri.className} container min-h-screen  select-none`}>
+            {children}
+            </main>
           <Footer />
         </StoreProvider>
         <ToastContainer />

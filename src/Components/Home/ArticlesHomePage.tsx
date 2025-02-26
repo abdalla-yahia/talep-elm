@@ -69,7 +69,7 @@ if(AllPosts?.Posts){
     }, [dispatch, DeletePost?.status]);
     //Fetch Posts
     const PostFetch = useCallback((post: PostsInterface, index: number) => 
-        <div key={index} className="card my-1 w-full ">
+        <article key={index} className="card my-1 w-full ">
             <div className="card-body">
                 <div className="w-full flex justify-center items-center flex-col " >
                     <div className="w-full flex justify-between items-center">
@@ -95,7 +95,7 @@ if(AllPosts?.Posts){
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     , [DeletePostHandeller, UserLogedData?.role]);
        
     return (
