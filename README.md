@@ -1,7 +1,7 @@
 # [Demo](https://talep-elm.vercel.app)
 # Talep Elm
 
-## Table of Contents
+## Talep Elm of Contents
 1. [Overview](#overview)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
@@ -125,8 +125,11 @@ To run this project locally, follow these steps:
 ```
 talep-elm/
 ├── public/
+│   ├── Audios/         # Static Audio
 │   ├── images/         # Static images
-│   └── fonts/          # Custom fonts
+│   ├── avatar/         # Static images
+│   ├── favicon/        # Static images
+│   └── uploads/        # Custom Uploads Files (Images-Audios-Videos-Pdf)
 ├── src/
 │   ├── components/     # Reusable UI components
 │   ├── app/            # Next.js pages
@@ -160,9 +163,9 @@ For any questions or inquiries, feel free to reach out to the developer:
 
 - Name: Abdalla Yahia
 - Email: abdallayahia75@gmail.com
-- LinkedIn: linkedin.com/in/abdalla-yahia
-- GitHub: github.com/abdalla-yahia
-- Tel:+2012-111-00554
+- LinkedIn: [linkedin.com/in/abdalla-yahia](https://www.linkedin.com/in/abdalla-yahia/)
+- GitHub: [github.com/abdalla-yahia](https://github.com/abdalla-yahia/)
+- Tel: +2012-111-00554 - whatsapp: +2012-111-00554
 
 
 
