@@ -2,9 +2,9 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as icon from '@/Components/Icons/icons'
 import { LegacyRef, useEffect, useRef, useState } from 'react';
-
+import Stations from './Radio_Station';
 export default function RadioQuran() {
-    const [Radios, setRadios] = useState<[{ url: string, name: string }]>([{ url: '', name: '' }])
+    const [Radios, setRadios] = useState<[{id:string, url: string, name: string ,category:string}]>([{id:'', url: '', name: '',category:'' }])
     const [selectedOption, setSelectedOption] = useState(Radios[0]);
     const [urlRadio, seturlRadio] = useState('')
     const [play, setplay] = useState(false)
@@ -12,13 +12,22 @@ export default function RadioQuran() {
     const [toggle, setToggle] = useState(false)
     const [RadioName, setRadioName] = useState('')
     const [SearchText, SetSearchText] = useState('')
-
+    const categories = [...new Set(Stations.map((el) => el.category))].sort((a,b)=>a>b?1:-1)
     const refAudio = useRef<HTMLAudioElement>() as unknown as { current: { muted: boolean | undefined, volume: number, play: () => void, pause: () => void } }
-    useEffect(() => {
-        fetch('https://mp3quran.net/api/v3/radios?language=ar')
-            .then(res => res.json())
-            .then(res => setRadios(res?.radios))
-
+    //Fetch Radios
+    const fetchRadios = async () => {
+        try {
+            // await fetch('https://mp3quran.net/api/v3/radios?language=ar')
+            //     .then(res => res.json())
+            //     .then(res => setRadios(res?.radios))
+            setRadios(Stations as unknown as [{id:string, url: string, name: string,category:string }])
+        } catch (error) {
+            throw new Error(error as unknown as string)
+        }
+    }
+    //UseEffect Fetch Radios From API
+ useEffect(() => {
+        fetchRadios()
     }, [])
 
     const selectNext = () => {
@@ -58,57 +67,30 @@ export default function RadioQuran() {
                     {toggle && <div className='bg-second_background_color rounded-md absolute left-0 top-[100%] w-[80%] z-40 max-h-[400px] scrollbar-hide overflow-y-scroll text-accent_color flex justify-start items-start flex-col'>
                         {
                             Radios?.length > 0 && SearchText === '' ?
-                                (
-                                    <>
-                                        <span onClick={() => { seturlRadio('https://stream.radiojar.com/8s5u5tpdtwzuv'); setToggle(false); setRadioName('إذاعة القرآن الكريم من القاهرة'); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' title={'إذاعة القرآن الكريم من القاهرة'}>{'إذاعة القرآن الكريم من القاهرة'}</span>
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'>حفص عن عاصم الكوفي</span>
-                                        {
-                                            Radios?.filter(el => !el?.name.includes('رواي') && !el?.name.includes('باللغة')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> ورش عن نافع</span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes('رواية ورش')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> قالون عن نافع</span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes('رواية قالون')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> رواية السوسي </span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes('رواية السوسي')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> رواية الدوري </span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes('رواية الدوري')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> رواية ابن ذكوان </span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes('رواية ابن ذكوان')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> رواية خلف </span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes('رواية خلف')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> رواية البزي </span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes('رواية البزي')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                        <span className='text-2xl font-bold text-text_color border-b-2 border-red-600'> رواية رويس </span>
-                                        {
-                                            Radios?.filter(el => el?.name.includes(' رويس')).map((radio, index) =>
-                                                <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
-                                        }
-                                    </>
-                                ) : (Radios?.filter(el => el.name.includes(SearchText))).map((radio, index) =>
+                                        (
+                                            <>
+                                            {
+                                                categories && categories.map((category, index) =>
+                                                    
+                                                {
+                                                    return <div key={index} className='text-2xl flex flex-col  justify-start items-start font-bold text-text_color border-b-2 border-red-600'> 
+                                                    <h1 className='bg-slate-400 w-full flex flex-col  justify-start items-start rounded-md px-2'>
+                                                    {category}
+                                                    </h1>
+                                                    <div className='flex flex-col justify-start items-start'>
+                                                    { Radios?.filter(el => el?.category === category).map((radio) =>
+                                                            <span   onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true) }} className='hover:bg-background_color line-clamp-1  text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={radio?.id} title={radio?.name}>{radio?.name}</span>)
+                                                        }
+                                                        </div>
+                                                </div>
+                                                }
+                                                    
+                                                )
+                                            }
+                                            </>
+                                    )
+                                    
+                                 : (Radios?.filter(el => el.name.includes(SearchText))).map((radio, index) =>
                                     <span onClick={() => { seturlRadio(radio?.url); setToggle(false); setRadioName(radio?.name); setplay(true); SetSearchText('') }} className='hover:bg-background_color text-text_color hover:text-text_color px-2 py-1 cursor-pointer rounded' key={index} title={radio?.name}>{radio?.name}</span>)
                         }
                     </div>}
