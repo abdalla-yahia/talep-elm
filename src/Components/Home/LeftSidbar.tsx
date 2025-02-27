@@ -77,7 +77,7 @@ export default function LeftSidbar() {
     });
   }
   return (
-    <div className="flex flex-col gap-2 justify-center items-center">
+    <div className="flex flex-col h-screen gap-2 justify-center items-center">
       {!toggle &&
         (UserLogedData?.role as React.ReactNode) &&
         UserLogedData?.role === "OWNER" && (

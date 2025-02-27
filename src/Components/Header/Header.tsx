@@ -22,7 +22,7 @@ export default async function Header() {
         <nav className={`${amiri.className} ${style.header_nav} relative w-full z-50 flex bg-background_color mb-2`}>
           <div className="container  w-full p-2 flex justify-around items-center">
             <Link href="/" className={'flex justify-center  items-center font-bold text-fuchsia-700 hover:text-text_color'}>
-              <Image loading="lazy" className="rounded-lg ml-2" alt="logo" width={280} height={320} src={'/images/Title_Logo.png'} />
+              <Image loading="lazy" className="rounded-lg ml-2" alt="logo" width={280} height={320} src={'/images/Title_Logo.webp'} />
             </Link>
             <NavLinks user={null} />
             <Image loading="lazy" className="rounded-lg ml-2" alt="logo" width={150} height={120} src={'/Salaf_Logo.png'} />
@@ -38,7 +38,7 @@ export default async function Header() {
       <nav className={`${amiri.className} ${style.header_nav} relative w-full z-50 flex bg-background_color mb-2`}>
         <div className="container  w-full p-2 flex justify-around items-center">
           <Link href="/" className={'flex justify-center  items-center font-bold text-fuchsia-700'}>
-            <Image loading="lazy" className="rounded-lg ml-2" alt="logo" width={280} height={320} src={'/images/Title_Logo.png'} />
+            <Image loading="lazy" className="rounded-lg ml-2" alt="logo" width={280} height={320} src={'/images/Title_Logo.webp'} />
           </Link>
           <NavLinks user={Decoade} />
           <Image loading="lazy" className="rounded-lg ml-2" alt="logo" width={150} height={120} src={'/Salaf_Logo.png'} />

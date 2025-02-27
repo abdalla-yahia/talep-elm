@@ -18,7 +18,7 @@ export default function HomePage() {
           </div>
         </div>
         <section className=" flex justify-between items-start gap-2">
-          <aside className="hidden  min-h-full md:flex lg:flex  md:w-[15%] lg:w-[15%] flex-col justify-start my-2  items-center bg-background_color rounded ">
+          <aside className="hidden  h-screen md:flex lg:flex  md:w-[15%] lg:w-[15%] flex-col justify-start my-2  items-center bg-background_color rounded ">
           <Suspense fallback={<div>يتم التحميل...</div>}>
             <PrayerTimes />
           </Suspense>
@@ -32,7 +32,7 @@ export default function HomePage() {
               </Suspense>
             </div>
           </section>
-          <aside className={`shadow hidden min-h-full md:flex lg:flex  md:w-[15%] lg:w-[15%] flex-col justify-start p-2 rounded text-text_color my-2 items-center  bg-background_color`}>
+          <aside className={`shadow hidden h-screen md:flex lg:flex  md:w-[15%] lg:w-[15%] flex-col justify-start p-2 rounded text-text_color my-2 items-center  bg-background_color`}>
             <LeftSidbar />
           </aside>
         </section>

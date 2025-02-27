@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
 
-    <footer  className="text-text_color rounded-lg max-w-full shadow bg-background_color mt-4">
+    <footer  className="text-text_color rounded-lg max-w-full shadow bg-second_background_color mt-4">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="flex justify-between w-full items-start">
           {/**Site Title And Logo*/}
@@ -36,6 +36,9 @@ export default function Footer() {
         <hr className="my-0 border-white  sm:mx-auto  lg:my-8" />
         <span className="block max-w-full text-sm text-text_color sm:text-center">جميع الحقوق محفوظة  ©  {new Date().getFullYear()} <Link href="mailto:abdalla_y2007@yahoo.com/" className="hover:underline text-orange-600 font-bold text-lg">موقع طالب علم™ </Link> </span>
       </div>
+      <a href='https://visitorbadge.io/status?path=https%3A%2F%2Ftalep-elm.vercel.app%2F'>
+          <img src='https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftalep-elm.vercel.app%2F&countColor=%23263759' alt='img-vesitors' width={150} height={50}/>
+        </a>
     </footer>
 
 

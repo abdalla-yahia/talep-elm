@@ -31,15 +31,12 @@ export default function RootLayout({
       <body suppressHydrationWarning className='bg-second_background_color dark:bg-black text-text_color'>
         <StoreProvider>
           <Header />
-          <main className={`${amiri.className} container min-h-screen  select-none`}>
+          <main className={`${amiri.className} container min-h-fit  select-none`}>
             {children}
             </main>
           <Footer />
         </StoreProvider>
         <ToastContainer />
-        <a href='https://visitorbadge.io/status?path=https%3A%2F%2Ftalep-elm.vercel.app%2F'>
-          <img src='https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftalep-elm.vercel.app%2F&countColor=%23263759' alt='img-vesitors' width={150} height={50}/>
-        </a>
       </body>
     </html>
   );

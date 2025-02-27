@@ -21,7 +21,7 @@ import { PrayerTime } from "@/Interfaces/InterFaces"
   return (
     <>
       {/*Hijiry Time */}
-      <div className="card px-1 text-[13px] w-full text-center shadow mb-2 bg-background_color text-text_color">
+      <div className="card px-1 text-[13px]  w-full text-center shadow mb-2 bg-background_color text-text_color">
         <span className="w-full text-red-600 text-2xl">
           {prayer?.date?.hijri?.weekday?.ar}
         </span>
