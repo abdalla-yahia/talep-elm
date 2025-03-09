@@ -1270,7 +1270,55 @@ const Stations = [
       name_en: "Yousef Bin Noah Ahmad",
       category: "حفص عن عاصم",
       category_en: "Readers"
-    }
+    },
+    {
+      id: 10928,
+      name: "شهر رمضان المبارك",
+      url: "https://backup.qurango.net/radio/ramadan",
+      name_en:"Ramadan",
+      category: "منوعات",
+      category_en: "Others"
+    },
+    {
+      id: 10929,
+      name: "ستة من شوال",
+      url: "https://backup.qurango.net/radio/SixDaysOfShawwal",
+      name_en:"Six Days of Shawwal",
+       category: "منوعات",
+      category_en: "Others"
+    },
+    {
+      id: 10930,
+      name: "يوم عاشوراء",
+      url: "https://backup.qurango.net/radio/TheDayofAshoora",
+      name_en:"The Day of Ashoora",
+       category: "منوعات",
+      category_en: "Others"
+    },
+    {
+      id: 10932,
+      name: "سورة الملك",
+      url: "https://backup.qurango.net/radio/Surah_Al-Mulk",
+      name_en:"Surah Al-Mulk",
+      category: "منوعات",
+      category_en: "Others"
+    },
+    {
+      id: 21117,
+      name: "تفسير القرآن الكريم - الخلاصة من تفسير الطبري",
+      url: "https://backup.qurango.net/radio/tabri",
+      name_en:"Tafsir Al-Quran Al-Kareem - Al-Khalasa min Tafsir Al-Tabari",
+      category: "تفسير",
+      category_en: "Tafseer"
+    },
+    {
+      id: 109037,
+      name: "عشر ذي الحجة",
+      url: "https://backup.qurango.net/radio/ten_dhul_hijjah",
+      name_en:"Ten Days of Dhul Hijjah",
+      category: "منوعات",
+      category_en: "Others"
+    },
   ]
 
   export default Stations;
