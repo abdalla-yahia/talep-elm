@@ -1,0 +1,38 @@
+{
+    "id": 19,
+    "title": "محاضرات الجامعات المصرية",
+    "description": "محاضرات الجامعات المصرية",
+    "search": "بحث في محاضرات الجامعات المصرية",
+    "type": "المادة",
+    "author": "الشيخ أبو إسحاق الحويني",
+    "publisher": "بصوت الشيخ أبو إسحاق الحويني",
+    "year": "الإثنين 17 رمضان 1446هـ الموافق 17-3-2025 م",
+    "audio_count": 4,
+    "audio_type": "mp4",
+    "sort": "id",
+    "download": "",
+    "url": "https://www.youtube.com/embed",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRYS783JMLUwXgODcBthL4MeZtzvmwO7D2g&s",
+    "data": [
+        {
+            "id": 1,
+            "name": "يا شباب الإسلام | لقاء خاص بجامعة كفرالشيخ| للشيخ الحويني",
+            "url": "442L58Vw1S0"
+        },
+        {
+            "id": 2,
+            "name": "محاضرة فضيلة الشيخ أبو إسحاق الحويني بجامعة أسيوط | 14 5 2011",
+            "url": "es8XhsL0Gvw"
+        },
+        {
+            "id": 3,
+            "name": "لقاء جامعة طنطا | الوحي حياة القلوب | الشيخ الحويني HD",
+            "url": "sA7ylLvLX3U"
+        },
+        {
+            "id": 4,
+            "name": "لقاء مميز : وبالحق نزل | للشيخ الحويني",
+            "url": "ShzlCQKPeuQ"
+        }
+    ]
+}

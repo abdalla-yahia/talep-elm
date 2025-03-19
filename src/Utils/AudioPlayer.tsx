@@ -154,6 +154,24 @@ export default function AudioPlayer({ Book, audioUrl, BookTitle, setAudioUrl, pl
         }
     }
 
+    // Download Audio
+    const handleDownload = async () => {
+        try {
+            const response = await fetch(audioUrl,{headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}}) // محاكاة متصفح لتجنب الحظر);
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${SahapyName}.mp3`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+            
+        } catch (error) {
+            throw new Error('An Error Occured',error as Error)
+            
+        }
+    };
 
 
     return (
@@ -180,6 +198,10 @@ export default function AudioPlayer({ Book, audioUrl, BookTitle, setAudioUrl, pl
                 <div className="w-full flex justify-evenly items-center gap-2">
 
                     <p>{currentTime}</p>
+                    
+                    <icon.FaDownload onClick={()=>handleDownload()}
+                    className=" cursor-pointer" title="تحميل الملف"/>
+                        
                     {/* Volume Control */}
                     <div className={`${styleProgress.volumeParent}`} >
                         <div className={`${styleProgress.volumeProgress} `}>
@@ -196,7 +218,6 @@ export default function AudioPlayer({ Book, audioUrl, BookTitle, setAudioUrl, pl
                     <icon.FaPlay onClick={() => handlePlay()} className={`${play && 'text-blue-600'} cursor-pointer hover:text-blue-600 shadow `} />
                     <icon.TbRewindBackward10 className='cursor-pointer hover:text-blue-600' onClick={() => handleMinusTenSeconds()} />
                     <icon.TbPlayerTrackPrevFilled onClick={() => { PlayPrevAudio(); setplay(true) }} className={` cursor-pointer hover:text-blue-600 shadow `} />
-
                     <div className='flex justify-between items-center gap-2'>
                         <p>{audioUrl !== '' && (duration == "NaN:NaN" || duration == "00:00") ?
                             <div className="spinner-border" role="status">

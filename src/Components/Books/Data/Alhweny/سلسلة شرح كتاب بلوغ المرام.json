@@ -1,0 +1,53 @@
+{
+    "id": 10,
+    "title": "سلسلة شرح كتاب بلوغ المرام",
+    "description": "سلسلة شرح كتاب بلوغ المرام",
+    "search": "بحث في سلسلة شرح كتاب بلوغ المرام",
+    "type": "المادة",
+    "author": "الشيخ أبو إسحاق الحويني",
+    "publisher": "بصوت الشيخ أبو إسحاق الحويني",
+    "year": "الإثنين 17 رمضان 1446هـ الموافق 17-3-2025 م",
+    "audio_count": 7,
+    "audio_type": "mp4",
+    "sort": "id",
+    "download": "",
+    "url": "https://www.youtube.com/embed",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRYS783JMLUwXgODcBthL4MeZtzvmwO7D2g&s",
+    "data": [
+        {
+            "id": 1,
+            "name": "شرح كتاب بلوغ المرام | 1 | الشيخ الحويني",
+            "url": "ivwPibI-aV0"
+        },
+        {
+            "id": 2,
+            "name": "شرح كتاب بلوغ المرام | 2 | الشيخ الحويني",
+            "url": "T1PTua5cP-k"
+        },
+        {
+            "id": 3,
+            "name": "شرح كتاب بلوغ المرام | 3 | الشيخ الحويني",
+            "url": "0WIMBo1V6d0"
+        },
+        {
+            "id": 4,
+            "name": "شرح كتاب بلوغ المرام | 5 | الشيخ الحويني",
+            "url": "fbbxtQloo5o"
+        },
+        {
+            "id": 5,
+            "name": "شرح كتاب بلوغ المرام | 6 | الشيخ الحويني",
+            "url": "YLOxI3H6e9c"
+        },
+        {
+            "id": 6,
+            "name": "شرح كتاب بلوغ المرام | 7 | الشيخ الحويني",
+            "url": "wXIR4RRe-pY"
+        },
+        {
+            "id": 7,
+            "name": "شرح كتاب بلوغ المرام | 8 | الشيخ الحويني",
+            "url": "aXEx_BewzJc"
+        }
+    ]
+}

@@ -28,7 +28,7 @@ export default function SideBar({ setBook }: { setBook: (chapter: Chapter) => vo
                                         {book?.books?.map((chapter, index) => {
                                             return (
                                                 <div onClick={() => setBook(chapter as Chapter)} key={index} className='w-full text-center shadow-sm line-clamp-1 flex justify-end items-start py-2 cursor-pointer hover:text-primary_color'>
-                                                    {chapter.title}
+                                                    <p className='line-clamp-1 w-full text-right' title={chapter?.title}>{chapter?.title}</p>
                                                     {chapter.audio_type === 'mp3' ? <icon.LuFileAudio className='mx-2 text-blue-700' /> : <icon.RiFolderVideoFill className='mx-2 text-red-600' />}
                                                 </div>
                                             )

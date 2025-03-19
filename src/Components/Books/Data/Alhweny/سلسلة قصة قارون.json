@@ -1,0 +1,43 @@
+{
+    "id": 33,
+    "title": "سلسلة قصة قارون",
+    "description": "سلسلة قصة قارون",
+    "search": "بحث في سلسلة قصة قارون",
+    "type": "المادة",
+    "author": "الشيخ أبو إسحاق الحويني",
+    "publisher": "بصوت الشيخ أبو إسحاق الحويني",
+    "year": "الإثنين 17 رمضان 1446هـ الموافق 17-3-2025 م",
+    "audio_count": 5,
+    "audio_type": "mp4",
+    "sort": "id",
+    "download": "",
+    "url": "https://www.youtube.com/embed",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRYS783JMLUwXgODcBthL4MeZtzvmwO7D2g&s",
+    "data": [
+        {
+            "id": 1,
+            "name": "قصة قارون والوصايا الأربعة | للشيخ الحويني",
+            "url": "oZYXWAM2GfU"
+        },
+        {
+            "id": 2,
+            "name": "سلسة قصة قارون [1-2]  | محاضرة نادرة للشيخ الحويني",
+            "url": "z5U70KLg494"
+        },
+        {
+            "id": 3,
+            "name": "عطر الكلام |  قيمة قارون |  الشيخ الحويني",
+            "url": "wVum1CLa8F0"
+        },
+        {
+            "id": 4,
+            "name": "عاقبة البغي | قصة قارون (1) | الشيخ الحويني 4/2/2016",
+            "url": "Ff2H6kZq4Fk"
+        },
+        {
+            "id": 5,
+            "name": "سلسلة قصة قارون [2-2] محاضرة نادرة للشيخ الحويني",
+            "url": "gQCkub3Cfqw"
+        }
+    ]
+}

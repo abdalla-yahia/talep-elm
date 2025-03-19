@@ -1,0 +1,33 @@
+{
+    "id": 67,
+    "title": "خطب المحبة لله ورسوله",
+    "description": "خطب المحبة لله ورسوله",
+    "search": "بحث في خطب المحبة لله ورسوله",
+    "type": "المادة",
+    "author": "الشيخ أبو إسحاق الحويني",
+    "publisher": "بصوت الشيخ أبو إسحاق الحويني",
+    "year": "الإثنين 17 رمضان 1446هـ الموافق 17-3-2025 م",
+    "audio_count": 3,
+    "audio_type": "mp4",
+    "sort": "id",
+    "download": "",
+    "url": "https://www.youtube.com/embed",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRYS783JMLUwXgODcBthL4MeZtzvmwO7D2g&s",
+    "data": [
+        {
+            "id": 1,
+            "name": "الزجر بالهجر | علامات المحبة | الشيخ الحويني",
+            "url": "YvQ6aFpwtfQ"
+        },
+        {
+            "id": 2,
+            "name": "البذل | علامات المحبة | خطبة ماتعة للشيخ الحويني",
+            "url": "gDxc0Fbu_bQ"
+        },
+        {
+            "id": 3,
+            "name": "الإيثار | علامات المحبة | خطبة ماتعة للشيخ الحويني",
+            "url": "3WwM13atjYk"
+        }
+    ]
+}

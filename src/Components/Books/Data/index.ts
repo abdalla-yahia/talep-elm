@@ -15,8 +15,10 @@ import Tafseer from './Tafseer';
 import Tazkea from './Tazkea';
 import Ferak_Mazahb from './Ferak_Mazaheb';
 import Khotab from './Khotab';
+import Alhweny from './Alhweny';
 export default function BooksData(){
     return [
+        Alhweny(),
         Sera(),
         Tarekh(),
         Osol_Feqh(),
