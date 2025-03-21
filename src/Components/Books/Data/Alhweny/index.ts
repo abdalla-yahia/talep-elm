@@ -1,3 +1,4 @@
+import play_list_0 from './alhewenytube_videos.json';
 import play_list_1 from './أبو بكر الصديق رضي الله عنه.json';
 import play_list_2 from './أبيات شعر رائعة.json';
 import play_list_3 from './أحاديث ضعيفة وموضوعة عن النبي ﷺ.json';
@@ -160,6 +161,7 @@ export default function Alhweny_Books() {
     title: 'مكتبة الشيخ الحويني',
     description: 'كل خطب الشيخ الحويني في مكتبة واحدة',
     books: [
+      play_list_0,
       play_list_1,
       play_list_2,
       play_list_3,
