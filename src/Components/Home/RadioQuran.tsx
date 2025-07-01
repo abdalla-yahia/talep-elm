@@ -1,7 +1,7 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as icon from '@/Components/Icons/icons'
-import { LegacyRef, useEffect, useRef, useState } from 'react';
+import { LegacyRef, useEffect, useMemo, useRef, useState } from 'react';
 import Stations from './Radio_Station';
 export default function RadioQuran() {
     const [Radios, setRadios] = useState<[{id:string, url: string, name: string ,category:string}]>([{id:'', url: '', name: '',category:'' }])
@@ -29,7 +29,12 @@ export default function RadioQuran() {
  useEffect(() => {
         fetchRadios()
     }, [])
-
+     useMemo(()=>{
+        if(RadioName){
+            document.title = `${RadioName}`;
+            document.querySelector('meta[name="description"]')?.setAttribute('content', `راديو ${RadioName} خاص بموقع طالب علم شرعي , يحتوي على المنهج العلمي لكل طالب علم يسعى إلى الإرتقاء في  سلم طلب العلم الشرعي وفق منهج علمي على الكتاب والسنة`);
+        }
+    },[RadioName])
     const selectNext = () => {
         const currentIndex = Radios.indexOf(selectedOption);
         const nextIndex = (currentIndex + 1) % Radios.length;

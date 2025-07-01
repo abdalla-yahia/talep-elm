@@ -2,7 +2,14 @@ import { Chapter } from "@/Interfaces/InterFaces";
 import Image from "next/image";
 import Link from "next/link";
 import * as icon from '@/Components/Icons/icons'
+import { useEffect } from "react";
 export default function BookInfo({ Book }: { Book: Chapter }) {
+
+ useEffect(()=>{
+        document.title = `شرح كتاب ${Book?.title} للشيخ ${Book?.author} بشرح ${Book?.publisher}`;
+        document.querySelector('meta[name="description"]')?.setAttribute('content', `شرح كتاب ${Book?.description} للشيخ ${Book?.author} بشرح ${Book?.publisher} - عدد المواد ${Book?.audio_count} مادة`);
+        
+    }, [Book?.title, Book?.description, Book?.author, Book?.publisher, Book?.audio_count])
 
     return (
         <div className="w-full overflow-hidden flex flex-col md:flex-row lg:flex-row  md:justify-start lg:justify-start  justify-center items-center  gap-3 mt-2">
