@@ -112,14 +112,14 @@ export const metadata: Metadata = {
     address: false,
     email: false,
   },
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  //   nocache: false,
-  //   noimageindex: false,
-  //   noarchive: false,
-  //   nosnippet: false,
-  // },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    noimageindex: false,
+    noarchive: false,
+    nosnippet: false,
+  },
 
 };
 

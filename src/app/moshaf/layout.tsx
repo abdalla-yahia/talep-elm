@@ -101,14 +101,14 @@ export const metadata: Metadata = {
     maximumScale: 1,
     userScalable: false,
   },
-  //  robots: {
-  //   index: true,
-  //   follow: true,
-  //   nocache: false,
-  //   noimageindex: false,
-  //   noarchive: false,
-  //   nosnippet: false,
-  // },
+   robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    noimageindex: false,
+    noarchive: false,
+    nosnippet: false,
+  },
 };
 
 export default function MoshafLayout({
