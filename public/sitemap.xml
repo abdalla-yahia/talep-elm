@@ -1,57 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Generated and corrected for compatibility with Google Search Console -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage -->
   <url>
     <loc>https://talep-elm.vercel.app/</loc>
     <lastmod>2025-07-01</lastmod>
-    <priority>1.00</priority>
     <changefreq>daily</changefreq>
+    <priority>1.00</priority>
   </url>
-  
-  <!-- Moshaf page -->
   <url>
     <loc>https://talep-elm.vercel.app/moshaf</loc>
     <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-    <changefreq>daily</changefreq>
   </url>
-  
-  <!-- Booksound page -->
   <url>
     <loc>https://talep-elm.vercel.app/booksound</loc>
     <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-    <changefreq>daily</changefreq>
   </url>
-  
-  <!-- Articles page -->
   <url>
     <loc>https://talep-elm.vercel.app/articles</loc>
     <lastmod>2025-07-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-    <changefreq>daily</changefreq>
   </url>
-  
-  <!-- About page -->
   <url>
     <loc>https://talep-elm.vercel.app/about</loc>
     <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <changefreq>daily</changefreq>
   </url>
-  
-  <!-- Contact page -->
   <url>
     <loc>https://talep-elm.vercel.app/contact</loc>
     <lastmod>2025-07-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-    <changefreq>weekly</changefreq>
   </url>
-
 </urlset>
