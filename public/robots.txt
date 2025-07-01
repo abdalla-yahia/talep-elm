@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://talep-elm.vercel.app/sitemap.xml

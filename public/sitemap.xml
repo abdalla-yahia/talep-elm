@@ -9,54 +9,41 @@
 
 <url>
   <loc>https://talep-elm.vercel.app/</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
+  <lastmod>2025-07-01</lastmod>
   <priority>1.00</priority>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>https://talep-elm.vercel.app/moshaf</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
+  <lastmod>2025-07-01</lastmod>
   <priority>0.80</priority>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>https://talep-elm.vercel.app/booksound</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
+  <lastmod>2025-07-01</lastmod>
   <priority>0.80</priority>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>https://talep-elm.vercel.app/articles</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
+  <lastmod>2025-07-01</lastmod>
   <priority>0.80</priority>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>https://talep-elm.vercel.app/about</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
+  <lastmod>2025-07-01</lastmod>
   <priority>0.80</priority>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>https://talep-elm.vercel.app/contact</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
+  <lastmod>2025-07-01</lastmod>
   <priority>0.80</priority>
+  <changefreq>weakly</changefreq>
 </url>
-<url>
-  <loc>https://talep-elm.vercel.app/login</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://talep-elm.vercel.app/forgetpassword</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://talep-elm.vercel.app/register</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://talep-elm.vercel.app/invite-code</loc>
-  <lastmod>2025-02-25T12:25:39+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
+
 
 
 </urlset>
