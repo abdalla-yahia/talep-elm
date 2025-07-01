@@ -54,24 +54,24 @@ export const metadata: Metadata = {
   
   icons: {
     icon: "/favicon.ico",
-    apple: "/public/icon/apple-touch-icon.png",
-    shortcut: "/public/icon/favicon-16x16.png",
+    apple: "/icon/apple-touch-icon.png",
+    shortcut: "/icon/favicon-16x16.png",
     other: [
       {
         rel: "icon",
-        url: "/public/icon/favicon-32x32.png",
+        url: "/icon/favicon-32x32.png",
         sizes: "32x32",
         type: "image/png",
       },
       {
         rel: "icon",
-        url: "/public/icon/android-chrome-192x192.png",
+        url: "/icon/android-chrome-192x192.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
         rel: "icon",
-        url: "/public/icon/android-chrome-512x512.png",
+        url: "/icon/android-chrome-512x512.png",
         sizes: "512x512",
         type: "image/png",
       },
