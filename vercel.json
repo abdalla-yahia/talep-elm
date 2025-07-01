@@ -6,6 +6,19 @@
         {
           "type": "host",
           "value": "www.talep-elm.vercel.app"
+        },
+        {
+          "type":"host",
+          "value": "talep-elm.vercel.app"
+        },
+        {
+          "type":"host",
+          "value": "https://www.talep-elm.vercel.app"
+        },
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "(?!TR).*"
         }
       ],
       "destination": "https://talep-elm.vercel.app/:path*",
