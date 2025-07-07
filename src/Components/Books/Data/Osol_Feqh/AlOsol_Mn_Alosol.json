@@ -1,38 +1,39 @@
 {
-    "id":4,
-    "title":"الأصول من علم الأصول",
-    "description":"الأصول من علم الأصول ",
-    "search":" بحث عن موضوع في كتاب الأصول ",
-    "type":"المادة",
-    "author":" محمد بن صالح العثيمين",
-    "publisher":"بشرح الشيخ عبد المنعم الشحات",
-    "year":1984,
-    "audio_count":4,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/20200822_20200822_1725/%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84%20%D9%85%D9%86%20%D8%B9%D9%84%D9%85%20%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84.pdf",
-    "url":"https://ia601802.us.archive.org/19/items/ana-sal-shahaat-osol-ilmosol",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/3/9/6/1/e5c4b0052f961b27b82a0c17d28e5981.jpg.webp",
-    "data":[
+    "id": 4,
+    "title": "الأصول من علم الأصول",
+    "description": "الأصول من علم الأصول ",
+    "search": " بحث عن موضوع في كتاب الأصول ",
+    "type": "المادة",
+    "author": " محمد بن صالح العثيمين",
+    "publisher": "بشرح الشيخ عبد المنعم الشحات",
+    "section": "أصول فقه",
+    "year": 1984,
+    "audio_count": 4,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/20200822_20200822_1725/%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84%20%D9%85%D9%86%20%D8%B9%D9%84%D9%85%20%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84.pdf",
+    "url": "https://ia601802.us.archive.org/19/items/ana-sal-shahaat-osol-ilmosol",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/3/9/6/1/e5c4b0052f961b27b82a0c17d28e5981.jpg.webp",
+    "data": [
         {
-            "id":1,
-            "name":"الدرس الأول",
-            "url":"001.mp3"
+            "id": 1,
+            "name": "الدرس الأول",
+            "url": "001.mp3"
         },
         {
-            "id":2,
-            "name":"الدرس الثاني",
-            "url":"002.mp3"
+            "id": 2,
+            "name": "الدرس الثاني",
+            "url": "002.mp3"
         },
         {
-            "id":3,
-            "name":"الدرس الثالث",
-            "url":"003.mp3"
+            "id": 3,
+            "name": "الدرس الثالث",
+            "url": "003.mp3"
         },
         {
-            "id":4,
-            "name":"الدرس الرابع",
-            "url":"004.mp3"
+            "id": 4,
+            "name": "الدرس الرابع",
+            "url": "004.mp3"
         }
     ]
 }

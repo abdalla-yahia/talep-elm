@@ -26,7 +26,7 @@ import Zad_ElMostaqneaa from './Zad_Elmostaqneaa.json';
 export default function Feqh_Hanbalyan(){
     return {
         id:2,
-        title:"فقه ",
+        title:"فقه حنبلي",
         description:"فقه حنبلي",
         books:[
             Frooa_Feqh_Mansour,

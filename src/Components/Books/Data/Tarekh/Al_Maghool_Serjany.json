@@ -1,20 +1,20 @@
 {
-    "id":4,
-    "title":"التتار من البداية إلى عين جالوت",
-    "description":"التتار من البداية إلى عين جالوت",
-    "search":"بحث عن موضوع  في التتار من البداية إلى عين جالوت",
-    "type":"مادة",
-    "author":"د. راغب السرجاني",
-    "publisher":"د. راغب السرجاني",
-    "year":2007,
-    "audio_count":12,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/p.d.f5108/%D9%82%D8%B5%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AA%D8%A7%D8%B1%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9%20..%20%D8%A5%D9%84%D9%89%20%D8%B9%D9%8A%D9%86%20%D8%AC%D8%A7%D9%84%D9%88%D8%AA%20%20p.d.f%20%20%20%20%D9%83%D8%AA%D8%A7%D8%A8%20%205108.pdf",
-    "url":"https://archive.org/download/128kbps_202011",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJqRv0l6Bv3eZFRqko_kaOnjJvsEsLBBJhA&s",
-    "data":
-    [
+    "id": 4,
+    "title": "التتار من البداية إلى عين جالوت",
+    "description": "التتار من البداية إلى عين جالوت",
+    "search": "بحث عن موضوع  في التتار من البداية إلى عين جالوت",
+    "type": "مادة",
+    "author": "د. راغب السرجاني",
+    "publisher": "د. راغب السرجاني",
+    "section": "تاريخ",
+    "year": 2007,
+    "audio_count": 12,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/p.d.f5108/%D9%82%D8%B5%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AA%D8%A7%D8%B1%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9%20..%20%D8%A5%D9%84%D9%89%20%D8%B9%D9%8A%D9%86%20%D8%AC%D8%A7%D9%84%D9%88%D8%AA%20%20p.d.f%20%20%20%20%D9%83%D8%AA%D8%A7%D8%A8%20%205108.pdf",
+    "url": "https://archive.org/download/128kbps_202011",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJqRv0l6Bv3eZFRqko_kaOnjJvsEsLBBJhA&s",
+    "data": [
         {
             "id": 11,
             "name": " 11 - عين_جالوت_في_الميزان",
@@ -22,7 +22,7 @@
         },
         {
             "id": 12,
-            "name": " 12 - بغداد_بين_سقوطين" ,
+            "name": " 12 - بغداد_بين_سقوطين",
             "url": "التاريخ_الكامل_للمغول_الحلقة_12_والاخيرة_بغداد_بين_سقوطين_128kbps.m4a"
         },
         {

@@ -1,20 +1,20 @@
 {
-    "id":1,
-    "title":"مئة المعاني  ",
-    "description":"مئة المعاني والبيان   ",
-    "search":" بحث عن موضوع في كتاب مئة المعاني ",
-    "type":"المادة",
-    "author":" محب الدين بن الشحنة",
-    "publisher":"بشرح  الشيخ العلامة أحمد بن عمر الحازمي",
-    "year":1984,
-    "audio_count":18,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/A0040/A0001.pdf",
-    "url":"https://archive.org/download/0003_20241209",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/13/c/3/0/20ca66b862c300e360d52fe29a260abf.png.webp",
-    "data":
-    [
+    "id": 1,
+    "title": "مئة المعاني  ",
+    "description": "مئة المعاني والبيان   ",
+    "search": " بحث عن موضوع في كتاب مئة المعاني ",
+    "type": "المادة",
+    "author": " محب الدين بن الشحنة",
+    "publisher": "بشرح  الشيخ العلامة أحمد بن عمر الحازمي",
+    "section": "اللغة العربية",
+    "year": 1984,
+    "audio_count": 18,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/A0040/A0001.pdf",
+    "url": "https://archive.org/download/0003_20241209",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/13/c/3/0/20ca66b862c300e360d52fe29a260abf.png.webp",
+    "data": [
         {
             "id": 1,
             "name": "(1)- مئة المعاني والبيان ",
@@ -92,4 +92,3 @@
         }
     ]
 }
-

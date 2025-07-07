@@ -1,20 +1,20 @@
 {
-    "id":2,
-    "title":"المنة2 ",
-    "description":"المنة2 شرح إعتقاد أهل السنة   ",
-    "search":" بحث عن موضوع في كتاب المنة شرح إعتقاد أهل السنة ",
-    "type":"المادة",
-    "author":"  د. ياسر برهامي",
-    "publisher":"بشرح الشيخ د. ياسر برهامي",
-    "year":1984,
-    "audio_count":44,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/AAlexandrina-155628/155628_%D9%81%D8%AA%D8%AD_%D8%A7%D9%84%D9%85%D8%AC%D9%8A%D8%AF_%D8%B4%D8%B1%D8%AD_%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%AA%D9%88%D8%AD%D9%8A%D8%AF.pdf",
-    "url":"https://archive.org/download/mennuh/almenna-2",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/16/6/a/b/1e0f1c40f56ab88ab9e9588901da1dc1.png.webp",
-    "data":
-    [
+    "id": 2,
+    "title": "المنة2 ",
+    "description": "المنة2 شرح إعتقاد أهل السنة   ",
+    "search": " بحث عن موضوع في كتاب المنة شرح إعتقاد أهل السنة ",
+    "type": "المادة",
+    "author": "  د. ياسر برهامي",
+    "publisher": "بشرح الشيخ د. ياسر برهامي",
+    "section": "عقيدة",
+    "year": 1984,
+    "audio_count": 44,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/AAlexandrina-155628/155628_%D9%81%D8%AA%D8%AD_%D8%A7%D9%84%D9%85%D8%AC%D9%8A%D8%AF_%D8%B4%D8%B1%D8%AD_%D9%83%D8%AA%D8%A7%D8%A8_%D8%A7%D9%84%D8%AA%D9%88%D8%AD%D9%8A%D8%AF.pdf",
+    "url": "https://archive.org/download/mennuh/almenna-2",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/16/6/a/b/1e0f1c40f56ab88ab9e9588901da1dc1.png.webp",
+    "data": [
         {
             "id": 1,
             "name": "001 - مقـــدمـــة - الإتباع  ",
@@ -235,6 +235,5 @@
             "name": "044- ترويع المسلم واخافته ",
             "url": "044.mp3"
         }
-
     ]
 }

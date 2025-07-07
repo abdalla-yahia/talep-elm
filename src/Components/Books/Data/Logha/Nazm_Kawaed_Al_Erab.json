@@ -1,20 +1,20 @@
 {
-    "id":1,
-    "title":"نظم قواعد الإعراب  ",
-    "description":"نظم قواعد الإعراب    ",
-    "search":" بحث عن موضوع في كتاب نظم قواعد الإعراب ",
-    "type":"المادة",
-    "author":" الزواوي",
-    "publisher":"بشرح الشيخ محمد بن سعيد الطوق",
-    "year":1984,
-    "audio_count":10,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/zawawi_201803/%D9%86%D8%B8%D9%85%20%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D8%A7%D9%84%D8%A5%D8%B9%D8%B1%D8%A7%D8%A8%20%D9%84%D9%84%D8%B2%D9%88%D8%A7%D9%88%D9%8A.pdf",
-    "url":"https://archive.org/download/drooselmiah-alzwawi",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUISYUVexflUX_BNiPMC-X5m42Yoa48l6hA&s",
-    "data":
-    [
+    "id": 1,
+    "title": "نظم قواعد الإعراب  ",
+    "description": "نظم قواعد الإعراب    ",
+    "search": " بحث عن موضوع في كتاب نظم قواعد الإعراب ",
+    "type": "المادة",
+    "author": " الزواوي",
+    "publisher": "بشرح الشيخ محمد بن سعيد الطوق",
+    "section": "اللغة العربية",
+    "year": 1984,
+    "audio_count": 10,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/zawawi_201803/%D9%86%D8%B8%D9%85%20%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D8%A7%D9%84%D8%A5%D8%B9%D8%B1%D8%A7%D8%A8%20%D9%84%D9%84%D8%B2%D9%88%D8%A7%D9%88%D9%8A.pdf",
+    "url": "https://archive.org/download/drooselmiah-alzwawi",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiUISYUVexflUX_BNiPMC-X5m42Yoa48l6hA&s",
+    "data": [
         {
             "id": 1,
             "name": "نظم قواعد الإعراب للزواوي ١ ",
@@ -67,4 +67,3 @@
         }
     ]
 }
-

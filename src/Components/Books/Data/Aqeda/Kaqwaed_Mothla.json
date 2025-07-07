@@ -1,98 +1,99 @@
 {
-    "id":10,
-    "title":"القواعد المثلي   ",
-    "description":"القواعد المثلي في صفات الله واسمائه الحسنى    ",
-    "search":" بحث عن موضوع في كتاب القواعد المثلي  ",
-    "type":"المادة",
-    "author":"  الشيخ محمد بن صالح العثيمين",
-    "publisher":"بشرح الشيخ عبدالرازق بن عبدالمحسن البدر",
-    "year":1984,
-    "audio_count":16,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/mohamed199230_gmail_02_201602/02%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D8%A7%D9%84%D9%85%D8%AB%D9%84%D9%8A%20%20%D9%80%D9%80%D9%80%20%D8%A7%D8%A8%D9%86%20%D8%B9%D8%AB%D9%8A%D9%85%D9%8A%D9%86.pdf",
-    "url":"https://archive.org/download/badir-kawaid-muthla",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/1/e/8/1/9c7ba583dee81de555574e36d5f5c54f.png.webp",
-    "data":[
+    "id": 10,
+    "title": "القواعد المثلي   ",
+    "description": "القواعد المثلي في صفات الله واسمائه الحسنى    ",
+    "search": " بحث عن موضوع في كتاب القواعد المثلي  ",
+    "type": "المادة",
+    "author": "  الشيخ محمد بن صالح العثيمين",
+    "publisher": "بشرح الشيخ عبدالرازق بن عبدالمحسن البدر",
+    "section": "عقيدة",
+    "year": 1984,
+    "audio_count": 16,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/mohamed199230_gmail_02_201602/02%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D8%A7%D9%84%D9%85%D8%AB%D9%84%D9%8A%20%20%D9%80%D9%80%D9%80%20%D8%A7%D8%A8%D9%86%20%D8%B9%D8%AB%D9%8A%D9%85%D9%8A%D9%86.pdf",
+    "url": "https://archive.org/download/badir-kawaid-muthla",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/1/e/8/1/9c7ba583dee81de555574e36d5f5c54f.png.webp",
+    "data": [
         {
-            "id":1,
-            "name":"مقدمة الشرح",
-            "url":"01.mp3"
+            "id": 1,
+            "name": "مقدمة الشرح",
+            "url": "01.mp3"
         },
         {
-            "id":2,
-            "name":"الدرس الثاني",
-            "url":"02.mp3"
+            "id": 2,
+            "name": "الدرس الثاني",
+            "url": "02.mp3"
         },
         {
-            "id":3,
-            "name":"الدرس الثالث",
-            "url":"03.mp3"
+            "id": 3,
+            "name": "الدرس الثالث",
+            "url": "03.mp3"
         },
         {
-            "id":4,
-            "name":"الدرس الرابع",
-            "url":"04.mp3"
+            "id": 4,
+            "name": "الدرس الرابع",
+            "url": "04.mp3"
         },
         {
-            "id":5,
-            "name":"الدرس الخامس",
-            "url":"05.mp3"
+            "id": 5,
+            "name": "الدرس الخامس",
+            "url": "05.mp3"
         },
         {
-            "id":6,
-            "name":"الدرس السادس",
-            "url":"06.mp3"
+            "id": 6,
+            "name": "الدرس السادس",
+            "url": "06.mp3"
         },
         {
-            "id":7,
-            "name":"الدرس السابع",
-            "url":"07.mp3"
+            "id": 7,
+            "name": "الدرس السابع",
+            "url": "07.mp3"
         },
         {
-            "id":8,
-            "name":"الدرس الثامن",
-            "url":"08.mp3"
+            "id": 8,
+            "name": "الدرس الثامن",
+            "url": "08.mp3"
         },
         {
-            "id":9,
-            "name":"الدرس التاسع",
-            "url":"09.mp3"
+            "id": 9,
+            "name": "الدرس التاسع",
+            "url": "09.mp3"
         },
         {
-            "id":10,
-            "name":"الدرس العاشر",
-            "url":"10.mp3"
+            "id": 10,
+            "name": "الدرس العاشر",
+            "url": "10.mp3"
         },
         {
-            "id":11,
-            "name":"الدرس الحادي عشر",
-            "url":"11.mp3"
+            "id": 11,
+            "name": "الدرس الحادي عشر",
+            "url": "11.mp3"
         },
         {
-            "id":12,
-            "name":"الدرس الثاني عشر",
-            "url":"12.mp3"
+            "id": 12,
+            "name": "الدرس الثاني عشر",
+            "url": "12.mp3"
         },
         {
-            "id":13,
-            "name":"الدرس الثالث عشر",
-            "url":"13.mp3"
+            "id": 13,
+            "name": "الدرس الثالث عشر",
+            "url": "13.mp3"
         },
         {
-            "id":14,
-            "name":"الدرس الرابع عشر",
-            "url":"14.mp3"
+            "id": 14,
+            "name": "الدرس الرابع عشر",
+            "url": "14.mp3"
         },
         {
-            "id":15,
-            "name":"الدرس الخامس عشر",
-            "url":"15.mp3"
+            "id": 15,
+            "name": "الدرس الخامس عشر",
+            "url": "15.mp3"
         },
         {
-            "id":16,
-            "name":"الدرس السادس عشر",
-            "url":"16.mp3"
+            "id": 16,
+            "name": "الدرس السادس عشر",
+            "url": "16.mp3"
         }
     ]
 }

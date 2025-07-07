@@ -1,20 +1,20 @@
 {
-    "id":1,
-    "title":"معيار البدعة  ",
-    "description":"معيار البدعة    ",
-    "search":" بحث عن موضوع في كتاب معيار البدعة ",
-    "type":"المادة",
-    "author":" محمد بن حسين الجيزاني",
-    "publisher":"بشرح الشيخ د. خالد منصور",
-    "year":1984,
-    "audio_count":22,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/20240523_20240523_1045/%D9%85%D8%B9%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B9%D8%A9.pdf",
-    "url":"https://archive.org/download/ana-sal-mansor-bid3ah",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdgmk9yqgmG-loxhdFx_di9qw6AAhbsBrNg&s",
-    "data":
-    [
+    "id": 1,
+    "title": "معيار البدعة  ",
+    "description": "معيار البدعة    ",
+    "search": " بحث عن موضوع في كتاب معيار البدعة ",
+    "type": "المادة",
+    "author": " محمد بن حسين الجيزاني",
+    "publisher": "بشرح الشيخ د. خالد منصور",
+    "section": "اصول البدع",
+    "year": 1984,
+    "audio_count": 22,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/20240523_20240523_1045/%D9%85%D8%B9%D9%8A%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B9%D8%A9.pdf",
+    "url": "https://archive.org/download/ana-sal-mansor-bid3ah",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdgmk9yqgmG-loxhdFx_di9qw6AAhbsBrNg&s",
+    "data": [
         {
             "id": 1,
             "name": "(1)- معيار البدعة ",
@@ -127,4 +127,3 @@
         }
     ]
 }
-

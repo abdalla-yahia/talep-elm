@@ -16,11 +16,11 @@ export default function SideBar({ setBook }: { setBook: (chapter: Chapter) => vo
                         Books?.map((book, index) => {
                             return (
                                 <div key={index} className='w-full'>
-                                    <li onClick={() => setToggle(toggle === book?.id ? 0 : book?.id)} className={` ${toggle !== book?.id ? ' border-1 border-gray-400' : 'border-t border-l border-r border-b-0 border-gray-400 '}  cursor-pointer h-auto flex justify-center text-center  md:justify-start lg:justify-start items-center gap-3 w-full py-2 `} >
+                                    <li onClick={() => setToggle(toggle === book?.id ? 0 : book?.id)} className={` ${toggle !== book?.id ? ' border-1 border-gray-400' : 'border-t border-l border-r border-b-0 border-gray-400 '}  cursor-pointer h-auto flex justify-center text-center  md:justify-start lg:justify-start items-center gap-3 w-full py-2 hover:text-red-700`} >
 
                                         {toggle === book?.id ?
-                                            <icon.FaMinus className=" hidden md:block lg:block" /> :
-                                            <icon.FaPlus className=" hidden md:block lg:block" />
+                                            <icon.FaMinus className=" hidden md:block lg:block text-blue-600" /> :
+                                            <icon.FaBookQuran className=" hidden md:block lg:block" />
                                         }
                                         {book.title}
                                     </li>

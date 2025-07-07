@@ -1,19 +1,20 @@
 {
-    "id":30,
-    "title":"مختصر السيرة النبوية",
-    "description":"مختصر السيرة النبوية",
-    "search":"بحث في السيرة",
-    "type":"موضع السيرة",
-    "author":"موسی بن راشد العازمی",
-    "publisher":"بصوت د / علي بشير أحمد",
-    "year":2022,
-    "audio_count":205,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/siraa_llAzmy/%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D8%B5%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D9%85%D9%88%D8%B3%D9%89%20%D8%B1%D8%A7%D8%B4%D8%AF%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B2%D9%85%D9%8A.pdf",
-    "url":"https://archive.org/download/Mokhtasar__fi_Sirra",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/2/e/6/9/9f20b1e169e690e7494acfd0f884bef1.jpg.webp",
-    "data":[
+    "id": 30,
+    "title": "مختصر السيرة النبوية",
+    "description": "مختصر السيرة النبوية",
+    "search": "بحث في السيرة",
+    "type": "موضع السيرة",
+    "author": "موسی بن راشد العازمی",
+    "publisher": "بصوت د / علي بشير أحمد",
+    "section": "سيرة",
+    "year": 2022,
+    "audio_count": 205,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/siraa_llAzmy/%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D8%B5%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D8%A9%20%D9%85%D9%88%D8%B3%D9%89%20%D8%B1%D8%A7%D8%B4%D8%AF%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B2%D9%85%D9%8A.pdf",
+    "url": "https://archive.org/download/Mokhtasar__fi_Sirra",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/2/e/6/9/9f20b1e169e690e7494acfd0f884bef1.jpg.webp",
+    "data": [
         {
             "id": 1,
             "name": "نسب النبي صلى الله عليه وسلم",
@@ -905,5 +906,4 @@
             "url": "205.mp3"
         }
     ]
-    
 }

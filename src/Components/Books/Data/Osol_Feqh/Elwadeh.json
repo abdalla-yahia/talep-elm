@@ -1,19 +1,20 @@
 {
-    "id":2,
-    "title":"الواضح في أصول الفقه",
-    "description":"الواضح في أصول الفقه للمبتدأين",
-    "search":" بحث عن موضوع في كتاب الواضح ",
-    "type":"المادة",
-    "author":"د. محمد سليمان الأشقر",
-    "publisher":"بشرح الشيخ عبد المنعم الشحات",
-    "year":1984,
-    "audio_count":100,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/20210603_20210603_1739/%D8%A7%D9%84%D9%88%D8%A7%D8%B6%D8%AD%20%D9%81%D9%8A%20%D8%A3%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D9%81%D9%82%D9%87%20%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86.pdf",
-    "url":"https://ia600106.us.archive.org/14/items/alwa6e7",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/1/f/5/e/8c612f6244f5e2dd1204cefc35d60b2c.jpg.webp",
-    "data":[
+    "id": 2,
+    "title": "الواضح في أصول الفقه",
+    "description": "الواضح في أصول الفقه للمبتدأين",
+    "search": " بحث عن موضوع في كتاب الواضح ",
+    "type": "المادة",
+    "author": "د. محمد سليمان الأشقر",
+    "publisher": "بشرح الشيخ عبد المنعم الشحات",
+    "section": "أصول فقه",
+    "year": 1984,
+    "audio_count": 100,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/20210603_20210603_1739/%D8%A7%D9%84%D9%88%D8%A7%D8%B6%D8%AD%20%D9%81%D9%8A%20%D8%A3%D8%B5%D9%88%D9%84%20%D8%A7%D9%84%D9%81%D9%82%D9%87%20%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86.pdf",
+    "url": "https://ia600106.us.archive.org/14/items/alwa6e7",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/1/f/5/e/8c612f6244f5e2dd1204cefc35d60b2c.jpg.webp",
+    "data": [
         {
             "id": 1,
             "name": "001- مقدمة الشرح (الواضح في أصول الفقه). الشيخ.عبد المنعم الشحات ",
@@ -514,6 +515,5 @@
             "name": "التقليد (نهاية الكتاب- الواضح في أصول الفقه)",
             "url": "alwa6e7-100.mp3"
         }
-       
     ]
 }

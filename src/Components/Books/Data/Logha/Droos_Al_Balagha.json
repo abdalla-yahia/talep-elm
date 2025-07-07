@@ -1,20 +1,20 @@
 {
-    "id":1,
-    "title":"دروس البلاغة  ",
-    "description":"دروس البلاغة    ",
-    "search":" بحث عن موضوع في كتاب دروس البلاغة ",
-    "type":"المادة",
-    "author":" حفني ناصف ومجموعة أخرى",
-    "publisher":"بشرح الأستاذ محمود الشافعي",
-    "year":1984,
-    "audio_count":60,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/durus_albilaghih/%D8%AF%D8%B1%D9%88%D8%B3%20%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%BA%D9%87.pdf",
-    "url":"https://archive.org/download/dourous-balagha",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/13/7/1/d/dfff7914c571d885b364bb4cc47cc61f.png.webp",
-    "data":
-    [
+    "id": 1,
+    "title": "دروس البلاغة  ",
+    "description": "دروس البلاغة    ",
+    "search": " بحث عن موضوع في كتاب دروس البلاغة ",
+    "type": "المادة",
+    "author": " حفني ناصف ومجموعة أخرى",
+    "publisher": "بشرح الأستاذ محمود الشافعي",
+    "section": "اللغة العربية",
+    "year": 1984,
+    "audio_count": 60,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/durus_albilaghih/%D8%AF%D8%B1%D9%88%D8%B3%20%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%BA%D9%87.pdf",
+    "url": "https://archive.org/download/dourous-balagha",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/13/7/1/d/dfff7914c571d885b364bb4cc47cc61f.png.webp",
+    "data": [
         {
             "id": 1,
             "name": "(1)- دروس البلاغة  ",
@@ -317,4 +317,3 @@
         }
     ]
 }
-

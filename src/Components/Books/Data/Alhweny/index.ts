@@ -158,7 +158,7 @@ import play_list_154 from  './شرح سلسلة ألفية السيوطي.json';
 export default function Alhweny_Books() {
   return {
     id: 18,
-    title: 'مكتبة الشيخ الحويني',
+    title: "مكتبة الشيخ الحويني",
     description: 'كل خطب الشيخ الحويني في مكتبة واحدة',
     books: [
       play_list_0,

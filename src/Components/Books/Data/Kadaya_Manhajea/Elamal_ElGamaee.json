@@ -1,22 +1,23 @@
 {
-    "id":6,
-    "title":"العمل الجماعي ",
-    "description":"العمل الجماعي   ",
-    "search":" بحث عن موضوع في كتاب العمل الجماعي ",
-    "type":"المادة",
-    "author":"  الشيخ ياسر برهامي",
-    "publisher":"بشرح  المهندس عبدالمنعم الشحات",
-    "year":2000,
-    "audio_count":10,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"",
-    "url":"https://archive.org/download/tubseer-da3e-fee-mushro3yut-3umul-gma3y",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/12/2/a/9/9065b505542a9e622914bd913407409d.png.webp",
-    "data":[
+    "id": 6,
+    "title": "العمل الجماعي ",
+    "description": "العمل الجماعي   ",
+    "search": " بحث عن موضوع في كتاب العمل الجماعي ",
+    "type": "المادة",
+    "author": "  الشيخ ياسر برهامي",
+    "publisher": "بشرح  المهندس عبدالمنعم الشحات",
+    "section": "قضايا فكرية ",
+    "year": 2000,
+    "audio_count": 10,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "",
+    "url": "https://archive.org/download/tubseer-da3e-fee-mushro3yut-3umul-gma3y",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/12/2/a/9/9065b505542a9e622914bd913407409d.png.webp",
+    "data": [
         {
             "id": 1,
-            "name": " أصول و مقدمات" ,
+            "name": " أصول و مقدمات",
             "url": "01.mp3"
         },
         {
@@ -64,7 +65,5 @@
             "name": "مسائل متعلقة بالعمل الجماعي (2)",
             "url": "10.mp3"
         }
-        
-        
     ]
 }

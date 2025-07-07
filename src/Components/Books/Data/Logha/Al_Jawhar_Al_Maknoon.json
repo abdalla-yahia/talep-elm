@@ -1,20 +1,20 @@
 {
-    "id":1,
-    "title":"الجوهر المكنون في البلاغة  ",
-    "description":"الجوهر المكنون في البلاغة والبيان   ",
-    "search":" بحث عن موضوع في كتاب الجوهر المكنون في البلاغة ",
-    "type":"المادة",
-    "author":" عبدالرحمن بن صغير الأخضري",
-    "publisher":"بشرح  الشيخ العلامة أحمد بن عمر الحازمي",
-    "year":1984,
-    "audio_count":49,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/ar102arab181/%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D8%A8%D9%86%20%D8%B5%D8%BA%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A3%D8%AE%D8%B6%D8%B1%D9%8A-%D8%A7%D9%84%D8%AC%D9%88%D9%87%D8%B1%20%D8%A7%D9%84%D9%85%D9%83%D9%86%D9%88%D9%86%20%D9%81%D9%8A%20%D8%B5%D8%AF%D9%81%20%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86.pdf",
-    "url":"https://archive.org/download/0021_20231123",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/18/3/2/7/04c9d11f7e327acd2b8e251de7f7e517.jpg.webp",
-    "data":
-    [
+    "id": 1,
+    "title": "الجوهر المكنون في البلاغة  ",
+    "description": "الجوهر المكنون في البلاغة والبيان   ",
+    "search": " بحث عن موضوع في كتاب الجوهر المكنون في البلاغة ",
+    "type": "المادة",
+    "author": " عبدالرحمن بن صغير الأخضري",
+    "publisher": "بشرح  الشيخ العلامة أحمد بن عمر الحازمي",
+    "section": "اللغة العربية",
+    "year": 1984,
+    "audio_count": 49,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/ar102arab181/%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%20%D8%A8%D9%86%20%D8%B5%D8%BA%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A3%D8%AE%D8%B6%D8%B1%D9%8A-%D8%A7%D9%84%D8%AC%D9%88%D9%87%D8%B1%20%D8%A7%D9%84%D9%85%D9%83%D9%86%D9%88%D9%86%20%D9%81%D9%8A%20%D8%B5%D8%AF%D9%81%20%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%20%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86.pdf",
+    "url": "https://archive.org/download/0021_20231123",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/18/3/2/7/04c9d11f7e327acd2b8e251de7f7e517.jpg.webp",
+    "data": [
         {
             "id": 1,
             "name": "(1)- الجوهر المكنون في البلاغة  ",
@@ -262,4 +262,3 @@
         }
     ]
 }
-

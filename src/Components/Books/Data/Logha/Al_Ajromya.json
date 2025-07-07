@@ -1,50 +1,49 @@
 {
-    "id":1,
-    "title":"الأجرومية  ",
-    "description":"الأجرومية    ",
-    "search":" بحث عن موضوع في كتاب الأجرومية ",
-    "type":"المادة",
-    "author":" أبي عبدالله بن عثمان الصنهاجي",
-    "publisher":"بشرح الشيخ د. خالد منصور",
-    "year":1984,
-    "audio_count":6,
-    "audio_type":"mp4",
-    "sort":"id",
-    "download":"https://archive.org/download/20240212_20240212_1011/%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D9%88%D9%85%D9%8A%D8%A9.pdf",
-    "url":"https://www.youtube.com/embed",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy3Jmx2TzztNX6Rxu56IXMJj_KjqJxSROjiw&s",
-    "data":
-    [
+    "id": 1,
+    "title": "الأجرومية  ",
+    "description": "الأجرومية    ",
+    "search": " بحث عن موضوع في كتاب الأجرومية ",
+    "type": "المادة",
+    "author": " أبي عبدالله بن عثمان الصنهاجي",
+    "publisher": "بشرح الشيخ د. خالد منصور",
+    "section": "اللغة العربية",
+    "year": 1984,
+    "audio_count": 6,
+    "audio_type": "mp4",
+    "sort": "id",
+    "download": "https://archive.org/download/20240212_20240212_1011/%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D9%88%D9%85%D9%8A%D8%A9.pdf",
+    "url": "https://www.youtube.com/embed",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy3Jmx2TzztNX6Rxu56IXMJj_KjqJxSROjiw&s",
+    "data": [
         {
             "id": 1,
-            "name": "\u0634\u0631\u062d \u0627\u0644\u0627\u062c\u0631\u0648\u0645\u064a\u0629 01 \u0644\u0641\u0636\u064a\u0644\u0629 \u0627\u0644\u0634\u064a\u062e \u062e\u0627\u0644\u062f \u0645\u0646\u0635\u0648\u0631",
+            "name": "شرح الاجرومية 01 لفضيلة الشيخ خالد منصور",
             "url": "fwZDsSSEm8Y"
         },
         {
             "id": 2,
-            "name": "\u0634\u0631\u062d \u0627\u0644\u0627\u062c\u0631\u0648\u0645\u064a\u0629 02 \u0644\u0641\u0636\u064a\u0644\u0629 \u0627\u0644\u0634\u064a\u062e \u062e\u0627\u0644\u062f \u0645\u0646\u0635\u0648\u0631",
+            "name": "شرح الاجرومية 02 لفضيلة الشيخ خالد منصور",
             "url": "rL0OzpwLEl0"
         },
         {
             "id": 3,
-            "name": "\u0634\u0631\u062d \u0627\u0644\u0627\u062c\u0631\u0648\u0645\u064a\u0629 03 \u0644\u0641\u0636\u064a\u0644\u0629 \u0627\u0644\u0634\u064a\u062e \u062e\u0627\u0644\u062f \u0645\u0646\u0635\u0648\u0631",
+            "name": "شرح الاجرومية 03 لفضيلة الشيخ خالد منصور",
             "url": "pqZCrZRPuHY"
         },
         {
             "id": 4,
-            "name": "\u0634\u0631\u062d \u0627\u0644\u0627\u062c\u0631\u0648\u0645\u064a\u0629 04 \u0644\u0641\u0636\u064a\u0644\u0629 \u0627\u0644\u0634\u064a\u062e \u062e\u0627\u0644\u062f \u0645\u0646\u0635\u0648\u0631",
+            "name": "شرح الاجرومية 04 لفضيلة الشيخ خالد منصور",
             "url": "UeP42RJQnRo"
         },
         {
             "id": 5,
-            "name": "\u0634\u0631\u062d \u0627\u0644\u0627\u062c\u0631\u0648\u0645\u064a\u0629 05 \u0644\u0641\u0636\u064a\u0644\u0629 \u0627\u0644\u0634\u064a\u062e \u062e\u0627\u0644\u062f \u0645\u0646\u0635\u0648\u0631",
+            "name": "شرح الاجرومية 05 لفضيلة الشيخ خالد منصور",
             "url": "wLibKwPuVjA"
         },
         {
             "id": 6,
-            "name": "\u0634\u0631\u062d \u0627\u0644\u0627\u062c\u0631\u0648\u0645\u064a\u0629 06 \u0644\u0641\u0636\u064a\u0644\u0629 \u0627\u0644\u0634\u064a\u062e \u062e\u0627\u0644\u062f \u0645\u0646\u0635\u0648\u0631",
+            "name": "شرح الاجرومية 06 لفضيلة الشيخ خالد منصور",
             "url": "rMtbbPKYsbo"
         }
     ]
 }
-

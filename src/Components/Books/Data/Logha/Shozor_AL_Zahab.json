@@ -1,20 +1,20 @@
 {
-    "id":1,
-    "title":"شذور الذهب  ",
-    "description":"شذور الذهب في معرفة كلام العرب   ",
-    "search":" بحث عن موضوع في كتاب شذور الذهب ",
-    "type":"المادة",
-    "author":" الإمام ابن هشام الأنصاري",
-    "publisher":"بشرح الشيخ د. فهد البحري",
-    "year":1984,
-    "audio_count":41,
-    "audio_type":"mp3",
-    "sort":"id",
-    "download":"https://archive.org/download/sharh_shothor_althahab/sharh_shothor_althahab_text.pdf",
-    "url":"https://archive.org/download/shozoor_bahri",
-    "image":"https://www.noor-book.com/publice/covers_cache_webp/18/8/9/2/258e332cac892b998119d40400f9d560.jpg.webp",
-    "data":
-    [
+    "id": 1,
+    "title": "شذور الذهب  ",
+    "description": "شذور الذهب في معرفة كلام العرب   ",
+    "search": " بحث عن موضوع في كتاب شذور الذهب ",
+    "type": "المادة",
+    "author": " الإمام ابن هشام الأنصاري",
+    "publisher": "بشرح الشيخ د. فهد البحري",
+    "section": "اللغة العربية",
+    "year": 1984,
+    "audio_count": 41,
+    "audio_type": "mp3",
+    "sort": "id",
+    "download": "https://archive.org/download/sharh_shothor_althahab/sharh_shothor_althahab_text.pdf",
+    "url": "https://archive.org/download/shozoor_bahri",
+    "image": "https://www.noor-book.com/publice/covers_cache_webp/18/8/9/2/258e332cac892b998119d40400f9d560.jpg.webp",
+    "data": [
         {
             "id": 1,
             "name": "١. مدخل الكتاب شذور الذهب و تعريف الكلمة - شرح شذور الذهب لابن هشام - الشيخ د. فهد البحري اليمني",
@@ -222,4 +222,3 @@
         }
     ]
 }
-
