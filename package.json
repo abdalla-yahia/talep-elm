@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "node generate-sitemap-index.js",
     "start": "next start",
     "vercel-build": "prisma generate && prisma migrate deploy && next build",
     "netlify-build": "npm install --force && prisma generate && prisma migrate deploy && next build",
@@ -24,6 +24,7 @@
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.30.1",
     "next": "15.0.2",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.16",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-bootstrap": "^2.10.5",

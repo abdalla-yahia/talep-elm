@@ -7,7 +7,9 @@ import SelectQarea from "./SelectQarea";
 import Data from './Data/Quran-hafs.json';
 import Type from './Data/Quran.json';
 import VolumeSpans from "./VolumeSpans";
+import QareeAndSrs from './Data/QareeAndSrs.json';
 import { Datainterface } from "@/Interfaces/InterFaces";
+import {useRouter, useSearchParams} from 'next/navigation';
 
 export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setShaikhSound, setAyaNumber, audioRef1, audioRef2, soraData }:
   {
@@ -34,6 +36,37 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
   const [mute, setMute] = useState(false);
   const [Equalizer, setEqualizer] = useState<JSX.Element[]>([]);
 
+
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  // Set Url params 
+  const ChangeUrlWithoutReload =(qaree:string, sora:string)=>{
+    router.replace(`/moshaf?sora=${encodeURIComponent(sora)}&qaree=${encodeURIComponent(qaree)}`);
+  }
+  
+  // Set Sora Number From Params
+  useEffect(() => {
+    const qareeFromUrl = searchParams.get('qaree');
+    const soraFromUrl = searchParams.get('sora');
+    if (qareeFromUrl) {
+      setNameShaikh(decodeURIComponent(qareeFromUrl));
+      const shaikhFound = QareeAndSrs.find((item) => item.qaree.trim() == decodeURIComponent(qareeFromUrl));
+      if(shaikhFound) {
+        setShaikhSound(shaikhFound.title);
+      }
+      setTimeout(() => {
+        setPlay(true);
+      }, 5000);
+    }
+    if (soraFromUrl) {
+      const soraIndex = NameSoras.indexOf(decodeURIComponent(soraFromUrl));
+      if (soraIndex !== -1) {
+        setSoraNumber(soraIndex + 1);
+        setNameSora(soraFromUrl);
+      }
+    }
+  },[nameShaikh, nameSora, NameSoras, searchParams,SoraNumber]);
+  // Play Audio Handeller
   const PlayAudioHandeller = () => {
     if (!audioRef1?.current.paused || !audioRef2?.current.paused) {
       audioRef1?.current.pause()
@@ -46,7 +79,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
       setMute(true)
     }
   }
-
+  // Search Handeller
   useEffect(() => {
     if (search?.length > 3) {
       setResultSearch(Data?.filter(el => el.aya_text_emlaey.includes(`${search}`)));
@@ -54,7 +87,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
     if (search.length > 0)
       setSearchToggle(true)
   }, [search])
-
+  // Mute Handeller 
   const MuteHandeller = () => {
     if (audioRef1.current.muted !== undefined && audioRef1.current.muted !== false) {
       audioRef1.current.muted = true;
@@ -62,6 +95,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
     }
     setMute(!mute)
   }
+  // UnMute Handeller
   const UnMuteHandeller = () => {
     if (audioRef1.current.muted === true && audioRef2.current.muted === true) {
       audioRef1.current.muted = false;
@@ -69,6 +103,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
     }
     setMute(!mute)
   }
+  // Set Equalizer 
   useEffect(() => {
     for (let i = 0; i < 20; i++) {
       setEqualizer(prev => [
@@ -87,14 +122,20 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
     }
 
   }, []);
+  // set Sora Information
   useEffect(() => {
     setNameSora(soraData?.[0]?.sura_name_ar);
     setTypeSora((Type as [{ type: string }])[+SoraNumber + 1]?.type) as unknown as string;
     setLengthAyat(soraData?.length);
   }, [soraData, SoraNumber]);
-  useEffect(() => {
-    document.title = `سورة  ${nameSora} - الشيخ ${nameShaikh}`
-  }, [nameSora, nameShaikh])
+  // set Shaikh Sound
+    useEffect(() => {
+    document.title = `سورة ${nameSora} بصوت القارىء ${nameShaikh}`;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', `سورة ${nameSora} للقارىء الشيخ ${nameShaikh} عدد أياتها ${LengthAyat} أية - التنزيل ${TypeSora}`);
+    }
+  }, [nameSora, nameShaikh, LengthAyat, TypeSora]);
 
   return (
     <>
@@ -182,6 +223,8 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
                   React.SetStateAction<string | null>
                 >
               }
+              ChangeUrlWithoutReload={ChangeUrlWithoutReload}
+              nameSora={nameSora}
               setMute={setMute}
               setPlay={setPlay}
             />
@@ -243,6 +286,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
           {" "}
           {nameSora || "اختر السورة"}
           <icon.MdKeyboardDoubleArrowDown className=" self-end" />
+        {/*Sora Change */}
           {soraToggle && (
             <div className="flex flex-col justify-start items-start px-2 absolute top-[100%] z-40 left-0 w-[80%] max-h-[400px] overflow-y-scroll scrollbar-hide bg-background_color text-text_color">
               {NameSoras?.length > 0 &&
@@ -254,6 +298,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
                       setNameSora(item);
                       setSoraNumber(index + 1);
                       setAyaNumber(1);
+                      ChangeUrlWithoutReload(nameShaikh, item);
                     }}
                     className="hover:bg-second_background_color hover:text-primary_color px-2 py-1 rounded w-full text-end"
                   >
