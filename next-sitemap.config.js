@@ -239,7 +239,7 @@ const radios = [
 
 
 module.exports = {
-  siteUrl: 'https://https://talep-elm.vercel.app/',
+  siteUrl: 'https://talep-elm.vercel.app/',
   generateRobotsTxt: true,
   // generateIndexSitemap: true,
   generateIndexSitemap: false,
