@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://https://talep-elm.vercel.app/
+Host: https://talep-elm.vercel.app/
 
 # Sitemaps
-Sitemap: https://https://talep-elm.vercel.app/sitemap.xml
+Sitemap: https://talep-elm.vercel.app/sitemap.xml
