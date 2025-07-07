@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const date = new Date().toISOString().split('T')[0]; // التاريخ فقط بدون الوقت
+const date = new Date().toISOString(); 
 
 const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex 

@@ -3077,7 +3077,7 @@ module.exports = {
       quraanSuras.forEach((sora) => {
         dynamicUrls.push({
           loc: `/moshaf?القارىء=${encodeURIComponent(qaree)}&السورة=${encodeURIComponent(sora)}`,
-          lastmod: new Date().toISOString().split('T')[0],
+          lastmod: new Date().toISOString(),
           changefreq: 'weekly',
           priority: 0.7,
         });
@@ -3088,7 +3088,7 @@ module.exports = {
     radios.forEach((radio) => {
       dynamicUrls.push({
         loc: `/?radio=${encodeURIComponent(radio)}`,
-        lastmod: new Date().toISOString().split('T')[0],
+        lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: 0.7,
       });
@@ -3099,7 +3099,7 @@ module.exports = {
       khotap[section].forEach((khotb) =>
         dynamicUrls.push({
           loc: `/booksound?القسم=${encodeURIComponent(section)}&كتاب=${encodeURIComponent(khotb.title)}&المؤلف=${encodeURIComponent(khotb.author)}&بشرح=${encodeURIComponent(khotb.publisher)}`,
-          lastmod: new Date().toISOString().split('T')[0],
+          lastmod: new Date().toISOString(),
           changefreq: 'weekly',
           priority: 0.7,
         })
@@ -3109,7 +3109,7 @@ module.exports = {
 
     return [...urls.map((url) => ({
       loc: url,
-      lastmod: new Date().toISOString().split('T')[0],
+      lastmod: new Date().toISOString(),
       changefreq: url === '/' ? 'daily' : 'weekly',
       priority: url === '/' ? 1.0 : 0.7,
     })), ...dynamicUrls];
