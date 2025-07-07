@@ -1,12 +1,40 @@
 'use client'
 import SideBar from "@/Components/Books/SideBar";
 import BookContainer from "@/Components/Books/BookContainer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Chapter } from "@/Interfaces/InterFaces";
+import { useSearchParams } from "next/navigation";
+import  BooksData from '@/Components/Books/Data';
 
 
 export default function UserDAshboardLayout() {
-  const [Book, setBook] = useState({})
+      const searchParams = useSearchParams();
+      
+
+    const [Book, setBook] = useState({})
+
+    useEffect(() => {
+      const bookTitle = searchParams.get("كتاب");
+      const LessonName = searchParams.get("الدرس");
+      const AuthorName = searchParams.get("المؤلف");
+      const SheikhName = searchParams.get("بشرح");
+      const section = searchParams.get("القسم");
+
+      const Books = BooksData();
+      if (bookTitle && LessonName && AuthorName && SheikhName) {
+        const selectedBook = Books.find(book => book.title.trim() === decodeURIComponent(section as string)?.trim());
+        if (selectedBook) {
+          const selectedChapter = selectedBook.books.find(chapter => chapter.title === bookTitle && chapter.author === AuthorName && chapter.publisher === SheikhName );
+          if (selectedChapter) {
+            setBook(selectedChapter as Chapter);
+          } else {
+            setBook({});
+          }
+        } else {
+          setBook({});
+        }
+      }
+    }, [searchParams]);
   return (
         <section className="flex h-full container justify-start items-start gap-1">
           <div className="h-full w-2/6 md:w-1/6 lg:w-1/6">

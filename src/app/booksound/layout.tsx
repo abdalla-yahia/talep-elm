@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "Salaf Logo",
       },
     ],
-    url: "https://talep-elm.vercel.app/booksound",
+    url: "https://talep-elm.vercel.app/booksound?",
     siteName: "المكتبة العلمية لكوكبة من العلماء والمشايخ ",
     type: "website",
     locale: "ar_AR",
