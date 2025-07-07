@@ -9,7 +9,7 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
           const router = useRouter();
       const searchParams = useSearchParams();
     
-      const changeUrlWithoutReload = (book: {title:string,publisher:string,author:string,section:string},sound:{name:string}) => {
+      const changeUrlWithoutReload = (book: {title:string,publisher:string,author:string,section:string}) => {
         router.replace(`?كتاب=${encodeURIComponent(book.title)}&المؤلف=${encodeURIComponent(book.author)}&بشرح=${encodeURIComponent(book.publisher)}&القسم=${encodeURIComponent(book.section)}`);
       }
       const bookTitle = searchParams.get("كتاب");
@@ -42,15 +42,7 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
     if (decodeURIComponent(SheikhName as string) !== null && decodeURIComponent(SheikhName as string) !== undefined) {
         SetSahapyName(decodeURIComponent(SheikhName as string));
     }
-    if (Book?.audio_type === 'mp3' && Book?.data.length > 0) {
-        setAudioUrl(`${Book?.url}/${Book?.data[0].url}`);
-        SetType(Book?.type ?? '');
-        SetBookTitle(Book?.title ?? '');
-        setplay(true);
-        SetID(Book?.data[0].id as number);
-        SetSahapyName(Book?.data[0].name);
-        changeUrlWithoutReload(Book , Book.data[0]);
-    }
+
       },[bookTitle,AuthorName,SheikhName, searchParams]);
     return (
         <>
@@ -83,8 +75,8 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
                                     SetBookTitle(Book?.title); setplay(true); 
                                     SetID(sound.id as number); 
                                     SetSahapyName(sound.name);
-                                    changeUrlWithoutReload(Book ,sound );
-                                     }} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-second_background_color hover:text-accent_color bg-background_color rounded text-text_color`}>
+                                    changeUrlWithoutReload(Book);
+                                    }} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-second_background_color hover:text-accent_color bg-background_color rounded text-text_color`}>
                                     {Book?.id === 3 ?
                                         <h1 className='line-clamp-1 text-text_color'>{`( ${sound.id} ) - ${sound.name}`}</h1> :
                                         <h1 className='line-clamp-1 text-text_color'>{sound.name}
