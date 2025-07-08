@@ -16,8 +16,7 @@ export default function RadioQuran() {
     const [SearchText, SetSearchText] = useState('');
     const categories = [...new Set(Stations.map((el) => el.category))].sort((a, b) => a > b ? 1 : -1);
     const refAudio = useRef<HTMLAudioElement>() as unknown as { current: { muted: boolean | undefined, volume: number, play: () => void, pause: () => void } };
-    const buttonRef = useRef<HTMLDivElement>(null);
-    const listRef = useRef<HTMLDivElement>(null);
+
 
     const router = useRouter();
     const searchParams = useSearchParams();
@@ -94,10 +93,9 @@ export default function RadioQuran() {
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
+            const target = e.target as HTMLElement
             if (
-                toggle &&
-                buttonRef.current && !buttonRef.current.contains(e.target as Node) &&
-                listRef.current && !listRef.current.contains(e.target as Node)
+                toggle && !target.closest('.selectRadio')
             ) {
                 setToggle(false);
             }
@@ -133,7 +131,7 @@ export default function RadioQuran() {
                         <span className="text-lg cursor-pointer font-bold text-primary_color">{RadioName || 'اختر الإذاعة'}</span>
                         <icon.MdKeyboardDoubleArrowDown />
                     </span>
-                    {toggle && <div className='bg-second_background_color rounded-md absolute left-0 top-[100%] w-[100%] z-40 max-h-[400px] scrollbar-hide overflow-y-scroll text-accent_color flex justify-start items-start flex-col'>
+                    {toggle && <div className='bg-secondary_color selectRadio rounded-md absolute left-0 top-[100%] w-[100%] z-40 max-h-[400px] scrollbar-hide overflow-y-scroll text-accent_color flex justify-start items-start flex-col'>
                          {
                             Radios?.length > 0 && SearchText === '' ?
                                 (

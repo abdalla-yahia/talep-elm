@@ -9,7 +9,8 @@ export default function SelectQarea({setShaikhToggle,setNameShaikh,setShaikhSoun
     ChangeUrlWithoutReload:(qaree:string , sora:string)=>void,
     nameSora:string
   }
-) {
+) 
+{
   return (
         <>
        

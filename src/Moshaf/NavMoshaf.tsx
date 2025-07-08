@@ -136,7 +136,34 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
       metaDescription.setAttribute('content', `سورة ${nameSora} للقارىء الشيخ ${nameShaikh} عدد أياتها ${LengthAyat} أية - التنزيل ${TypeSora}`);
     }
   }, [nameSora, nameShaikh, LengthAyat, TypeSora]);
-
+  // Close Select sora Toggle on Click Outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.selectSora') && soraToggle == true) {
+        setSoraToggle(false);
+        setShaikhToggle(false);
+      }
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [soraToggle]);
+    // Close Select Shaikh Toggle on Click Outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.selectShaikh') && shaikhToggle == true) {
+        setSoraToggle(false);
+        setShaikhToggle(false);
+      }
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [shaikhToggle]);
   return (
     <>
       <nav className="text-gray-700 fixed top-0  left-0 z-30 w-full flex-wrap md:flex-nowrap lg:flex-nowrap flex justify-evenly md:justify-between lg:justify-between items-end gap-1 bg-second_background_color shadow py-3 px-2">
@@ -208,7 +235,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
         </div>
         {/*Select Name Of Shaikh */}
         <div
-          className=" w-1/3 md:w-[15%] lg:w-[15%]  relative flex justify-evenly cursor-pointer text-sm rounded px-2 py-1 bg-gray-300"
+          className="selectShaikh w-1/3 md:w-[15%] lg:w-[15%]  relative flex justify-evenly cursor-pointer text-sm rounded px-2 py-1 bg-gray-300"
           onClick={() => setShaikhToggle(!shaikhToggle)}
         >
           {" "}
@@ -288,7 +315,7 @@ export default function NafMoshaf({ NameSoras, SoraNumber, setSoraNumber, setSha
           <icon.MdKeyboardDoubleArrowDown className=" self-end" />
         {/*Sora Change */}
           {soraToggle && (
-            <div className="flex flex-col justify-start items-start px-2 absolute top-[100%] z-40 left-0 w-[80%] max-h-[400px] overflow-y-scroll scrollbar-hide bg-background_color text-text_color">
+            <div className="flex selectSora flex-col justify-start items-start px-2 absolute top-[100%] z-40 left-0 w-[80%] max-h-[400px] overflow-y-scroll scrollbar-hide bg-background_color text-text_color">
               {NameSoras?.length > 0 &&
                 NameSoras.map((item, index) => (
                   <span

@@ -46,7 +46,7 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
       },[bookTitle,AuthorName,SheikhName, searchParams]);
     return (
         <>
-            <div className='w-full flex flex-col justify-center items-center'>
+            <div className='w-full flex flex-col justify-center items-center '>
                 <div className='w-full flex justify-center items-center md:w-[70%] lg:w-[50%]'>
                     {
                         Book?.audio_type !== 'mp3' && audioUrl !== undefined &&
@@ -66,17 +66,16 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
             <div className={`w-full flex flex-wrap  justify-evenly items-start mt-3 gap-1 h-[200vh] overflow-y-scroll scrollbar-hide`}>
                 {
                     (Search === '' || Search === null) ?
-
                         (Book?.data?.sort((a, b) => a[SORT] > b[SORT] ? 1 : -1).map((sound) => {
                             return (
-                                <div title={`${sound.name}`} style={{ backgroundColor: `${ID === sound.id ? 'var(--primary-color)' : ''}`, color: `${ID === sound.id ? 'var(--accent-color)' : ''}` }} onClick={() => { 
+                                <div title={`${sound.name}`} style={{ backgroundColor: `${ID === sound.id ? 'var(--accent-color)' : ''}`, color: `${ID === sound.id ? 'var(--background-color)' : ''}` }} onClick={() => { 
                                     setAudioUrl(`${Book?.url}/${sound?.url}`);
                                     setdownloadUrl(sound?.url);SetType(Book?.type); 
                                     SetBookTitle(Book?.title); setplay(true); 
                                     SetID(sound.id as number); 
                                     SetSahapyName(sound.name);
                                     changeUrlWithoutReload(Book);
-                                    }} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-second_background_color hover:text-accent_color bg-background_color rounded text-text_color`}>
+                                    }} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-second_background_color  bg-background_color rounded text-text_color`}>
                                     {Book?.id === 3 ?
                                         <h1 className='line-clamp-1 text-text_color'>{`( ${sound.id} ) - ${sound.name}`}</h1> :
                                         <h1 className='line-clamp-1 text-text_color'>{sound.name}
