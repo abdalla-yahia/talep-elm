@@ -5,7 +5,7 @@ import Type from "./Data/Quran.json";
 import Tafseer from './Data/tafseerMouaser.json'
 import style from './style.module.css';
 import { Amiri } from 'next/font/google';
-import * as icon from '@/Components/Icons/icons'
+// import * as icon from '@/Components/Icons/icons'
 import { Datainterface, TafseerInterface } from '@/Interfaces/InterFaces';
 const amiri = Amiri({
   subsets: ["latin"],
@@ -76,7 +76,7 @@ export default function SoraPage({ setNameSoras, setSoraNumber, setClickedAya, S
       <div className={`${amiri.className} container w-full `}>
         <div className="row">
           <div className="col-md-12 relative">
-            <div className={style.next_prev_sora}>
+            {/* <div className={style.next_prev_sora}>
               <icon.MdKeyboardDoubleArrowRight title='السورة السابقة' onClick={() => {
                 if (SoraNumber as unknown as number !== 1) {
                   setSoraNumber(--SoraNumber as number);
@@ -89,7 +89,7 @@ export default function SoraPage({ setNameSoras, setSoraNumber, setClickedAya, S
                   setAyaNumber(1);
                 }
               }} className={`${style.next_prev} ${SoraNumber as unknown as number >= 114 ? style.visability_hidden : 'visible'}`} />
-            </div>
+            </div> */}
             <div className={`${style.soraPage} text-center w-full h-fit`}>
               {/*Set Pasmala And Header Of Sora */}
               <div className={`${style.passmalla} hidden text-center md:flex lg:flex justify-center items-center `}>

@@ -11,7 +11,7 @@ export default function HomePage() {
   
   return (
     
-      <section className="overflow-hidden h-full flex justify-center items-center flex-col">
+      <section className="container overflow-hidden h-full flex justify-center items-center flex-col">
         <div className=" w-[120%] relative -left-[6%]">
           <div className="col-md-12">
             <Newsbar />

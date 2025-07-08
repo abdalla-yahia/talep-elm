@@ -134,9 +134,9 @@ export default function RootLayout({
       <body suppressHydrationWarning className='bg-second_background_color dark:bg-black text-text_color'>
         <StoreProvider>
           <Header />
-          <main className={`${amiri.className} container min-h-fit  select-none`}>
+          <div className={`${amiri.className}  min-h-fit  select-none`}>
             {children}
-            </main>
+            </div>
           <Footer />
         </StoreProvider>
         <ToastContainer />
