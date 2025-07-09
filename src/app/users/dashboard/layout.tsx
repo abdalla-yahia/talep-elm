@@ -6,8 +6,8 @@ import Sidebar from "@/Components/DashvoardSideBar/Sidebar";
 
 
 export const metadata: Metadata = {
-  title: " الدورات العلمية  ",
-  description: " الدورات العلمية لموقع طالب علم شرعي تهدف لإخراج جيل جديد على الكتاب والسنة بدون إفراط أو تفريط",
+  title: " الموقع الرسمي لطالب العلم الشرعي على منهج الكتاب والسُنة  ",
+  description: " الموقع الرسمي لطالب العلم الشرعي على منهج الكتاب والسُنة لموقع طالب علم شرعي تهدف لإخراج جيل جديد على الكتاب والسنة بدون إفراط أو تفريط",
 };
 
 export default function UserDAshboardLayout({
