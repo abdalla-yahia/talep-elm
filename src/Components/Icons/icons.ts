@@ -2,7 +2,7 @@ import { MdPlayLesson,MdAddTask,MdOutlineGroupAdd,MdTransferWithinAStation,MdKey
 import { PiExamThin,PiStudentDuotone,PiArticleNyTimesBold,PiSubtitlesFill } from "react-icons/pi";
 import { FcGraduationCap,FcManager,FcTreeStructure } from "react-icons/fc";
 import { ImProfile } from "react-icons/im";
-import { FaBookQuran,FaPeopleGroup,FaFolderTree,FaXmark,FaCloudSunRain,FaXTwitter,FaPlus,FaMinus,FaDownload } from "react-icons/fa6";
+import { FaBookQuran,FaPeopleGroup,FaFolderTree,FaXmark,FaCloudSunRain,FaXTwitter,FaPlus,FaMinus,FaDownload,FaSquareWhatsapp } from "react-icons/fa6";
 import { GiNewspaper,GiTeacher } from "react-icons/gi";
 import { GrDocumentTest,GrUserAdmin } from "react-icons/gr";
 import { SiLeaderprice } from "react-icons/si";
@@ -83,5 +83,6 @@ export {
     SiAudiobookshelf,
     LuFileAudio,
     RiFolderVideoFill,
-    FaSoundcloud
+    FaSoundcloud,
+    FaSquareWhatsapp
 }

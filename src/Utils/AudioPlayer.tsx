@@ -177,7 +177,7 @@ export default function AudioPlayer({ Book, audioUrl, BookTitle, setAudioUrl, pl
     return (
         <>
             {/*Player Audio Box */}
-            <div className="fixed bottom-0 left-0 w-full flex flex-col justify-center items-center rounded h-fit px-2 py-1 bg-background_color shadow">
+            <div className="fixed z-50 bottom-0 left-0 w-full flex flex-col justify-center items-center rounded h-fit px-2 py-1 bg-background_color shadow">
                 {/* Progress Bar */}
                 <div onClick={(e) => handleProgress(e)} className={`${styleProgress.progressbar}`}>
                     <input type="range" min="0" max="100" value={progress || 0} onChange={(e) => SetProgress(Number(e.target.value))} className='w-full text-accent_color rotate-180 h-1 relative ' />
