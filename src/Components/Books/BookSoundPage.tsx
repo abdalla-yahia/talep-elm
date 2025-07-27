@@ -47,13 +47,13 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
     return (
         <>
             <div className='w-full flex flex-col justify-center items-center '>
-                <div className='w-full flex justify-center items-center md:w-[70%] lg:w-[50%]'>
+                <div className='w-full flex justify-center items-center md:w-[90%] lg:w-[80%]'>
                     {
                         Book?.audio_type !== 'mp3' && audioUrl !== undefined &&
                         (
                             <div className='w-full my-5 h-[450px] flex flex-col justify-center items-center gap-2'>
                         <iframe className='bottom-0 left-6 rounded-md' width='100%' height='100%' src={`${audioUrl}?autoplay=1&loop=1`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                        <Link className='w-[50%] text-center text-blue-700 bg-slate-400 rounded-md p-2' href={`https://www.ssyoutube.com/watch?v=${downloadUrl}`}>
+                        <Link className='w-[40%] text-center text-gray-700 bg-blue-400 rounded-md p-2' href={`https://www.ssyoutube.com/watch?v=${downloadUrl}`}>
                         تحميل الفيديو
                         </Link>
                             </div>
@@ -63,7 +63,7 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
                 </div>
                 <input onChange={(e) => SetSearch(e.target.value)} type="search" name="" id="" className='w-full rounded outline-none border-none my-2 p-1 text-gray-900' placeholder={`${Book?.search}....`} />
             </div>
-            <div className={`w-full flex flex-wrap  justify-evenly items-start mt-1 gap-1 h-[100vh] overflow-y-scroll scrollbar-hide`}>
+            <div className={`w-full flex flex-wrap  justify-between items-start mt-1 gap-1 h-[100vh] overflow-y-scroll scrollbar-hide`}>
                 {
                     (Search === '' || Search === null) ?
                         (Book?.data?.sort((a, b) => a[SORT] > b[SORT] ? 1 : -1).map((sound) => {
