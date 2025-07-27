@@ -1,14 +1,15 @@
 import BooksContainer from "./bookContainer";
 
 
-export const generateMetadata = async ({,searchParams}:
-  Promise<{searchParams: string[]}>) =>{
+export const generateMetadata = async ({params,searchParams}:
+  Promise<{params: string, searchParams: string[]}>) =>{
+    const id = await params;
   // Extracting search parameters
     const {كتاب,المؤلف, بشرح} = await searchParams
   const title =  `كتاب ${كتاب} للشيخ ${المؤلف} بشرح ${بشرح}` || " المكتبة العلمية لكوكبة من العلماء والمشايخ ";
   return{
   title:title,
-  description: " المكتبة العلمية لكوكبة من العلماء والمشايخ  , تحتوي على المنهج العلمي لكل طالب علم يسعى إلى الإرتقاء في  سلم طلب العلم الشرعي وفق منهج علمي على الكتاب والسنة",
+  description:id + " المكتبة العلمية لكوكبة من العلماء والمشايخ  , تحتوي على المنهج العلمي لكل طالب علم يسعى إلى الإرتقاء في  سلم طلب العلم الشرعي وفق منهج علمي على الكتاب والسنة",
   openGraph: {
     title: " المكتبة العلمية لكوكبة من العلماء والمشايخ ",
     description: " المكتبة العلمية لكوكبة من العلماء والمشايخ  , تحتوي على المنهج العلمي لكل طالب علم يسعى إلى الإرتقاء في  سلم طلب العلم الشرعي وفق منهج علمي على الكتاب والسنة",
