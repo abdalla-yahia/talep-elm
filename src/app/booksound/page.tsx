@@ -1,8 +1,9 @@
 import BooksContainer from "./bookContainer";
 
 
-export const generateMetadata = async ({params,searchParams}:
-  Promise<{params: string, searchParams: string[]}>) =>{
+export const generateMetadata = async ({,searchParams}:
+  Promise<{searchParams: string[]}>) =>{
+  // Extracting search parameters
     const {كتاب,المؤلف, بشرح} = await searchParams
   const title =  `كتاب ${كتاب} للشيخ ${المؤلف} بشرح ${بشرح}` || " المكتبة العلمية لكوكبة من العلماء والمشايخ ";
   return{

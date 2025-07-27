@@ -5,7 +5,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <sitemap>
     <loc>https://talep-elm.vercel.app/sitemap-0.xml</loc>
-    <lastmod>2025-07-07T19:52:24.535Z</lastmod>
+    <lastmod>2025-07-27T15:33:59.983Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </sitemap>
