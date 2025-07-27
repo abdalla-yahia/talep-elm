@@ -46,8 +46,8 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
       },[bookTitle,AuthorName,SheikhName, searchParams]);
     return (
         <>
-            <div className='w-full flex flex-col justify-center items-center relative '>
-                <div className={`w-full flex justify-center items-center ${Book?.audio_type !== 'mp3' && audioUrl !== undefined && 'h-[300px]'} md:w-[90%] lg:w-[80%]`}>
+            <div className='w-full flex flex-col justify-center items-center '>
+                <div className='w-full flex justify-center items-center md:w-[70%] lg:w-[50%]'>
                     {
                         Book?.audio_type !== 'mp3' && audioUrl !== undefined &&
                         (
