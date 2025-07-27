@@ -26,7 +26,7 @@ export default function BookInfo({ Book }: { Book: Chapter }) {
                     <h2>المؤلف :
                         <span className="text-accent_color">{Book?.author}</span>
                     </h2>
-                    <h2>الناشر :
+                    <h2>الشارح :
                         <span className="text-accent_color">{Book?.publisher}</span>
                     </h2>
                 </div>

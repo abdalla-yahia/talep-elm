@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     "منهج أهل الفقه",
     "منهج أهل العقيدة",
     "شرح كتاب ",
-    "بشرح الشيخ ",
+    "الشيخ",
     "بشرح الدكتور ",
     "فقه",
     "عقيدة",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     maximumScale: 1,
     userScalable: false,
   },
-   robots: {
+  robots: {
     index: true,
     follow: true,
     nocache: false,
@@ -127,8 +127,8 @@ export default function BooksLayout({
   children: React.ReactNode;
 }>) {
   return (
-     <>
-      <div  className={`${amiri.className} min-h-screen  select-none`}>
+    <>
+      <div className={`${amiri.className} min-h-screen  select-none`}>
         {children}
       </div>
     </>
