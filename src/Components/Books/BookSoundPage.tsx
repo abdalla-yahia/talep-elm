@@ -26,9 +26,9 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
     const [play, setplay] = useState(false)
 
     const SORT: keyof typeof Book.data[0] = Book?.sort as keyof typeof Book.data[0]
-    useEffect(() => {
-        document.title = `${SahapyName} - ${BookTitle}`
-    }, [SahapyName, BookTitle])
+    // useEffect(() => {
+    //     document.title = `${SahapyName} - ${BookTitle}`
+    // }, [SahapyName, BookTitle])
 
             // Set initial values based on URL parameters
       useEffect(()=>{
@@ -46,8 +46,8 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
       },[bookTitle,AuthorName,SheikhName, searchParams]);
     return (
         <>
-            <div className='w-full flex flex-col justify-center items-center '>
-                <div className='w-full flex justify-center items-center md:w-[70%] lg:w-[50%]'>
+            <div className='w-full flex flex-col justify-center items-center relative '>
+                <div className={`w-full flex justify-center items-center ${Book?.audio_type !== 'mp3' && audioUrl !== undefined && 'h-[300px]'} md:w-[90%] lg:w-[80%]`}>
                     {
                         Book?.audio_type !== 'mp3' && audioUrl !== undefined &&
                         (
@@ -63,7 +63,7 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
                 </div>
                 <input onChange={(e) => SetSearch(e.target.value)} type="search" name="" id="" className='w-full rounded outline-none border-none my-2 p-1 text-gray-900' placeholder={`${Book?.search}....`} />
             </div>
-            <div className={`w-full flex flex-wrap  justify-evenly items-start mt-3 gap-1 h-[200vh] overflow-y-scroll scrollbar-hide`}>
+            <div className={`w-full flex flex-wrap  justify-evenly items-start mt-1 gap-1 h-[100vh] overflow-y-scroll scrollbar-hide`}>
                 {
                     (Search === '' || Search === null) ?
                         (Book?.data?.sort((a, b) => a[SORT] > b[SORT] ? 1 : -1).map((sound) => {
@@ -75,7 +75,7 @@ export default function BookSoundPage({ Book }: { Book: Chapter }) {
                                     SetID(sound.id as number); 
                                     SetSahapyName(sound.name);
                                     changeUrlWithoutReload(Book);
-                                    }} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-second_background_color  bg-background_color rounded text-text_color`}>
+                                    }} key={sound.id} className={`w-full sm:w-1/3 md:w-1/4 lg:w-1/5 cursor-pointer shadow-sm line-clamp-1  text-end text-lg p-2 hover:bg-secondary_color  bg-background_color rounded text-text_color`}>
                                     {Book?.id === 3 ?
                                         <h1 className='line-clamp-1 text-text_color'>{`( ${sound.id} ) - ${sound.name}`}</h1> :
                                         <h1 className='line-clamp-1 text-text_color'>{sound.name}
