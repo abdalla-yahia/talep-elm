@@ -19,7 +19,7 @@ import examSlice              from './Reducers/ExamsReducer';
 import examResultSlice        from './Reducers/ExamsResultsReducer';
 import articleSlice           from './Reducers/ArticlesReducer';
 import postSlice              from './Reducers/PostsReducer';
-import hadithSlice              from './Reducers/HadithReducer';
+import hadithSlice            from './Reducers/HadithReducer';
 import newsSlice              from './Reducers/NewsReducer';
 import codeSlice              from './Reducers/CodesReducer';
 
