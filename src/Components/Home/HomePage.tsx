@@ -3,7 +3,6 @@ import { lazy, Suspense } from "react";
 import CreatePost from "./CreatePost";
 import LeftSidbar from "./LeftSidbar";
 import Newsbar from "./Newsbar";
-import Image from "next/image";
 const RadioQuran = lazy(()=>import( "./RadioQuran"));
 const PrayerTimes = lazy(()=>import( "./PrayerTimes"));
 const ArticlesHomePage = lazy(()=>import("./ArticlesHomePage"));

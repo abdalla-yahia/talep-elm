@@ -27,7 +27,7 @@ export default function NavLinks({ user }: { user: UserPayload | null }) {
                   {!guidelines ? (
                     <div className="w-full flex justify-center text-red-700 items-center flex-col">
                       <Image className=" animate-bounce" src={'/guide.png'} alt="guide-image" width={80} height={80}/>
-                      اضغط   
+                      <span className=' animate-pulse'>اضغط</span>   
                     </div>
                     ):""}
                 </div>
