@@ -23,7 +23,7 @@ export default function NavLinks({ user }: { user: UserPayload | null }) {
          (
           <div className='relative flex justify-center items-center flex-col'>
           <IoIosMenu  onClick={() => {setToggle(!toggle);localStorage.setItem('guidelines','true')}} className="text-3xl lg:hidden block cursor-pointer" />
-              <div className="guide-lines absolute top-9 left-0  z-50 flex justify-center items-center">
+              <div className={`${style.guide_lines} absolute top-9 left-0  z-50 flex justify-center items-center`}>
                   {!guidelines ? (
                     <div className="w-full flex justify-center text-red-700 items-center flex-col">
                       <Image className=" animate-bounce" src={'/guide.png'} alt="guide-image" width={80} height={80}/>

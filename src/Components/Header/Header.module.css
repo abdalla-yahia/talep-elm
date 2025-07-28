@@ -26,3 +26,9 @@
         
     }
 }
+@media (min-width: 1023.5px){
+    .guide_lines {
+        display: none;
+    }
+    
+}
