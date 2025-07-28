@@ -5,16 +5,34 @@ import { IoIosMenu, IoMdClose } from 'react-icons/io'
 import style from './Header.module.css'
 import LoginForm from './LoginForm'
 import { TokenInterFace, UserPayload } from '@/Interfaces/InterFaces'
+import Image from 'next/image'
 
 export default function NavLinks({ user }: { user: UserPayload | null }) {
   const [toggle, setToggle] = useState(false)
+    const guidelines = localStorage.getItem("guidelines");
 
   return (
     <div className='text-text_color'>
+
       {
         toggle ?
-          <IoMdClose onClick={() => setToggle(!toggle)} className="text-3xl lg:hidden block cursor-pointer" /> :
-          <IoIosMenu onClick={() => setToggle(!toggle)} className="text-3xl lg:hidden block cursor-pointer" />
+        
+          <IoMdClose onClick={() => setToggle(!toggle)} className="text-3xl lg:hidden block cursor-pointer" />
+    
+         :
+         (
+          <div className='relative flex justify-center items-center flex-col'>
+          <IoIosMenu  onClick={() => {setToggle(!toggle);localStorage.setItem('guidelines','true')}} className="text-3xl lg:hidden block cursor-pointer" />
+              <div className="guide-lines absolute top-9 left-0  z-50 flex justify-center items-center">
+                  {!guidelines ? (
+                    <div className="w-full flex justify-center text-red-700 items-center flex-col">
+                      <Image className=" animate-bounce" src={'/guide.png'} alt="guide-image" width={80} height={80}/>
+                      اضغط   
+                    </div>
+                    ):""}
+                </div>
+          </div>
+         )
       }
       <div className='h-fit'>
         <div className={`${style.toggleDown} `}
