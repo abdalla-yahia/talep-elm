@@ -9,32 +9,33 @@ import Image from 'next/image'
 
 export default function NavLinks({ user }: { user: UserPayload | null }) {
   const [toggle, setToggle] = useState(false)
-    const guidelines = localStorage.getItem("guidelines");
-
+    const guidelines = sessionStorage.getItem("guidelines");
+  //Close DrobDown Menu on click outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (!target.closest('.toggleDown')&& !target.closest('.open-drob-down')) {
+      setToggle(false);
+    }
+  });
   return (
     <div className='text-text_color'>
-
-      {
-        toggle ?
-        
-          <IoMdClose onClick={() => setToggle(!toggle)} className="text-3xl lg:hidden block cursor-pointer" />
-    
-         :
-         (
-          <div className='relative flex justify-center items-center flex-col'>
-          <IoIosMenu  onClick={() => {setToggle(!toggle);localStorage.setItem('guidelines','true')}} className="text-3xl lg:hidden block cursor-pointer" />
-              <div className={`${style.guide_lines} absolute top-9 left-0  z-50 flex justify-center items-center`}>
-                  {!guidelines ? (
-                    <div className="w-full flex justify-center text-red-700 items-center flex-col">
-                      <Image className=" animate-bounce" src={'/guide.png'} alt="guide-image" width={80} height={80}/>
-                      <span className=' animate-pulse'>اضغط</span>   
-                    </div>
-                    ):""}
-                </div>
-          </div>
-         )
-      }
-      <div className='h-fit'>
+      <div className='relative flex justify-center items-center flex-col'>
+        {
+          toggle?
+            
+           <IoMdClose onClick={()=>{setToggle(!toggle);sessionStorage.setItem('guidelines','true')}} className="text-3xl lg:hidden block cursor-pointer"/>:
+                     <IoIosMenu  onClick={() => {setToggle(true)}} className="open-drob-down text-3xl lg:hidden block cursor-pointer" />
+                  }
+                  <div className={`${style.guide_lines} absolute top-9 left-0  z-50 flex justify-center items-center`}>
+                             {!guidelines ? (
+                               <div className="w-full flex justify-center text-white items-center flex-col">
+                                 <Image className=" animate-bounce" src={'/guide.png'} alt="guide-image" width={80} height={80}/>
+                                 <span className="text-center text-sm animate-pulse">اضغط</span>
+                               </div>
+                               ):""}
+                           </div>
+                  </div>
+          <div className='h-fit toggleDown'>
         <div className={`${style.toggleDown} `}
           style={{
             clipPath: toggle && 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' || ''
