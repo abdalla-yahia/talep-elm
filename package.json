@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node generate-sitemap-index.js",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "vercel-build": "prisma generate && prisma migrate deploy && next build",
     "netlify-build": "npm install --force && prisma generate && prisma migrate deploy && next build",
