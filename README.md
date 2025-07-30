@@ -17,7 +17,7 @@
 
 **Talep Elm** is an interactive Qur'an platform built with Next.js 15, React.js, PostgreSQL, Prisma ORM, Tailwind CSS, Bootstrap, Redux Toolkit, Axios, and deployed on Vercel. The platform provides users with a rich experience while reading the Qur'an online, featuring real-time radio broadcasting, private lectures for subscribers, role-based access control (RBAC), and detailed tracking of student progress.
 
-The project was developed using modern technologies to ensure scalability, maintainability, and performance. It optimizes SEO performance and reduces load times by up to 30%.
+The project was developed using modern technologies to ensure scalability, maintainability, and performance. It optimizes SEO performance and reduces load times by up to 35%.
 
 ---
 
