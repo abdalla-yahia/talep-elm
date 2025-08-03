@@ -4,8 +4,8 @@
   "description": "موقع طالب علم شرعي , يحتوي على المنهج العلمي لكل طالب علم يسعى إلى الإرتقاء في  سلم طلب العلم الشرعي وفق منهج علمي على الكتاب والسنة",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#FFF",
+  "theme_color": "#FFF",
   "icons": [
     {
       "src": "/icon/android-chrome-192x192.png",
