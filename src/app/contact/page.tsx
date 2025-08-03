@@ -13,7 +13,7 @@ export default function ContactPage() {
               <li  className="flex justify-center items-center gap-3 hover:rotate-6 transition-all">
                 <Link href={'https://soundcloud.com/26tnfbxs3af8/'} className="flex text-orange-700 text-2xl gap-2 justify-center items-center ">
                 <icon.FaSoundcloud className="text-orange-700 text-2xl"/>
-                صفحتنا على ساوند كلاود 
+                <h2>صفحتنا على ساوند كلاود </h2>
                 </Link>
               </li>
               <li  className="flex justify-center items-center gap-3 hover:rotate-6 transition-all">

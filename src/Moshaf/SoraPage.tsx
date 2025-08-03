@@ -93,7 +93,7 @@ export default function SoraPage({ setNameSoras, setSoraNumber, setClickedAya, S
             <div className={`${style.soraPage} text-center w-full h-fit`}>
               {/*Set Pasmala And Header Of Sora */}
               <div className={`${style.passmalla} hidden text-center md:flex lg:flex justify-center items-center `}>
-                <span className={`${style.sora_name, style.passmalla_title}  `}>   {`سورة ${sora?.length > 0 && sora?.[0].sura_name_ar || ''}`}  </span>
+                <h2 className={`${style.sora_name, style.passmalla_title}  `}>   {`سورة ${sora?.length > 0 && sora?.[0].sura_name_ar || ''}`}  </h2>
                 <span className={`${style.sora_mak_mad, style.passmalla_title}  `}>   {`التنزيل ${TypeSora}`}  </span>
                 <span className={`${style.sora_ayas_num, style.passmalla_title} headerayatlength `}>   {`أياتها ${sora?.length > 0 && sora?.length || ''}`}  </span>
               </div>
