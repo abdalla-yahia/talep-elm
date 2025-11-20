@@ -37,14 +37,28 @@ export default function Footer() {
         <span className="flex justify-center items-center md:block max-w-full text-sm text-text_color sm:text-center">جميع الحقوق محفوظة  ©  {new Date().getFullYear()} <Link href="mailto:abdalla_y2007@yahoo.com/" className="hover:underline text-orange-600 font-bold text-lg">موقع طالب علم™ </Link> </span>
       </div><br></br>
       {/**Site Owner */}
-              <div className=" max-w-full flex justify-center items-center md:block lg:block  text-sm text-gray-200 text-center">تم تصميم وتطوير الموقع بواسطة  
-                <Link href="https://www.linkedin.com/in/abdalla-yahia/" target="_blank" className="hover:underline text-blue-700 font-bold text-lg flex justify-center items-center">م / عبدالله يحيى 
-                  <span className="text-red-600">™</span>
-                  <span className=" max-w-full text-sm text-gray-200 sm:text-center">جميع الحقوق محفوظة  ©</span>
-                    </Link><span> للتواصل: 
-                      <icon.FaWhatsapp className="text-green-700 inline-flex mx-2"/>
-                      <Link href="https://wa.me/201211100554?text=مرحباً%مهندس/%20!!%عبدالله%أرغب%في%20التواصل%20معكم%20لتطوير%20موقع" target="_blank">01211100554</Link></span> 
-              </div>
+              <div className="w-full flex flex-col md:flex-row justify-center items-center text-xs text-gray-500 gap-1">
+                      <span>Developed by</span>
+                      <Link
+                        href="https://www.linkedin.com/in/abdalla-yahia/"
+                        target="_blank"
+                        className="hover:underline text-blue-600 font-medium flex items-center gap-1"
+                      >
+                        Eng. Abdalla Yahia <span className="text-red-500">™</span>
+                      </Link>
+                      <span className="opacity-60">© All Rights Reserved</span>
+                      <span className="flex items-center gap-1">
+                        | Contact:
+                        <icon.FaWhatsapp className="text-green-600" />
+                        <Link
+                          href="https://wa.me/201211100554?text=Hello%20Eng.%20Abdalla,%20I%20would%20like%20to%20connect%20with%20you%20for%20website%20development."
+                          target="_blank"
+                          className="hover:underline text-gray-500"
+                        >
+                          01211100554
+                        </Link>
+                      </span>
+                  </div>
       <br></br>
 
     </footer>
